@@ -1,0 +1,18 @@
+{# BLOG (i.e. a page loop)
+   Part of recommended generic templates
+   Turns a directory into a BLOG 
+   to output a collection of child ITEM pages
+#}
+
+{% embed 'partials/base.html.twig' %}
+
+{% block content %}
+
+  {% set content = page.content|slice(page.summary|length) %}
+  {{ content|raw }}
+  <br>
+  {% include 'partials/loop.html.twig' %}
+
+{% endblock %}
+
+{% endembed %}

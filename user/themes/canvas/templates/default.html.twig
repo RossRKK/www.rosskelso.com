@@ -1,0 +1,18 @@
+{# DEFAULT
+   Part of recommended generic templates
+   Output page content
+#}
+
+{% embed 'partials/base.html.twig' %}
+
+
+{# Compatibility layer for features in
+item-type pages. #}
+
+{% block pageflip %}
+  {% if page_template == 'item' %}
+  {% include 'partials/pageflip.html.twig' %}
+  {% endif %}
+{% endblock pageflip %}
+
+{% endembed %}

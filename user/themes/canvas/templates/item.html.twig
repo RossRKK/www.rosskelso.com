@@ -1,0 +1,21 @@
+{# ITEM (i.e. blogposts)
+   Part of recommended generic templates
+   Preferred child template for
+   BLOG directories
+#}
+
+
+{% embed 'partials/base.html.twig' %}
+
+{% block content %}
+
+{% include 'partials/content.html.twig' %}
+{% if metadata_location == 'content_footer' %}
+  <div class="content-footer">
+  {% include 'partials/metadata.html.twig' %}
+  </div>
+{% endif %}
+{% endblock content %}
+
+{% endembed %}
+

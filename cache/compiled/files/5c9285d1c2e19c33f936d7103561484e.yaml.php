@@ -1,0 +1,34 @@
+<?php
+return [
+    '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
+    'filename' => '/var/www/html/user/config/themes/quark.yaml',
+    'modified' => 1739467017,
+    'size' => 511,
+    'data' => [
+        'enabled' => true,
+        'production-mode' => true,
+        'grid-size' => 'grid-lg',
+        'header-fixed' => true,
+        'header-animated' => true,
+        'header-dark' => false,
+        'header-transparent' => false,
+        'sticky-footer' => true,
+        'blog-page' => '/blog',
+        'spectre' => [
+            'exp' => false,
+            'icons' => false
+        ],
+        'custom_logo' => [
+            'user/themes/quark/images/logo/rossrkk_Avatar-web-circle.svg' => [
+                'name' => 'rossrkk_Avatar-web-circle.svg',
+                'full_path' => 'rossrkk_Avatar-web-circle.svg',
+                'type' => 'image/svg+xml',
+                'size' => 56418,
+                'path' => 'user/themes/quark/images/logo/rossrkk_Avatar-web-circle.svg'
+            ]
+        ],
+        'custom_logo_mobile' => [
+            
+        ]
+    ]
+];

@@ -1,0 +1,29 @@
+{# LOOP
+Generates a basic post loop/index
+Taken with modifications from Hypertext #}
+
+{% set page_collection = page.collection()|length > 0 ? page.collection() : page.children.visible('folder','asc') %}
+
+  {% if page_collection %}
+  <hr>
+  {% set page_collection = page_collection.order(page.header.content.order.by|default(system.pages.order.by), page.header.content.order.dir|default(system.pages.order.dir)) %}
+  {% for child in page_collection %}
+    <h3><a href="{{ child.url }}">{{ child.title|e }}</a></h3>
+    {% if child.header.publish_date is null %}
+      <p>Published on {{child.date|date("F j, Y")}}.</p>
+    {% else %}
+      <p>Published on {{child.header.publish_date|date("F j, Y")}}.</p>
+    {% endif %}
+    <p>{{ child.summary|raw }}</p>
+    <br>
+    <em><a href="{{ child.url }}">Continue reading...</a></em>
+    <hr>
+  {% endfor %}
+  {% endif %}
+
+{# Pagination support - from the repository page
+https://github.com/getgrav/grav-plugin-pagination #}
+
+{% if config.plugins.pagination.enabled and page_collection.params.pagination %}
+  {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':page_collection.params.pagination} %}
+{% endif %}

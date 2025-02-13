@@ -1,0 +1,11 @@
+state: enabled
+email: admin@rosskelso.com
+fullname: 'Ross Kelso'
+title: Administrator
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$10$FC87CrzchnS0xBKyg9XbWu3dOUlGFGx5fvOoEb6RqpQUmW3MGwEvK

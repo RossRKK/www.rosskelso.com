@@ -1,0 +1,51 @@
+<?php
+return [
+    '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
+    'filename' => 'themes://canvas/canvas.yaml',
+    'modified' => 1739465131,
+    'size' => 718,
+    'data' => [
+        'style' => [
+            'color' => [
+                'palette' => 'theme_default',
+                'custom' => [
+                    'light' => [
+                        'bg' => '#ffffff',
+                        'accent-bg' => '#f5f7ff',
+                        'text' => '#212121',
+                        'text-light' => '#585858',
+                        'border' => '#d8dae1',
+                        'accent' => '#004d40',
+                        'code' => '#795548',
+                        'preformatted' => '#444444',
+                        'disabled' => '#efefef'
+                    ],
+                    'dark' => [
+                        'bg' => '#212121',
+                        'accent-bg' => '#2b2b2b',
+                        'text' => '#dcdcdc',
+                        'text-light' => '#ababab',
+                        'border' => '#666666',
+                        'accent' => '#00bcd4',
+                        'code' => '#ea80fc',
+                        'preformatted' => '#cccccc',
+                        'disabled' => '#111111'
+                    ]
+                ]
+            ]
+        ],
+        'partials' => [
+            'navigation' => [
+                'where' => 'header'
+            ],
+            'metadata' => [
+                'where' => 'header'
+            ],
+            'footer' => [
+                'theme_attribution' => [
+                    'toggle' => true
+                ]
+            ]
+        ]
+    ]
+];

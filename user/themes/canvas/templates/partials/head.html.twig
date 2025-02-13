@@ -1,0 +1,121 @@
+{# Refer to base.html.twig for variables used #}
+{# Browsers Meta #}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta itemscope itemtype="https://schema.org/WebSite" />
+
+{# SEO Meta #}
+<title>{% if meta_title %}{{ meta_title }}{% endif %}</title>
+<link rel="canonical" href="{{ canonical_url }}">
+{% if favicon_file_url %}
+<link rel="icon" type="image/png" href="{{ favicon_file_url }}" >
+<link rel="apple-touch-icon" href="{{ favicon_file_url }}" >
+<link rel="mask-icon" href="{{ favicon_file_url }}">
+{% endif %}
+{% if author_name %}
+<meta name="author" content="{{ author_name }}" />
+{% endif %}
+
+{# Load Site and Page Specific Metadata Overloads #}
+{% for meta in page.metadata %}
+<meta {% if meta.name %}name="{{ meta.name|e }}" {% endif %}
+{% if meta.http_equiv %}http-equiv="{{ meta.http_equiv|e }}" {% endif %}
+{% if meta.charset %}charset="{{ meta.charset|e }}" {% endif %}
+{% if meta.property %}property="{{ meta.property|e }}" {% endif %}
+{% if meta.content %}content="{{ meta.content|raw }}" {% endif %}>
+{% endfor %}
+
+{# Social Media Metadata #}
+<meta property="og:type" content="website">
+<meta property="twitter:card" content="summary_large_image">
+{% if canonical_url %}
+<meta property="og:url" content="{{ canonical_url }}">
+<meta property="twitter:url" content="{{ canonical_url }}">
+{% endif %}
+{% if meta_title %}
+<meta itemprop="name" content="{{ meta_title }}">
+<meta property="og:title" content="{{ meta_title }}">
+<meta property="twitter:title" content="{{ meta_title }}">
+{% endif %}
+{% if meta_description %}
+<meta property="og:description" content="{{ meta_description }}">
+<meta property="twitter:description" content="{{ meta_description }}">
+<meta itemprop="description" content="{{ meta_description }}">
+{% endif %}
+{% if preview_image_url %}
+<meta property="og:image" content="{{ preview_image_url }}">
+<meta property="twitter:image" content="{{ preview_image_url }}">
+<meta itemprop="image" content="{{ preview_image_url }}">
+{% endif %}
+{% if author_name %}
+<meta property="article:author" content="{{ author_name }}">
+{% endif %}
+
+{# Basic Schema.org json #}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "headline": "{{ page_title }}",
+  "name": "{{ site_title }}",
+  "url": "{{ canonical_url }}",
+  "image": {
+  "@type": "ImageObject",
+  "url": "{{ preview_image_url }}"
+  },
+  "author": {
+  "@type": "Person",
+  "name": "{{ author_name }}"
+  },
+  "datePublished": "{{ date_published }}",
+  "description": "{{ meta_description }}"
+}
+</script>
+
+{# PLUGIN - Feed #}
+{# Note: The plugin requires that there should be an
+explicit definition of content.items in the template
+for the feed to work, else it will just render the page #}
+{% if config.plugins["feed"].enabled and
+ (page.template() in blog_templates) and
+ page.header.content.items %}
+  <link rel="alternate" type="application/atom+xml" title="{{ page.title }} feed" href="{{ canonical_url }}.atom" />
+  <link rel="alternate" type="application/rss+xml" title="{{ page.title }} feed" href="{{ canonical_url }}.rss" />
+  <link rel="alternate" type="application/json" title="{{ page.title }} feed" href="{{ canonical_url }}.json" />
+{% endif %}
+
+
+
+{# Asset Files #}
+
+{% block stylesheets %}
+  {% do assets.addCss('theme://assets/css/reset.css', { priority: 102 })  %}
+  {% do assets.addCss('theme://assets/css/base.css') %}
+{% endblock stylesheets %}
+
+{% block assets deferred %}
+  {{ assets.css()|raw }}
+  {{ assets.js()|raw }}
+{% endblock %}
+
+{# Inline Theme Styling #}
+<style>
+  {% if theme_config.style.color.theme.behavior == 'light' %}
+  {% include 'partials/theme-light.html.twig' %}
+  {% endif %}
+
+  {% if theme_config.style.color.theme.behavior == 'dark' %}
+  {% include 'partials/theme-dark.html.twig' %}
+  {% endif %}
+
+  {% if theme_config.style.color.theme.behavior == 'theme_default' %}
+  {% include 'partials/theme-default.html.twig' %}
+  {% endif %}
+
+  {# Inline Global Styling #}
+  {% if theme_config.style.custom.css %}
+  {{ theme_config.style.custom.css }}
+  {% endif %}
+</style>
+

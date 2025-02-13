@@ -1,0 +1,67 @@
+
+{% if meta_title %}
+<title>{{ meta_title }}</title>
+<meta itemprop="name" content="{{ meta_title }}">
+<meta property="og:title" content="{{ meta_title }}">
+<meta property="twitter:title" content="{{ meta_title }}">
+{% endif %}
+
+{# URLs #}
+{% if canonical_url %}
+<link rel="canonical" href="{{ canonical_url }}">
+<meta property="og:url" content="{{ canonical_url }}">
+<meta property="twitter:url" content="{{ canonical_url }}">
+{% endif %}
+
+{# Author Name #}
+{% if author_name %}
+<meta property="article:author" content="{{ author_name }}">
+{% endif %}
+
+{# Site Description #}
+{% if meta_description %}
+<meta name="description" content="{{ meta_description }}">
+<meta property="og:description" content="{{ meta_description }}">
+<meta property="twitter:description" content="{{ meta_description }}">
+<meta itemprop="description" content="{{ meta_description }}">
+{% endif %}
+
+{% if featured_image_url %}
+<meta property="og:image" content="{{ featured_image_url }}">
+<meta property="twitter:image" content="{{ featured_image_url }}">
+<meta itemprop="image" content="{{ featured_image_url }}">
+{% endif %}
+
+{# Social Media Type #}
+<meta property="og:type" content="website">
+<meta property="twitter:card" content="summary_large_image">
+
+{# Basic Schema.org json #}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "headline": "{{ page_title }}",
+  "name": "{{ site_title }}",
+  "url": "{{ canonical_url }}",
+  "image": {
+  "@type": "ImageObject",
+  "url": "{{ featured_image_url }}",
+  },
+  "author": {
+  "@type": "Person",
+  "name": "{{ author_name }}"
+  },
+  "datePublished": "{{ date_published }}",
+  "description": "{{ meta_description }}"
+}
+</script>
+
+{# Load Site and Page Specific Metadata Overloads #}
+{% for meta in page.metadata %}
+<meta {% if meta.name %}name="{{ meta.name|e }}" {% endif %}
+{% if meta.http_equiv %}http-equiv="{{ meta.http_equiv|e }}" {% endif %}
+{% if meta.charset %}charset="{{ meta.charset|e }}" {% endif %}
+{% if meta.property %}property="{{ meta.property|e }}" {% endif %}
+{% if meta.content %}content="{{ meta.content|raw }}" {% endif %}>
+{% endfor %}
