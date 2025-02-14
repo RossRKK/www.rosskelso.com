@@ -1,7 +1,7 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1739497516,
+    'timestamp' => 1739504347,
     'checksum' => '3c3f576dfe39ddef149c7fb9c9e3419d',
     'files' => [
         'system/languages' => [

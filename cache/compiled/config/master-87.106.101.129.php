@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1739497516,
-    'checksum' => 'b220641c1d54325f90585e2f5ff69517',
+    'timestamp' => 1739504347,
+    'checksum' => 'b87698a95634106f6ea4cc915e0ecd85',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -27,7 +27,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1739495765
+                'modified' => 1739501012
             ],
             'themes/darkquark' => [
                 'file' => 'user/config/themes/darkquark.yaml',
