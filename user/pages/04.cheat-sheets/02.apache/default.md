@@ -59,13 +59,13 @@ sudo service apache2 reload
 
 ## Certbot
 
-Install
+### Install
 
 ```bash
 sudo apt install certbot python3-certbot-apache
 ```
 
-Run
+### Run
 
 ```bash
 sudo certbot --apache
