@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1739492755,
-    'checksum' => '128f36f40b95b86bfad9cc8c39021145',
+    'timestamp' => 1739497516,
+    'checksum' => 'b220641c1d54325f90585e2f5ff69517',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -12,6 +12,10 @@ return [
             'media' => [
                 'file' => 'user/config/media.yaml',
                 'modified' => 1739464579
+            ],
+            'plugins/file-browser' => [
+                'file' => 'user/config/plugins/file-browser.yaml',
+                'modified' => 1739496008
             ],
             'security' => [
                 'file' => 'user/config/security.yaml',
@@ -23,7 +27,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1739491755
+                'modified' => 1739495765
             ],
             'themes/darkquark' => [
                 'file' => 'user/config/themes/darkquark.yaml',
@@ -69,6 +73,10 @@ return [
             ]
         ],
         'user/plugins' => [
+            'plugins/file-browser' => [
+                'file' => 'user/plugins/file-browser/file-browser.yaml',
+                'modified' => 1615950086
+            ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
                 'modified' => 1739463485
@@ -237,6 +245,38 @@ return [
             ]
         ],
         'plugins' => [
+            'file-browser' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'load_font_awesome' => true,
+                'fa4_compatability' => true,
+                'source' => 'user://files',
+                'show_hidden_files' => true,
+                'default_view' => 'list',
+                'base_to_extend' => 'partials/base.html.twig',
+                'use_alt_arrows' => false,
+                'icon_weight' => 'fas',
+                'sort_show' => true,
+                'sort_reverse' => false,
+                'file_icon_default' => 'fa-file-alt',
+                'show_thumbnails' => true,
+                'thumbnail_types' => 'png, jpg, jpeg, gif, bmp, svg',
+                'file_icons_specific' => true,
+                'colourise_icons' => true,
+                'file_icon_types' => [
+                    'fa-file-word' => 'doc, docx, odt, rtf',
+                    'fa-file-csv' => 'csv',
+                    'fa-file-excel' => 'xls, xlsx, ods',
+                    'fa-file-powerpoint' => 'ppt, pps, pptx, ppsx, odp',
+                    'fa-file-archive' => 'zip',
+                    'fa-file-video' => 'mp4, mov',
+                    'fa-file-audio' => 'mp3, ogg, wav',
+                    'fa-file-image' => 'png, jpg, jpeg, gif, bmp, svg',
+                    'fa-file-pdf' => 'pdf'
+                ],
+                'sort_icon_asc' => NULL,
+                'sort_icon_desc' => NULL
+            ],
             'admin' => [
                 'enabled' => true,
                 'route' => '/admin',

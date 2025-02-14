@@ -10,6 +10,10 @@ partials:
         toggle: true
 ---
 
+How to install the Sims 3 and it's expansions on a steam deck from the DVDs using Lutris.
+
+===
+
 # Installing the Sims 3 on a Steam Deck from a DVD
 
 ! An expansion pack as new or newer than 'Showtime' is required to follow these instructions

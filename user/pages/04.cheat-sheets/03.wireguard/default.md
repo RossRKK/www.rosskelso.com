@@ -34,3 +34,23 @@ sudo systemctl status wg-quick@wg0
 ```bash
 sudo systemctl enable wg-quick@wg0
 ```
+
+### Generate Key Pair
+
+```bash
+wg genkey > privatekey
+```
+
+```bash
+wg pubkey < privatekey > publickey
+```
+
+```bash
+wg genkey | tee privatekey | wg pubkey > publickey
+```
+
+### Generate Pre-shared Key
+
+```bash
+openssl rand 32 | base64
+```

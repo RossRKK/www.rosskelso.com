@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1739491757,
-    'checksum' => '9fe3e9593e7c1d04f60fe0ee9d940442',
+    'timestamp' => 1739495768,
+    'checksum' => '79d5de681e32e4f4a97bdb5489694c7b',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
@@ -41,6 +41,10 @@ return [
             ]
         ],
         'user/plugins' => [
+            'plugins/file-browser' => [
+                'file' => 'user/plugins/file-browser/blueprints.yaml',
+                'modified' => 1615950086
+            ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/blueprints.yaml',
                 'modified' => 1739463485
@@ -2956,17 +2960,261 @@ return [
                 'name' => 'system.accounts.avatar',
                 'validation' => 'loose'
             ],
-            'plugins.admin' => [
+            'plugins.file-browser' => [
                 'type' => '_root',
                 'form_field' => false,
                 'form' => [
-                    'validation' => 'loose'
+                    'validation' => 'strict'
                 ]
             ],
             'plugins' => [
                 'type' => '_parent',
                 'name' => 'plugins',
                 'form_field' => false
+            ],
+            'plugins.file-browser.enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.file-browser.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.file-browser.built_in_css' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_FILE_BROWSER.BUILTIN_CSS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.file-browser.built_in_css',
+                'validation' => 'strict'
+            ],
+            'plugins.file-browser.load_font_awesome' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_FILE_BROWSER.LOAD_FONT_AWESOME',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.file-browser.load_font_awesome',
+                'validation' => 'strict'
+            ],
+            'plugins.file-browser.fa4_compatability' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_FILE_BROWSER.FA4_COMPATIBILITY',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.file-browser.fa4_compatability',
+                'validation' => 'strict'
+            ],
+            'plugins.file-browser.source' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_FILE_BROWSER.DEFAULT_SOURCE',
+                'default' => 'user://files',
+                'name' => 'plugins.file-browser.source',
+                'validation' => 'strict'
+            ],
+            'plugins.file-browser.show_hidden_files' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_FILE_BROWSER.SHOW_HIDDEN_FILES',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.file-browser.show_hidden_files',
+                'validation' => 'strict'
+            ],
+            'plugins.file-browser.default_view' => [
+                'type' => 'select',
+                'label' => 'PLUGIN_FILE_BROWSER.DEFAULT_VIEW',
+                'default' => 'tile',
+                'options' => [
+                    'tile' => 'PLUGIN_FILE_BROWSER.TILE_VIEW',
+                    'list' => 'PLUGIN_FILE_BROWSER.LIST_VIEW'
+                ],
+                'name' => 'plugins.file-browser.default_view',
+                'validation' => 'strict'
+            ],
+            'plugins.file-browser.base_to_extend' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_FILE_BROWSER.BASE_TO_EXTEND',
+                'name' => 'plugins.file-browser.base_to_extend',
+                'validation' => 'strict'
+            ],
+            'plugins.file-browser.use_alt_arrows' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_FILE_BROWSER.USE_ALT_ARROWS',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.file-browser.use_alt_arrows',
+                'validation' => 'strict'
+            ],
+            'plugins.file-browser.icon_weight' => [
+                'type' => 'select',
+                'label' => 'PLUGIN_FILE_BROWSER.ICON_WEIGHT',
+                'default' => 'fas',
+                'options' => [
+                    'fas' => 'PLUGIN_FILE_BROWSER.ICON_WEIGHT_FAS',
+                    'far' => 'PLUGIN_FILE_BROWSER.ICON_WEIGHT_FAR',
+                    'fal' => 'PLUGIN_FILE_BROWSER.ICON_WEIGHT_FAL',
+                    'fad' => 'PLUGIN_FILE_BROWSER.ICON_WEIGHT_FAD'
+                ],
+                'name' => 'plugins.file-browser.icon_weight',
+                'validation' => 'strict'
+            ],
+            'plugins.file-browser.sort_show' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_FILE_BROWSER.SORT_SHOW',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.file-browser.sort_show',
+                'validation' => 'strict'
+            ],
+            'plugins.file-browser.sort_reverse' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_FILE_BROWSER.SORT_REVERSE',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.file-browser.sort_reverse',
+                'validation' => 'strict'
+            ],
+            'plugins.file-browser.sort_icon_asc' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_FILE_BROWSER.SORT_ASCENDING',
+                'name' => 'plugins.file-browser.sort_icon_asc',
+                'validation' => 'strict'
+            ],
+            'plugins.file-browser.sort_icon_desc' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_FILE_BROWSER.SORT_DESCENDING',
+                'name' => 'plugins.file-browser.sort_icon_desc',
+                'validation' => 'strict'
+            ],
+            'plugins.file-browser.file_icon_default' => [
+                'type' => 'text',
+                'label' => 'PLUGIN_FILE_BROWSER.FILE_ICON_DEFAULT',
+                'default' => 'fa-file-alt',
+                'name' => 'plugins.file-browser.file_icon_default',
+                'validation' => 'strict'
+            ],
+            'plugins.file-browser.colourise_icons' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_FILE_BROWSER.COLOURISE_ICONS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.file-browser.colourise_icons',
+                'validation' => 'strict'
+            ],
+            'plugins.file-browser.show_thumbnails' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_FILE_BROWSER.SHOW_THUMBNAILS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.file-browser.show_thumbnails',
+                'validation' => 'strict'
+            ],
+            'plugins.file-browser.file_icons_specific' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_FILE_BROWSER.FILE_ICONS_SPECIFIC',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.file-browser.file_icons_specific',
+                'validation' => 'strict'
+            ],
+            'plugins.file-browser.file_icon_types' => [
+                'type' => 'array',
+                'label' => 'PLUGIN_FILE_BROWSER.FILE_ICON_TYPES',
+                'default' => [
+                    'fa-file-word' => 'doc, docx, odt, rtf',
+                    'fa-file-csv' => 'csv',
+                    'fa-file-excel' => 'xls, xlsx, ods',
+                    'fa-file-powerpoint' => 'ppt, pps, pptx, ppsx, odp',
+                    'fa-file-archive' => 'zip',
+                    'fa-file-video' => 'mp4, mov',
+                    'fa-file-audio' => 'mp3, ogg, wav',
+                    'fa-file-pdf' => 'pdf'
+                ],
+                'name' => 'plugins.file-browser.file_icon_types',
+                'validation' => 'strict'
+            ],
+            'plugins.admin' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'loose'
+                ]
             ],
             'plugins.admin.enabled' => [
                 'type' => 'hidden',
@@ -7171,6 +7419,27 @@ return [
                 ]
             ],
             'plugins' => [
+                'file-browser' => [
+                    'enabled' => 'plugins.file-browser.enabled',
+                    'built_in_css' => 'plugins.file-browser.built_in_css',
+                    'load_font_awesome' => 'plugins.file-browser.load_font_awesome',
+                    'fa4_compatability' => 'plugins.file-browser.fa4_compatability',
+                    'source' => 'plugins.file-browser.source',
+                    'show_hidden_files' => 'plugins.file-browser.show_hidden_files',
+                    'default_view' => 'plugins.file-browser.default_view',
+                    'base_to_extend' => 'plugins.file-browser.base_to_extend',
+                    'use_alt_arrows' => 'plugins.file-browser.use_alt_arrows',
+                    'icon_weight' => 'plugins.file-browser.icon_weight',
+                    'sort_show' => 'plugins.file-browser.sort_show',
+                    'sort_reverse' => 'plugins.file-browser.sort_reverse',
+                    'sort_icon_asc' => 'plugins.file-browser.sort_icon_asc',
+                    'sort_icon_desc' => 'plugins.file-browser.sort_icon_desc',
+                    'file_icon_default' => 'plugins.file-browser.file_icon_default',
+                    'colourise_icons' => 'plugins.file-browser.colourise_icons',
+                    'show_thumbnails' => 'plugins.file-browser.show_thumbnails',
+                    'file_icons_specific' => 'plugins.file-browser.file_icons_specific',
+                    'file_icon_types' => 'plugins.file-browser.file_icon_types'
+                ],
                 'admin' => [
                     'enabled' => 'plugins.admin.enabled',
                     'cache_enabled' => 'plugins.admin.cache_enabled',
