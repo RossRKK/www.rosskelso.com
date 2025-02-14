@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1739468035,
-    'checksum' => '3486091cb07ff507246a461b4a32b555',
+    'timestamp' => 1739491757,
+    'checksum' => '128f36f40b95b86bfad9cc8c39021145',
     'files' => [
         'user/config' => [
             'backups' => [
@@ -23,7 +23,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1739465792
+                'modified' => 1739491755
             ],
             'themes/darkquark' => [
                 'file' => 'user/config/themes/darkquark.yaml',
@@ -89,6 +89,10 @@ return [
                 'file' => 'user/plugins/breadcrumbs/breadcrumbs.yaml',
                 'modified' => 1739465129
             ],
+            'plugins/simplesearch' => [
+                'file' => 'user/plugins/simplesearch/simplesearch.yaml',
+                'modified' => 1661524352
+            ],
             'plugins/feed' => [
                 'file' => 'user/plugins/feed/feed.yaml',
                 'modified' => 1739465128
@@ -108,6 +112,10 @@ return [
             'plugins/flex-objects' => [
                 'file' => 'user/plugins/flex-objects/flex-objects.yaml',
                 'modified' => 1739463485
+            ],
+            'plugins/prism-highlight' => [
+                'file' => 'user/plugins/prism-highlight/prism-highlight.yaml',
+                'modified' => 1661272102
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
@@ -386,6 +394,39 @@ return [
                 'icon_divider_classes' => 'fa fa-angle-right',
                 'link_trailing' => false
             ],
+            'simplesearch' => [
+                'enabled' => true,
+                'built_in_css' => true,
+                'built_in_js' => true,
+                'display_button' => false,
+                'min_query_length' => 3,
+                'route' => '/search',
+                'search_content' => 'rendered',
+                'template' => 'simplesearch_results',
+                'filters' => [
+                    'category' => NULL
+                ],
+                'filter_combinator' => 'and',
+                'ignore_accented_characters' => false,
+                'order' => [
+                    'by' => 'date',
+                    'dir' => 'desc'
+                ],
+                'searchable_types' => [
+                    'title' => true,
+                    'content' => true,
+                    'taxonomy' => true,
+                    'header' => false
+                ],
+                'header_keys_ignored' => [
+                    0 => 'title',
+                    1 => 'taxonomy',
+                    2 => 'content',
+                    3 => 'form',
+                    4 => 'forms',
+                    5 => 'media_order'
+                ]
+            ],
             'feed' => [
                 'enabled' => true,
                 'limit' => 10,
@@ -483,6 +524,21 @@ return [
                     0 => 'blueprints://flex-objects/pages.yaml',
                     1 => 'blueprints://flex-objects/user-accounts.yaml',
                     2 => 'blueprints://flex-objects/user-groups.yaml'
+                ]
+            ],
+            'prism-highlight' => [
+                'enabled' => true,
+                'theme' => 'prism-one-light.css',
+                'all-pre-blocks' => true,
+                'custom' => [
+                    'js_location' => 'user://data/prism-highlight/prism.js',
+                    'css_location' => 'user://data/prism-highlight/prism.css',
+                    'theme_location' => 'user://data/prism-highlight/custom-theme.css'
+                ],
+                'plugins' => [
+                    'line-numbers' => false,
+                    'command-line' => false,
+                    'command-line-prompt' => '$'
                 ]
             ],
             'form' => [

@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1739468056,
-    'checksum' => '1f02b1582312de1065a8f1c64f4ef00e',
+    'timestamp' => 1739491757,
+    'checksum' => '9fe3e9593e7c1d04f60fe0ee9d940442',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
@@ -61,6 +61,10 @@ return [
                 'file' => 'user/plugins/breadcrumbs/blueprints.yaml',
                 'modified' => 1739465129
             ],
+            'plugins/simplesearch' => [
+                'file' => 'user/plugins/simplesearch/blueprints.yaml',
+                'modified' => 1661524352
+            ],
             'plugins/feed' => [
                 'file' => 'user/plugins/feed/blueprints.yaml',
                 'modified' => 1739465128
@@ -80,6 +84,10 @@ return [
             'plugins/flex-objects' => [
                 'file' => 'user/plugins/flex-objects/blueprints.yaml',
                 'modified' => 1739463485
+            ],
+            'plugins/prism-highlight' => [
+                'file' => 'user/plugins/prism-highlight/blueprints.yaml',
+                'modified' => 1661272102
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/blueprints.yaml',
@@ -4451,6 +4459,211 @@ return [
                 'name' => 'plugins.breadcrumbs.link_trailing',
                 'validation' => 'strict'
             ],
+            'plugins.simplesearch' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.simplesearch.enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.simplesearch.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.simplesearch.search_content' => [
+                'type' => 'select',
+                'size' => 'medium',
+                'classes' => 'fancy',
+                'label' => 'PLUGIN_SIMPLESEARCH.SEARCH_CONTENT',
+                'default' => 'rendered',
+                'options' => [
+                    'rendered' => 'PLUGIN_SIMPLESEARCH.RENDERED_CONTENT',
+                    'raw' => 'PLUGIN_SIMPLESEARCH.RAW_CONTENT'
+                ],
+                'name' => 'plugins.simplesearch.search_content',
+                'validation' => 'strict'
+            ],
+            'plugins.simplesearch.built_in_css' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_SIMPLESEARCH.BUILTIN_CSS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.simplesearch.built_in_css',
+                'validation' => 'strict'
+            ],
+            'plugins.simplesearch.built_in_js' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_SIMPLESEARCH.BUILTIN_JS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.simplesearch.built_in_js',
+                'validation' => 'strict'
+            ],
+            'plugins.simplesearch.display_button' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_SIMPLESEARCH.DISPLAY_SEARCH_BUTTON',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.simplesearch.display_button',
+                'validation' => 'strict'
+            ],
+            'plugins.simplesearch.ignore_accented_characters' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_SIMPLESEARCH.IGNORE_ACCENDED_CHARACTERS',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.simplesearch.ignore_accented_characters',
+                'validation' => 'strict'
+            ],
+            'plugins.simplesearch.min_query_length' => [
+                'type' => 'text',
+                'size' => 'x-small',
+                'label' => 'PLUGIN_SIMPLESEARCH.MIN_QUERY_LENGTH',
+                'validate' => [
+                    'type' => 'number',
+                    'min' => 0
+                ],
+                'name' => 'plugins.simplesearch.min_query_length',
+                'validation' => 'strict'
+            ],
+            'plugins.simplesearch.route' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => 'PLUGIN_SIMPLESEARCH.SEARCH_PAGE_ROUTE',
+                'default' => '/random',
+                'name' => 'plugins.simplesearch.route',
+                'validation' => 'strict'
+            ],
+            'plugins.simplesearch.searchable_types' => [
+                'type' => 'checkboxes',
+                'label' => 'PLUGIN_SIMPLESEARCH.SEARCHABLE_TYPES',
+                'description' => 'PLUGIN_SIMPLESEARCH.SEARCHABLE_TYPES_DESCRIPTION',
+                'options' => [
+                    'title' => 'Title',
+                    'content' => 'Content',
+                    'header' => 'Header',
+                    'taxonomy' => 'Taxonomy'
+                ],
+                'use' => 'keys',
+                'name' => 'plugins.simplesearch.searchable_types',
+                'validation' => 'strict'
+            ],
+            'plugins.simplesearch.header_keys_ignored' => [
+                'type' => 'selectize',
+                'size' => 'large',
+                'label' => 'PLUGIN_SIMPLESEARCH.HEADER_KEYS_IGNORED',
+                'classes' => 'fancy',
+                'validate' => [
+                    'type' => 'commalist'
+                ],
+                'name' => 'plugins.simplesearch.header_keys_ignored',
+                'validation' => 'strict'
+            ],
+            'plugins.simplesearch.template' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => 'PLUGIN_SIMPLESEARCH.SEARCH_PAGE_TEMPLATE',
+                'default' => 'simplesearch_results',
+                'name' => 'plugins.simplesearch.template',
+                'validation' => 'strict'
+            ],
+            'plugins.simplesearch.filters' => [
+                'type' => '_parent',
+                'name' => 'plugins.simplesearch.filters',
+                'form_field' => false
+            ],
+            'plugins.simplesearch.filters.category' => [
+                'type' => 'selectize',
+                'label' => 'PLUGIN_SIMPLESEARCH.CATEGORY_FILTER',
+                'validate' => [
+                    'type' => 'commalist'
+                ],
+                'name' => 'plugins.simplesearch.filters.category',
+                'validation' => 'strict'
+            ],
+            'plugins.simplesearch.filter_combinator' => [
+                'type' => 'select',
+                'size' => 'medium',
+                'classes' => 'fancy',
+                'label' => 'PLUGIN_SIMPLESEARCH.FILTER_COMBINATOR',
+                'default' => 'and',
+                'options' => [
+                    'and' => 'PLUGIN_SIMPLESEARCH.AND_COMBINATOR',
+                    'or' => 'PLUGIN_SIMPLESEARCH.OR_COMBINATOR'
+                ],
+                'name' => 'plugins.simplesearch.filter_combinator',
+                'validation' => 'strict'
+            ],
+            'plugins.simplesearch.order' => [
+                'type' => '_parent',
+                'name' => 'plugins.simplesearch.order',
+                'form_field' => false
+            ],
+            'plugins.simplesearch.order.by' => [
+                'type' => 'select',
+                'size' => 'long',
+                'classes' => 'fancy',
+                'label' => 'PLUGIN_ADMIN.DEFAULT_ORDERING',
+                'options' => [
+                    'default' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_DEFAULT',
+                    'folder' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_FOLDER',
+                    'title' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_TITLE',
+                    'date' => 'PLUGIN_ADMIN.DEFAULT_ORDERING_DATE'
+                ],
+                'name' => 'plugins.simplesearch.order.by',
+                'validation' => 'strict'
+            ],
+            'plugins.simplesearch.order.dir' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.DEFAULT_ORDER_DIRECTION',
+                'highlight' => 'asc',
+                'default' => 'desc',
+                'options' => [
+                    'asc' => 'PLUGIN_ADMIN.ASCENDING',
+                    'desc' => 'PLUGIN_ADMIN.DESCENDING'
+                ],
+                'name' => 'plugins.simplesearch.order.dir',
+                'validation' => 'strict'
+            ],
             'plugins.feed' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -5162,6 +5375,120 @@ return [
                 ],
                 'name' => 'plugins.flex-objects.directories',
                 'validation' => 'loose'
+            ],
+            'plugins.prism-highlight' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.prism-highlight.enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
+                'highlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.prism-highlight.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.prism-highlight.theme' => [
+                'type' => 'select',
+                'label' => 'CSS Theme',
+                'default' => 'prism-one-light.css',
+                'size' => 'large',
+                'data-options@' => '\\Grav\\Plugin\\PrismHighlightPlugin::themeOptions',
+                'name' => 'plugins.prism-highlight.theme',
+                'validation' => 'strict'
+            ],
+            'plugins.prism-highlight.all-pre-blocks' => [
+                'type' => 'toggle',
+                'label' => 'All Pre Blocks',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.prism-highlight.all-pre-blocks',
+                'validation' => 'strict'
+            ],
+            'plugins.prism-highlight.plugins' => [
+                'type' => '_parent',
+                'name' => 'plugins.prism-highlight.plugins',
+                'form_field' => false
+            ],
+            'plugins.prism-highlight.plugins.line-numbers' => [
+                'type' => 'toggle',
+                'label' => 'Line Numbers',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.prism-highlight.plugins.line-numbers',
+                'validation' => 'strict'
+            ],
+            'plugins.prism-highlight.plugins.command-line' => [
+                'type' => 'toggle',
+                'label' => 'Command Line',
+                'highlight' => 0,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.prism-highlight.plugins.command-line',
+                'validation' => 'strict'
+            ],
+            'plugins.prism-highlight.plugins.command-line-prompt' => [
+                'type' => 'text',
+                'size' => 'small',
+                'label' => 'Command Line Prompt',
+                'name' => 'plugins.prism-highlight.plugins.command-line-prompt',
+                'validation' => 'strict'
+            ],
+            'plugins.prism-highlight.custom' => [
+                'type' => '_parent',
+                'name' => 'plugins.prism-highlight.custom',
+                'form_field' => false
+            ],
+            'plugins.prism-highlight.custom.js_location' => [
+                'type' => 'text',
+                'label' => 'Custom JS location',
+                'default' => 'user://data/prism-highlight/prism.js',
+                'name' => 'plugins.prism-highlight.custom.js_location',
+                'validation' => 'strict'
+            ],
+            'plugins.prism-highlight.custom.css_location' => [
+                'type' => 'text',
+                'label' => 'Custom CSS location',
+                'default' => 'user://data/prism-highlight/prism.css',
+                'name' => 'plugins.prism-highlight.custom.css_location',
+                'validation' => 'strict'
+            ],
+            'plugins.prism-highlight.custom.theme_location' => [
+                'type' => 'text',
+                'label' => 'Custom CSS location',
+                'default' => 'user://data/prism-highlight/prism.css',
+                'name' => 'plugins.prism-highlight.custom.theme_location',
+                'validation' => 'strict'
             ],
             'plugins.form' => [
                 'type' => '_root',
@@ -7008,6 +7335,27 @@ return [
                     'icon_divider_classes' => 'plugins.breadcrumbs.icon_divider_classes',
                     'link_trailing' => 'plugins.breadcrumbs.link_trailing'
                 ],
+                'simplesearch' => [
+                    'enabled' => 'plugins.simplesearch.enabled',
+                    'search_content' => 'plugins.simplesearch.search_content',
+                    'built_in_css' => 'plugins.simplesearch.built_in_css',
+                    'built_in_js' => 'plugins.simplesearch.built_in_js',
+                    'display_button' => 'plugins.simplesearch.display_button',
+                    'ignore_accented_characters' => 'plugins.simplesearch.ignore_accented_characters',
+                    'min_query_length' => 'plugins.simplesearch.min_query_length',
+                    'route' => 'plugins.simplesearch.route',
+                    'searchable_types' => 'plugins.simplesearch.searchable_types',
+                    'header_keys_ignored' => 'plugins.simplesearch.header_keys_ignored',
+                    'template' => 'plugins.simplesearch.template',
+                    'filters' => [
+                        'category' => 'plugins.simplesearch.filters.category'
+                    ],
+                    'filter_combinator' => 'plugins.simplesearch.filter_combinator',
+                    'order' => [
+                        'by' => 'plugins.simplesearch.order.by',
+                        'dir' => 'plugins.simplesearch.order.dir'
+                    ]
+                ],
                 'feed' => [
                     'enabled' => 'plugins.feed.enabled',
                     'limit' => 'plugins.feed.limit',
@@ -7083,6 +7431,21 @@ return [
                     'built_in_css' => 'plugins.flex-objects.built_in_css',
                     'extra_admin_twig_path' => 'plugins.flex-objects.extra_admin_twig_path',
                     'directories' => 'plugins.flex-objects.directories'
+                ],
+                'prism-highlight' => [
+                    'enabled' => 'plugins.prism-highlight.enabled',
+                    'theme' => 'plugins.prism-highlight.theme',
+                    'all-pre-blocks' => 'plugins.prism-highlight.all-pre-blocks',
+                    'plugins' => [
+                        'line-numbers' => 'plugins.prism-highlight.plugins.line-numbers',
+                        'command-line' => 'plugins.prism-highlight.plugins.command-line',
+                        'command-line-prompt' => 'plugins.prism-highlight.plugins.command-line-prompt'
+                    ],
+                    'custom' => [
+                        'js_location' => 'plugins.prism-highlight.custom.js_location',
+                        'css_location' => 'plugins.prism-highlight.custom.css_location',
+                        'theme_location' => 'plugins.prism-highlight.custom.theme_location'
+                    ]
                 ],
                 'form' => [
                     'enabled' => 'plugins.form.enabled',
