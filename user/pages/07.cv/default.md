@@ -11,13 +11,14 @@ Software developer with experience in full-stack development, data engineering, 
 Skilled in `c#`, `python`, and `javascript`, with a focus on building efficient, user-friendly systems.<br/>
 Background in industrial software, machine learning, and computer vision.
 
-<h4>Technical Skills</h4>
+<h3>Technical Skills</h3>
 
 Languages & Frameworks: `c#`, `python`, `javascript`, `.net`, `react`, `sql`<br/>
 Technologies: `elasticsearch`, `docker`, `kubernetes`, `tensorflow`, `ollama`, `nodejs`, `windows`, `linux`, `macos`<br/>
 Concepts: Machine Learning, Data Engineering, Cloud Architecture, Computer Vision
 
 <h3>Software Developer - Intelligent Plant (2021-present)</h3>
+Intelligent Plant specialises in providing data storage, analysis and visualisation solutions for the energy industry.
 
 Lead developer for [Sequence of Events Explorer](https://appstore.intelligentplant.com/Home/AppProfile?appId=f3175c7a68774ef1ae96de5e8c16900e) `c#` `javascript` `html` `css` `elasticsearch`
  * Experience working on an application from inception to maturity, including design, development, deployment, and maintenance.
