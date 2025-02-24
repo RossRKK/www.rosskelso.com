@@ -7,10 +7,10 @@ published: true
 Glasgow, Scotland <br/>
 [ross@rosskelso.com](mailto:ross@rosskelso.com) <a class="fa fa-github" href="https://github.com/RossRKK"></a>  <a class="fa fa-linkedin" href="https://www.linkedin.com/in/ross-kelso/"></a>
 
-Software developer with experience in full-stack development, data engineering, and AI.<br/>
-Skilled in `c#`, `python`, and `javascript`, with a focus on building efficient, data analysis and visualisation systems.<br/>
-Eager to learn and explore emerging technologies and frameworks.<br/>
-Background in industrial software, machine learning, and computer vision.
+Experienced software developer with 5+ years experience in full-stack development, data engineering, and AI.<br/>
+Skilled in rapid build out of efficient data analysis/visualisation systems in `c#`, `python`, and `javascript`.<br/>
+Driven to explore emerging technologies and frameworks.<br/>
+First class degree in Computer science with a background in industrial software, machine learning, and computer vision.
 
 <h3>Technical Skills</h3>
 
