@@ -15,14 +15,14 @@ First class degree in Computer science with a background in industrial software,
 <h3>Technical Skills</h3>
 
 Languages & Frameworks: `c#`, `python`, `javascript`, `.net`, `react`, `sql`<br/>
-Technologies: `elasticsearch`, `git`, `azure`, `docker`, `kubernetes`, `tensorflow`, `ollama`, `nodejs`, `windows`, `linux`<br/>
+Technologies: `elasticsearch`, `git`, `azure`, `docker`, `kubernetes`, `tensorflow`, `ollama`, `nodejs`, `windows`, `linux`, `ci`<br/>
 Concepts: Machine Learning, Data Engineering, Cloud Architecture, Computer Vision
 
 <h2>Work Experience</h2>
 <h3>Intelligent Plant - Software Developer (2021-present), Intern (2017-2021)</h3>
 Intelligent Plant specialises in providing data storage, analysis and visualisation solutions for the energy industry.
 
-Lead developer for [Sequence of Events Explorer](https://appstore.intelligentplant.com/Home/AppProfile?appId=f3175c7a68774ef1ae96de5e8c16900e) `c#` `javascript` `html` `css` `elasticsearch`
+Lead developer for [Sequence of Events Explorer](https://appstore.intelligentplant.com/Home/AppProfile?appId=f3175c7a68774ef1ae96de5e8c16900e) `c#` `javascript` `html` `css` `elasticsearch` `ci`
  * Developed the application from inception to maturity, including design, development, deployment, and maintenance resulting in it being adopted by multiple major industrial clients.
  * Enhanced user experience by developing an intuitive, and powerful frontend for advanced data queries.
  * Improved code quality and maintainability by managing developers through rigorous code reviews and enforcing best practices.
