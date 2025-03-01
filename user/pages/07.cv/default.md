@@ -3,9 +3,10 @@ title: CV
 published: true
 ---
 
-<h2>Ross Kelso</h2>
+<h2>Ross Kelso &nbsp; <a class="fa fa-github" href="https://github.com/RossRKK"></a>  <a class="fa fa-linkedin" href="https://www.linkedin.com/in/ross-kelso/"></a><a class="fa fa-download" href="/user/files/cv.pdf"></a></h2>
 Glasgow, Scotland <br/>
-[ross@rosskelso.com](mailto:ross@rosskelso.com) <a class="fa fa-github" href="https://github.com/RossRKK"></a>  <a class="fa fa-linkedin" href="https://www.linkedin.com/in/ross-kelso/"></a>
+[ross@rosskelso.com](mailto:ross@rosskelso.com) 
+
 
 Experienced software developer with 5+ years experience in full-stack development, data engineering, and AI.<br/>
 Skilled in rapid build out of efficient data analysis/visualisation systems in `c#`, `python`, and `javascript`.<br/>
