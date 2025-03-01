@@ -57,6 +57,8 @@ Optimized the [Excel Data Query Add-in](https://appstore.intelligentplant.com/Ho
 
 <h3>University of St Andrews - Computer Science MSci First Class (2016-2021)</h3>
 
+Dean's List, for academic excellence 2017/18, 2018/19, 2019/20
+
 **Masters Thesis**
 
 Synthetic GPS Traces for Privacy Protection
@@ -105,6 +107,9 @@ Vice-president, Social Rep, Publicity and Fundraising Rep (2017-2021)
 * Managed day-to-day operations, including equipment maintenance, weekly sessions and recruiting new members.
 * Promoted the society through social media channels and organized fundraisers, including live streams of semesterly Finals Day events.
 * Represented the university at several pool competitions, including 5 BUCS tournaments.
+
+
+
 
 
 <!-- 
