@@ -57,7 +57,7 @@ Optimized the [Excel Data Query Add-in](https://appstore.intelligentplant.com/Ho
 
 <h3>University of St Andrews - Computer Science MSci First Class (2016-2021)</h3>
 
-Dean's List, for academic excellence 2017/18, 2018/19, 2019/20
+Deans' List, for academic excellence 2017/18, 2018/19, 2019/20
 
 **Masters Thesis**
 
