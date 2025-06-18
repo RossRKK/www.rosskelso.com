@@ -16,10 +16,6 @@ partials:
         toggle: false
 ---
 
-## About Me
-
-I'm a software developer for [Intelligent Plant](https://www.intelligentplant.com), making data analysis and visualistion software.
-
 ## What is this?
 
 This is a site where I can document information I collect as I tinker with things. This information is primarily for my own benefit, use at your own risk.

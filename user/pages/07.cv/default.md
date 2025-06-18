@@ -20,7 +20,7 @@ Technologies: `elasticsearch`, `git`, `azure`, `docker`, `kubernetes`, `tensorfl
 Concepts: Machine Learning, Data Engineering, Cloud Architecture, Computer Vision
 
 <h2>Work Experience</h2>
-<h3>Intelligent Plant - Software Developer (2021-present), Intern (2017-2021)</h3>
+<h3>Intelligent Plant - Software Developer (4 years), Intern (4 years during holidays)</h3>
 Intelligent Plant specialises in providing data storage, analysis and visualisation solutions for the energy industry.
 
 Lead developer for [Sequence of Events Explorer](https://appstore.intelligentplant.com/Home/AppProfile?appId=f3175c7a68774ef1ae96de5e8c16900e) `c#` `javascript` `html` `css` `elasticsearch` `ci`
@@ -32,6 +32,10 @@ Developer for [Alarm Analysis](https://appstore.intelligentplant.com/Home/AppPro
  * Developed and maintained a backend for performing complex data aggregations.
  * Worked with clients directly to facilitate on-site installations.
  * Upgraded the historian across several major versions of Elastic Search. This more than doubled the size of a query that can be performed in 1s and increased the size of a query that can be performed in 5s by about 10 times.
+
+Developer for [Gestalt (PnID & Trend)](https://appstore.intelligentplant.com/Home/AppProfile?appId=2a59ca294ce2464cb14694b682294de5) `c#` `sql` `javascript`
+ * Lead the project to decouple the Gestalt web app from our data API, resulting in smoother deployments for Gestalt and our API.
+ * Designed and implemented a database model to replace an existing file system dependency paving the way for migration to App Services and zero downtime.
 
 Lead developer for the [Industrial App Store API Python Client](https://appstore.intelligentplant.com/Home/AppProfile?appId=40d7a49722f84be4986318bb5cc98cf3) `python` `pandas` `django`
 
@@ -76,7 +80,7 @@ Deans' List, for academic excellence 2017/18, 2018/19, 2019/20
 
 **Junior Honours Project**
 
-Group software engineering project to create an encrypted wireless network of embeded devices
+Group software engineering project to create an encrypted wireless network of embedded devices
 `c` `nodejs` `python` `git`
  * Applied low-level networking principles to develop a secure, distributed communication protocol.
  * Implemented encryption mechanisms for secure data transmission.
