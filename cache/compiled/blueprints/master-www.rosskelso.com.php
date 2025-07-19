@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1739501045,
-    'checksum' => '79d5de681e32e4f4a97bdb5489694c7b',
+    'timestamp' => 1752965522,
+    'checksum' => '3d995df8fc60297cee4afe7db773f992',
     'files' => [
         'user/plugins/admin/blueprints/config' => [
             'media' => [
@@ -79,7 +79,7 @@ return [
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
-                'modified' => 1739463485
+                'modified' => 1742576858
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
@@ -105,7 +105,7 @@ return [
         'user/themes' => [
             'themes/quark' => [
                 'file' => 'user/themes/quark/blueprints.yaml',
-                'modified' => 1739463485
+                'modified' => 1752965315
             ],
             'themes/canvas' => [
                 'file' => 'user/themes/canvas/blueprints.yaml',
@@ -6411,7 +6411,7 @@ return [
             ],
             'themes.quark.production-mode' => [
                 'type' => 'toggle',
-                'label' => 'Production mode',
+                'label' => 'THEME_QUARK.ADMIN.PRODUCTION_MODE',
                 'highlight' => 1,
                 'default' => 1,
                 'options' => [
@@ -6429,10 +6429,10 @@ return [
                 'label' => 'THEME_QUARK.ADMIN.GRID_SIZE',
                 'size' => 'small',
                 'options' => [
-                    '' => 'None (full width)',
-                    'grid-xl' => 'Extra Large',
-                    'grid-lg' => 'Large',
-                    'grid-md' => 'Medium'
+                    '' => 'THEME_QUARK.ADMIN.GRID_SIZE_NONE',
+                    'grid-xl' => 'THEME_QUARK.ADMIN.GRID_SIZE_EXTRA_LARGE',
+                    'grid-lg' => 'THEME_QUARK.ADMIN.GRID_SIZE_LARGE',
+                    'grid-md' => 'THEME_QUARK.ADMIN.GRID_SIZE_MEDIUM'
                 ],
                 'name' => 'themes.quark.grid-size',
                 'validation' => 'loose'
@@ -6444,12 +6444,12 @@ return [
                     'type' => 'ignore'
                 ],
                 'type' => 'file',
-                'label' => 'Custom Logo',
+                'label' => 'THEME_QUARK.ADMIN.CUSTOM_LOGO',
                 'size' => 'large',
                 'destination' => 'theme://images/logo',
                 'multiple' => false,
                 'markdown' => true,
-                'description' => 'Will be used instead of default logo `theme://images/grav-logo.svg`',
+                'description' => 'THEME_QUARK.ADMIN.CUSTOM_LOGO_DESCRIPTION',
                 'accept' => [
                     0 => 'image/*'
                 ],
@@ -6463,7 +6463,7 @@ return [
                     'type' => 'ignore'
                 ],
                 'type' => 'file',
-                'label' => 'Mobile Custom Logo',
+                'label' => 'THEME_QUARK.ADMIN.CUSTOM_LOGO_MOBILE',
                 'size' => 'large',
                 'destination' => 'theme://images/logo',
                 'multiple' => false,
@@ -6475,7 +6475,7 @@ return [
             ],
             'themes.quark.header-fixed' => [
                 'type' => 'toggle',
-                'label' => 'Fixed header',
+                'label' => 'THEME_QUARK.ADMIN.HEADER_FIXED',
                 'highlight' => 1,
                 'default' => 1,
                 'options' => [
@@ -6490,7 +6490,7 @@ return [
             ],
             'themes.quark.header-animated' => [
                 'type' => 'toggle',
-                'label' => 'Animated',
+                'label' => 'THEME_QUARK.ADMIN.HEADER_ANIMATED',
                 'highlight' => 1,
                 'default' => 1,
                 'options' => [
@@ -6505,7 +6505,7 @@ return [
             ],
             'themes.quark.header-dark' => [
                 'type' => 'toggle',
-                'label' => 'Dark Style',
+                'label' => 'THEME_QUARK.ADMIN.HEADER_DARK',
                 'highlight' => 0,
                 'default' => 0,
                 'options' => [
@@ -6520,7 +6520,7 @@ return [
             ],
             'themes.quark.header-transparent' => [
                 'type' => 'toggle',
-                'label' => 'Transparent',
+                'label' => 'THEME_QUARK.ADMIN.HEADER_TRANSPARENT',
                 'highlight' => 0,
                 'default' => 0,
                 'options' => [
@@ -6535,7 +6535,7 @@ return [
             ],
             'themes.quark.sticky-footer' => [
                 'type' => 'toggle',
-                'label' => 'Sticky footer',
+                'label' => 'THEME_QUARK.ADMIN.STICKY_FOOTER',
                 'highlight' => 1,
                 'default' => 1,
                 'options' => [
@@ -6550,7 +6550,7 @@ return [
             ],
             'themes.quark.blog-page' => [
                 'type' => 'text',
-                'label' => 'Blog Page',
+                'label' => 'THEME_QUARK.ADMIN.BLOG_PAGE',
                 'size' => 'medium',
                 'default' => '/blog',
                 'name' => 'themes.quark.blog-page',
@@ -6563,7 +6563,7 @@ return [
             ],
             'themes.quark.spectre.exp' => [
                 'type' => 'toggle',
-                'label' => 'Experimentals CSS',
+                'label' => 'THEME_QUARK.ADMIN.SPECTRE_EXP',
                 'highlight' => 0,
                 'default' => 0,
                 'options' => [
@@ -6578,7 +6578,7 @@ return [
             ],
             'themes.quark.spectre.icons' => [
                 'type' => 'toggle',
-                'label' => 'Icons CSS',
+                'label' => 'THEME_QUARK.ADMIN.SPECTRE_ICONS',
                 'highlight' => 0,
                 'default' => 0,
                 'options' => [

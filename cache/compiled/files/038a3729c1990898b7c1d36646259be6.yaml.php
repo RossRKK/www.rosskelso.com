@@ -2,13 +2,13 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/var/www/html/user/themes/quark/blueprints.yaml',
-    'modified' => 1739463485,
-    'size' => 4083,
+    'modified' => 1752965315,
+    'size' => 4241,
     'data' => [
         'name' => 'Quark',
         'slug' => 'quark',
         'type' => 'theme',
-        'version' => '2.0.4',
+        'version' => '2.1.1',
         'description' => 'New Grav Default Theme',
         'icon' => 'microchip',
         'author' => [
@@ -32,8 +32,8 @@ return [
             'fields' => [
                 'production-mode' => [
                     'type' => 'toggle',
-                    'label' => 'Production mode',
-                    'help' => 'When enabled, Quark will render with minified CSS',
+                    'label' => 'THEME_QUARK.ADMIN.PRODUCTION_MODE',
+                    'help' => 'THEME_QUARK.ADMIN.PRODUCTION_MODE_HELP',
                     'highlight' => 1,
                     'default' => 1,
                     'options' => [
@@ -47,35 +47,35 @@ return [
                 'grid-size' => [
                     'type' => 'select',
                     'label' => 'THEME_QUARK.ADMIN.GRID_SIZE',
-                    'help' => 'The maximum width of the theme',
+                    'help' => 'THEME_QUARK.ADMIN.GRID_SIZE_HELP',
                     'size' => 'small',
                     'options' => [
-                        '' => 'None (full width)',
-                        'grid-xl' => 'Extra Large',
-                        'grid-lg' => 'Large',
-                        'grid-md' => 'Medium'
+                        '' => 'THEME_QUARK.ADMIN.GRID_SIZE_NONE',
+                        'grid-xl' => 'THEME_QUARK.ADMIN.GRID_SIZE_EXTRA_LARGE',
+                        'grid-lg' => 'THEME_QUARK.ADMIN.GRID_SIZE_LARGE',
+                        'grid-md' => 'THEME_QUARK.ADMIN.GRID_SIZE_MEDIUM'
                     ]
                 ],
                 'header_section' => [
                     'type' => 'section',
-                    'title' => 'Header Defaults',
+                    'title' => 'THEME_QUARK.ADMIN.HEADER_DEFAULTS',
                     'underline' => true
                 ],
                 'custom_logo' => [
                     'type' => 'file',
-                    'label' => 'Custom Logo',
+                    'label' => 'THEME_QUARK.ADMIN.CUSTOM_LOGO',
                     'size' => 'large',
                     'destination' => 'theme://images/logo',
                     'multiple' => false,
                     'markdown' => true,
-                    'description' => 'Will be used instead of default logo `theme://images/grav-logo.svg`',
+                    'description' => 'THEME_QUARK.ADMIN.CUSTOM_LOGO_DESCRIPTION',
                     'accept' => [
                         0 => 'image/*'
                     ]
                 ],
                 'custom_logo_mobile' => [
                     'type' => 'file',
-                    'label' => 'Mobile Custom Logo',
+                    'label' => 'THEME_QUARK.ADMIN.CUSTOM_LOGO_MOBILE',
                     'size' => 'large',
                     'destination' => 'theme://images/logo',
                     'multiple' => false,
@@ -85,8 +85,8 @@ return [
                 ],
                 'header-fixed' => [
                     'type' => 'toggle',
-                    'label' => 'Fixed header',
-                    'help' => 'When enabled, the header will be fixed at the top of the browser',
+                    'label' => 'THEME_QUARK.ADMIN.HEADER_FIXED',
+                    'help' => 'THEME_QUARK.ADMIN.HEADER_FIXED_HELP',
                     'highlight' => 1,
                     'default' => 1,
                     'options' => [
@@ -99,8 +99,8 @@ return [
                 ],
                 'header-animated' => [
                     'type' => 'toggle',
-                    'label' => 'Animated',
-                    'help' => 'When enabled, the header will animate to a smaller header when scrolling',
+                    'label' => 'THEME_QUARK.ADMIN.HEADER_ANIMATED',
+                    'help' => 'THEME_QUARK.ADMIN.HEADER_ANIMATED_HELP',
                     'highlight' => 1,
                     'default' => 1,
                     'options' => [
@@ -113,8 +113,8 @@ return [
                 ],
                 'header-dark' => [
                     'type' => 'toggle',
-                    'label' => 'Dark Style',
-                    'help' => 'When enabled, a dark-friendly style will be used',
+                    'label' => 'THEME_QUARK.ADMIN.HEADER_DARK',
+                    'help' => 'THEME_QUARK.ADMIN.HEADER_DARK_HELP',
                     'highlight' => 0,
                     'default' => 0,
                     'options' => [
@@ -127,8 +127,8 @@ return [
                 ],
                 'header-transparent' => [
                     'type' => 'toggle',
-                    'label' => 'Transparent',
-                    'help' => 'When enabled, a transparent style will be used',
+                    'label' => 'THEME_QUARK.ADMIN.HEADER_TRANSPARENT',
+                    'help' => 'THEME_QUARK.ADMIN.HEADER_TRANSPARENT_HELP',
                     'highlight' => 0,
                     'default' => 0,
                     'options' => [
@@ -141,13 +141,13 @@ return [
                 ],
                 'footer_section' => [
                     'type' => 'section',
-                    'title' => 'Footer Defaults',
+                    'title' => 'THEME_QUARK.ADMIN.FOOTER_DEFAULTS',
                     'underline' => true
                 ],
                 'sticky-footer' => [
                     'type' => 'toggle',
-                    'label' => 'Sticky footer',
-                    'help' => 'When enabled, the footer will be sticky at the bottom of the browser',
+                    'label' => 'THEME_QUARK.ADMIN.STICKY_FOOTER',
+                    'help' => 'THEME_QUARK.ADMIN.STICKY_FOOTER_HELP',
                     'highlight' => 1,
                     'default' => 1,
                     'options' => [
@@ -160,25 +160,25 @@ return [
                 ],
                 'blog_section' => [
                     'type' => 'section',
-                    'title' => 'Blog Defaults',
+                    'title' => 'THEME_QUARK.ADMIN.BLOG_DEFAULTS',
                     'underline' => true
                 ],
                 'blog-page' => [
                     'type' => 'text',
-                    'label' => 'Blog Page',
-                    'help' => 'The route to the blog page when working with blog sidebar',
+                    'label' => 'THEME_QUARK.ADMIN.BLOG_PAGE',
+                    'help' => 'THEME_QUARK.ADMIN.BLOG_PAGE_HELP',
                     'size' => 'medium',
                     'default' => '/blog'
                 ],
                 'spectre_section' => [
                     'type' => 'section',
-                    'title' => 'Spectre.css Options',
+                    'title' => 'THEME_QUARK.ADMIN.SPECTRE_OPTIONS',
                     'underline' => true
                 ],
                 'spectre.exp' => [
                     'type' => 'toggle',
-                    'label' => 'Experimentals CSS',
-                    'help' => 'When enabled, the `spectre-exp.css` file will be included',
+                    'label' => 'THEME_QUARK.ADMIN.SPECTRE_EXP',
+                    'help' => 'THEME_QUARK.ADMIN.SPECTRE_EXP_HELP',
                     'highlight' => 0,
                     'default' => 0,
                     'options' => [
@@ -191,8 +191,8 @@ return [
                 ],
                 'spectre.icons' => [
                     'type' => 'toggle',
-                    'label' => 'Icons CSS',
-                    'help' => 'When enabled, the `spectre-icons.css` file will be included',
+                    'label' => 'THEME_QUARK.ADMIN.SPECTRE_ICONS',
+                    'help' => 'THEME_QUARK.ADMIN.SPECTRE_ICONS_HELP',
                     'highlight' => 0,
                     'default' => 0,
                     'options' => [

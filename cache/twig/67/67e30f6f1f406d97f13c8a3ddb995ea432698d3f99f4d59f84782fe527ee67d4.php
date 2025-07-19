@@ -68,61 +68,61 @@ class __TwigTemplate_c9e1feb4333f0b4a102b9dc0fd656c6697c6f463507699b1a0c3f9786fc
 ";
         // line 8
         $this->displayBlock('head', $context, $blocks);
-        // line 24
+        // line 19
         echo "
 ";
-        // line 25
+        // line 20
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 33
+        // line 28
         echo "
 ";
-        // line 34
+        // line 29
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 39
+        // line 34
         echo "
 ";
-        // line 40
+        // line 35
         $this->displayBlock('assets', $context, $blocks);
-        // line 44
+        // line 39
         echo "</head>
 <body id=\"top\" class=\"";
-        // line 45
+        // line 40
         $this->displayBlock('body_classes', $context, $blocks);
         echo "\">
     <div id=\"page-wrapper\">
     ";
-        // line 47
+        // line 42
         $this->displayBlock('header', $context, $blocks);
-        // line 81
+        // line 73
         echo "
     ";
-        // line 82
+        // line 74
         $this->displayBlock('hero', $context, $blocks);
-        // line 83
+        // line 75
         echo "
         <section id=\"start\">
         ";
-        // line 85
+        // line 77
         $this->displayBlock('body', $context, $blocks);
-        // line 95
+        // line 87
         echo "        </section>
 
     </div>
 
     ";
-        // line 99
+        // line 91
         $this->displayBlock('footer', $context, $blocks);
-        // line 102
+        // line 94
         echo "
     ";
-        // line 103
+        // line 95
         $this->displayBlock('mobile', $context, $blocks);
-        // line 115
+        // line 107
         echo "
 ";
-        // line 116
+        // line 108
         $this->displayBlock('bottom', $context, $blocks);
-        // line 119
+        // line 111
         echo "
 </body>
 </html>
@@ -156,57 +156,55 @@ class __TwigTemplate_c9e1feb4333f0b4a102b9dc0fd656c6697c6f463507699b1a0c3f9786fc
         $this->loadTemplate("partials/metadata.html.twig", "partials/base.html.twig", 14)->display($context);
         // line 15
         echo "
-    <link rel=\"icon\" type=\"image/png\" href=\"/images/favicon/favicon-96x96.png\" sizes=\"96x96\" />
-    <link rel=\"icon\" type=\"image/svg+xml\" href=\"/images/favicon/favicon.svg\" />
-    <link rel=\"shortcut icon\" href=\"/images/favicon/favicon.ico\" />
-    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/images/favicon/apple-touch-icon.png\" />
-    <meta name=\"apple-mobile-web-app-title\" content=\"Ross Kelso\" />
-    <link rel=\"manifest\" href=\"/images/favicon/site.webmanifest\" />
+    <link rel=\"icon\" type=\"image/png\" href=\"";
+        // line 16
+        echo twig_escape_filter($this->env, $this->env->getExtension('Grav\Common\Twig\Extension\GravExtension')->urlFunc("theme://images/favicon.png"), "html", null, true);
+        echo "\" />
     <link rel=\"canonical\" href=\"";
-        // line 22
+        // line 17
         echo twig_escape_filter($this->env, $this->getAttribute(($context["page"] ?? null), "url", [0 => true, 1 => true], "method"), "html", null, true);
         echo "\" />
 ";
         $this->deferred->resolve($this, $context, $blocks);
     }
 
-    // line 25
+    // line 20
     public function block_stylesheets($context, array $blocks = [])
     {
-        // line 26
+        // line 21
         echo "    ";
         $this->getAttribute(($context["assets"] ?? null), "addCss", [0 => ("theme://css-compiled/spectre" . ($context["compress"] ?? null))], "method");
-        // line 27
+        // line 22
         echo "    ";
         if ($this->env->getExtension('Grav\Common\Twig\Extension\GravExtension')->themeVarFunc($context, "spectre.exp")) {
             $this->getAttribute(($context["assets"] ?? null), "addCss", [0 => ("theme://css-compiled/spectre-exp" . ($context["compress"] ?? null))], "method");
         }
-        // line 28
+        // line 23
         echo "    ";
         if ($this->env->getExtension('Grav\Common\Twig\Extension\GravExtension')->themeVarFunc($context, "spectre.icons")) {
             $this->getAttribute(($context["assets"] ?? null), "addCss", [0 => ("theme://css-compiled/spectre-icons" . ($context["compress"] ?? null))], "method");
         }
-        // line 29
+        // line 24
         echo "    ";
         $this->getAttribute(($context["assets"] ?? null), "addCss", [0 => ("theme://css-compiled/theme" . ($context["compress"] ?? null))], "method");
-        // line 30
+        // line 25
         echo "    ";
         $this->getAttribute(($context["assets"] ?? null), "addCss", [0 => "theme://css/custom.css"], "method");
-        // line 31
+        // line 26
         echo "    ";
         $this->getAttribute(($context["assets"] ?? null), "addCss", [0 => "theme://css/line-awesome.min.css"], "method");
     }
 
-    // line 34
+    // line 29
     public function block_javascripts($context, array $blocks = [])
     {
-        // line 35
+        // line 30
         echo "    ";
         $this->getAttribute(($context["assets"] ?? null), "addJs", [0 => "jquery", 1 => 101], "method");
-        // line 36
+        // line 31
         echo "    ";
         $this->getAttribute(($context["assets"] ?? null), "addJs", [0 => "theme://js/jquery.treemenu.js", 1 => ["group" => "bottom"]], "method");
-        // line 37
+        // line 32
         echo "    ";
         $this->getAttribute(($context["assets"] ?? null), "addJs", [0 => "theme://js/site.js", 1 => ["group" => "bottom"]], "method");
     }
@@ -216,65 +214,70 @@ class __TwigTemplate_c9e1feb4333f0b4a102b9dc0fd656c6697c6f463507699b1a0c3f9786fc
         $this->deferred->defer($this, 'assets');
     }
 
-    // line 40
+    // line 35
     public function block_assets_deferred($context, array $blocks = [])
     {
-        // line 41
+        // line 36
         echo "    ";
         echo $this->getAttribute(($context["assets"] ?? null), "css", [], "method");
         echo "
     ";
-        // line 42
+        // line 37
         echo $this->getAttribute(($context["assets"] ?? null), "js", [], "method");
         echo "
 ";
         $this->deferred->resolve($this, $context, $blocks);
     }
 
-    // line 45
+    // line 40
     public function block_body_classes($context, array $blocks = [])
     {
         echo twig_escape_filter($this->env, ($context["body_classes"] ?? null), "html", null, true);
     }
 
-    // line 47
+    // line 42
     public function block_header($context, array $blocks = [])
     {
-        // line 48
+        // line 43
         echo "        <section id=\"header\" class=\"section\">
             <section class=\"container ";
-        // line 49
+        // line 44
         echo twig_escape_filter($this->env, ($context["grid_size"] ?? null), "html", null, true);
         echo "\">
                 <nav class=\"navbar\">
                     <section class=\"navbar-section logo\">
                         ";
-        // line 52
-        $this->loadTemplate("partials/logo.html.twig", "partials/base.html.twig", 52)->display($context);
-        // line 53
+        // line 47
+        $this->loadTemplate("partials/logo.html.twig", "partials/base.html.twig", 47)->display($context);
+        // line 48
         echo "                    </section>
-                    <section class=\"navbar-section\">
-                        <span class=\"navbar-brand\">Ross Kelso</span>
-                    </section>
                     <section class=\"navbar-section desktop-menu\">
 
                         <nav class=\"dropmenu animated\">
                         ";
-        // line 60
+        // line 52
         $this->displayBlock('header_navigation', $context, $blocks);
-        // line 63
+        // line 55
         echo "                        </nav>
 
                         ";
-        // line 65
+        // line 57
         if (($this->getAttribute($this->getAttribute($this->getAttribute(($context["config"] ?? null), "plugins", []), "login", []), "enabled", []) && $this->getAttribute($this->getAttribute(($context["grav"] ?? null), "user", []), "username", []))) {
-            // line 66
+            // line 58
             echo "                            <span class=\"login-status-wrapper\"><i class=\"fa fa-user\"></i> ";
-            $this->loadTemplate("partials/login-status.html.twig", "partials/base.html.twig", 66)->display($context);
+            $__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4 = null;
+            try {
+                $__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4 =                 $this->loadTemplate("partials/login-status.html.twig", "partials/base.html.twig", 58);
+            } catch (LoaderError $e) {
+                // ignore missing template
+            }
+            if ($__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4) {
+                $__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4->display($context);
+            }
             echo "</span>
                         ";
         }
-        // line 68
+        // line 60
         echo "
                     </section>
                 </nav>
@@ -290,34 +293,34 @@ class __TwigTemplate_c9e1feb4333f0b4a102b9dc0fd656c6697c6f463507699b1a0c3f9786fc
     ";
     }
 
-    // line 60
+    // line 52
     public function block_header_navigation($context, array $blocks = [])
     {
-        // line 61
+        // line 53
         echo "                            ";
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 61)->display($context);
-        // line 62
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 53)->display($context);
+        // line 54
         echo "                        ";
     }
 
-    // line 82
+    // line 74
     public function block_hero($context, array $blocks = [])
     {
     }
 
-    // line 85
+    // line 77
     public function block_body($context, array $blocks = [])
     {
-        // line 86
+        // line 78
         echo "            <section id=\"body-wrapper\" class=\"section\">
                 <section class=\"container ";
-        // line 87
+        // line 79
         echo twig_escape_filter($this->env, ($context["grid_size"] ?? null), "html", null, true);
         echo "\">
                     ";
-        // line 88
+        // line 80
         $this->displayBlock('messages', $context, $blocks);
-        // line 91
+        // line 83
         echo "                    ";
         $this->displayBlock("content_surround", $context, $blocks);
         echo "
@@ -326,61 +329,61 @@ class __TwigTemplate_c9e1feb4333f0b4a102b9dc0fd656c6697c6f463507699b1a0c3f9786fc
         ";
     }
 
-    // line 88
+    // line 80
     public function block_messages($context, array $blocks = [])
     {
-        // line 89
+        // line 81
         echo "                        ";
-        $__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4 = null;
+        $__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144 = null;
         try {
-            $__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4 =             $this->loadTemplate("partials/messages.html.twig", "partials/base.html.twig", 89);
+            $__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144 =             $this->loadTemplate("partials/messages.html.twig", "partials/base.html.twig", 81);
         } catch (LoaderError $e) {
             // ignore missing template
         }
-        if ($__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4) {
-            $__internal_f607aeef2c31a95a7bf963452dff024ffaeb6aafbe4603f9ca3bec57be8633f4->display($context);
+        if ($__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144) {
+            $__internal_62824350bc4502ee19dbc2e99fc6bdd3bd90e7d8dd6e72f42c35efd048542144->display($context);
         }
-        // line 90
+        // line 82
         echo "                    ";
     }
 
-    // line 99
+    // line 91
     public function block_footer($context, array $blocks = [])
     {
-        // line 100
+        // line 92
         echo "        ";
-        $this->loadTemplate("partials/footer.html.twig", "partials/base.html.twig", 100)->display($context);
-        // line 101
+        $this->loadTemplate("partials/footer.html.twig", "partials/base.html.twig", 92)->display($context);
+        // line 93
         echo "    ";
     }
 
-    // line 103
+    // line 95
     public function block_mobile($context, array $blocks = [])
     {
-        // line 104
+        // line 96
         echo "    <div class=\"mobile-container\">
         <div class=\"overlay\" id=\"overlay\">
             <div class=\"mobile-logo\">
                 ";
-        // line 107
-        $this->loadTemplate("partials/logo.html.twig", "partials/base.html.twig", 107)->display(twig_array_merge($context, ["mobile" => true]));
-        // line 108
+        // line 99
+        $this->loadTemplate("partials/logo.html.twig", "partials/base.html.twig", 99)->display(twig_array_merge($context, ["mobile" => true]));
+        // line 100
         echo "            </div>
             <nav class=\"overlay-menu\">
                 ";
-        // line 110
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 110)->display(twig_array_merge($context, ["tree" => true]));
-        // line 111
+        // line 102
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 102)->display(twig_array_merge($context, ["tree" => true]));
+        // line 103
         echo "            </nav>
         </div>
     </div>
     ";
     }
 
-    // line 116
+    // line 108
     public function block_bottom($context, array $blocks = [])
     {
-        // line 117
+        // line 109
         echo "    ";
         echo $this->getAttribute(($context["assets"] ?? null), "js", [0 => "bottom"], "method");
         echo "
@@ -399,7 +402,7 @@ class __TwigTemplate_c9e1feb4333f0b4a102b9dc0fd656c6697c6f463507699b1a0c3f9786fc
 
     public function getDebugInfo()
     {
-        return array (  384 => 117,  381 => 116,  374 => 111,  372 => 110,  368 => 108,  366 => 107,  361 => 104,  358 => 103,  354 => 101,  351 => 100,  348 => 99,  344 => 90,  333 => 89,  330 => 88,  321 => 91,  319 => 88,  315 => 87,  312 => 86,  309 => 85,  304 => 82,  300 => 62,  297 => 61,  294 => 60,  278 => 68,  272 => 66,  270 => 65,  266 => 63,  264 => 60,  255 => 53,  253 => 52,  247 => 49,  244 => 48,  241 => 47,  235 => 45,  228 => 42,  223 => 41,  220 => 40,  210 => 37,  207 => 36,  204 => 35,  201 => 34,  196 => 31,  193 => 30,  190 => 29,  185 => 28,  180 => 27,  177 => 26,  174 => 25,  167 => 22,  158 => 15,  156 => 14,  145 => 10,  142 => 9,  139 => 8,  126 => 119,  124 => 116,  121 => 115,  119 => 103,  116 => 102,  114 => 99,  108 => 95,  106 => 85,  102 => 83,  100 => 82,  97 => 81,  95 => 47,  90 => 45,  87 => 44,  85 => 40,  82 => 39,  80 => 34,  77 => 33,  75 => 25,  72 => 24,  70 => 8,  65 => 6,  62 => 5,  60 => 3,  58 => 2,  56 => 1,  25 => 4,);
+        return array (  387 => 109,  384 => 108,  377 => 103,  375 => 102,  371 => 100,  369 => 99,  364 => 96,  361 => 95,  357 => 93,  354 => 92,  351 => 91,  347 => 82,  336 => 81,  333 => 80,  324 => 83,  322 => 80,  318 => 79,  315 => 78,  312 => 77,  307 => 74,  303 => 54,  300 => 53,  297 => 52,  281 => 60,  267 => 58,  265 => 57,  261 => 55,  259 => 52,  253 => 48,  251 => 47,  245 => 44,  242 => 43,  239 => 42,  233 => 40,  226 => 37,  221 => 36,  218 => 35,  208 => 32,  205 => 31,  202 => 30,  199 => 29,  194 => 26,  191 => 25,  188 => 24,  183 => 23,  178 => 22,  175 => 21,  172 => 20,  165 => 17,  161 => 16,  158 => 15,  156 => 14,  145 => 10,  142 => 9,  139 => 8,  126 => 111,  124 => 108,  121 => 107,  119 => 95,  116 => 94,  114 => 91,  108 => 87,  106 => 77,  102 => 75,  100 => 74,  97 => 73,  95 => 42,  90 => 40,  87 => 39,  85 => 35,  82 => 34,  80 => 29,  77 => 28,  75 => 20,  72 => 19,  70 => 8,  65 => 6,  62 => 5,  60 => 3,  58 => 2,  56 => 1,  25 => 4,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -427,19 +430,14 @@ class __TwigTemplate_c9e1feb4333f0b4a102b9dc0fd656c6697c6f463507699b1a0c3f9786fc
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
     {% include 'partials/metadata.html.twig' %}
 
-    <link rel=\"icon\" type=\"image/png\" href=\"/images/favicon/favicon-96x96.png\" sizes=\"96x96\" />
-    <link rel=\"icon\" type=\"image/svg+xml\" href=\"/images/favicon/favicon.svg\" />
-    <link rel=\"shortcut icon\" href=\"/images/favicon/favicon.ico\" />
-    <link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/images/favicon/apple-touch-icon.png\" />
-    <meta name=\"apple-mobile-web-app-title\" content=\"Ross Kelso\" />
-    <link rel=\"manifest\" href=\"/images/favicon/site.webmanifest\" />
+    <link rel=\"icon\" type=\"image/png\" href=\"{{ url('theme://images/favicon.png') }}\" />
     <link rel=\"canonical\" href=\"{{ page.url(true, true) }}\" />
 {% endblock head %}
 
 {% block stylesheets %}
     {% do assets.addCss('theme://css-compiled/spectre'~compress) %}
-    {% if theme_var('spectre.exp') %}{% do assets.addCss('theme://css-compiled/spectre-exp'~compress)  %}{% endif %}
-    {% if theme_var('spectre.icons') %}{%  do assets.addCss('theme://css-compiled/spectre-icons'~compress) %}{% endif %}
+    {% if theme_var('spectre.exp') %}{% do assets.addCss('theme://css-compiled/spectre-exp'~compress) %}{% endif %}
+    {% if theme_var('spectre.icons') %}{% do assets.addCss('theme://css-compiled/spectre-icons'~compress) %}{% endif %}
     {% do assets.addCss('theme://css-compiled/theme'~compress) %}
     {% do assets.addCss('theme://css/custom.css') %}
     {% do assets.addCss('theme://css/line-awesome.min.css') %}
@@ -465,9 +463,6 @@ class __TwigTemplate_c9e1feb4333f0b4a102b9dc0fd656c6697c6f463507699b1a0c3f9786fc
                     <section class=\"navbar-section logo\">
                         {% include 'partials/logo.html.twig' %}
                     </section>
-                    <section class=\"navbar-section\">
-                        <span class=\"navbar-brand\">Ross Kelso</span>
-                    </section>
                     <section class=\"navbar-section desktop-menu\">
 
                         <nav class=\"dropmenu animated\">
@@ -477,7 +472,7 @@ class __TwigTemplate_c9e1feb4333f0b4a102b9dc0fd656c6697c6f463507699b1a0c3f9786fc
                         </nav>
 
                         {% if config.plugins.login.enabled and grav.user.username %}
-                            <span class=\"login-status-wrapper\"><i class=\"fa fa-user\"></i> {% include 'partials/login-status.html.twig' %}</span>
+                            <span class=\"login-status-wrapper\"><i class=\"fa fa-user\"></i> {% include 'partials/login-status.html.twig' ignore missing %}</span>
                         {% endif %}
 
                     </section>

@@ -1,9 +1,19 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1739501026,
-    'checksum' => 'b87698a95634106f6ea4cc915e0ecd85',
+    'timestamp' => 1752965327,
+    'checksum' => '9342b8310185e237f0609727f5ac3266',
     'files' => [
+        'user/www.rosskelso.com/config' => [
+            'security' => [
+                'file' => 'user/www.rosskelso.com/config/security.yaml',
+                'modified' => 1752965173
+            ],
+            'themes/quark' => [
+                'file' => 'user/www.rosskelso.com/config/themes/quark.yaml',
+                'modified' => 1752965169
+            ]
+        ],
         'user/config' => [
             'backups' => [
                 'file' => 'user/config/backups.yaml',
@@ -27,7 +37,7 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1739501012
+                'modified' => 1752965326
             ],
             'themes/darkquark' => [
                 'file' => 'user/config/themes/darkquark.yaml',
@@ -111,7 +121,7 @@ return [
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
-                'modified' => 1739463485
+                'modified' => 1742576858
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
@@ -137,7 +147,7 @@ return [
         'user/themes' => [
             'themes/quark' => [
                 'file' => 'user/themes/quark/quark.yaml',
-                'modified' => 1739463485
+                'modified' => 1752965315
             ],
             'themes/canvas' => [
                 'file' => 'user/themes/canvas/canvas.yaml',
@@ -166,13 +176,7 @@ return [
                     'icons' => false
                 ],
                 'custom_logo' => [
-                    'user/themes/quark/images/logo/rossrkk_Avatar-web-circle.svg' => [
-                        'name' => 'rossrkk_Avatar-web-circle.svg',
-                        'full_path' => 'rossrkk_Avatar-web-circle.svg',
-                        'type' => 'image/svg+xml',
-                        'size' => 56418,
-                        'path' => 'user/themes/quark/images/logo/rossrkk_Avatar-web-circle.svg'
-                    ]
+                    
                 ],
                 'custom_logo_mobile' => [
                     
@@ -4066,7 +4070,7 @@ node_modules',
                 12 => 'exe'
             ],
             'sanitize_svg' => true,
-            'salt' => '2Mt14v5sUTmZXj'
+            'salt' => 'o9K7q2zWSyFAt6'
         ],
         'site' => [
             'title' => 'Ross Kelso',

@@ -32,7 +32,7 @@ class __TwigTemplate_8c51801325bd36f05421aa9d8159b0cec9e458f2d574ccf0114edd1ccd6
         // line 2
         echo twig_escape_filter($this->env, ($context["grid_size"] ?? null), "html", null, true);
         echo "\">
-        <h2><a href=\"https://www.github.com/rossrkk\"><i class=\"fa fa-github\"></i></a></h2>
+        <p><a href=\"https://getgrav.org\">Grav</a> was <i class=\"fa fa-code\"></i> with <i class=\"fa fa-heart-o pulse \"></i> by <a href=\"https://trilby.media\">Trilby Media</a>.</p>
     </section>
 </section>
 ";
@@ -65,7 +65,7 @@ class __TwigTemplate_8c51801325bd36f05421aa9d8159b0cec9e458f2d574ccf0114edd1ccd6
     {
         return new Source("<section id=\"footer\" class=\"section bg-gray\">
     <section class=\"container {{ grid_size }}\">
-        <h2><a href=\"https://www.github.com/rossrkk\"><i class=\"fa fa-github\"></i></a></h2>
+        <p><a href=\"https://getgrav.org\">Grav</a> was <i class=\"fa fa-code\"></i> with <i class=\"fa fa-heart-o pulse \"></i> by <a href=\"https://trilby.media\">Trilby Media</a>.</p>
     </section>
 </section>
 ", "partials/footer.html.twig", "/var/www/html/user/themes/quark/templates/partials/footer.html.twig");

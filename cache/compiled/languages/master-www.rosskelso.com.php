@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledLanguages',
-    'timestamp' => 1739501027,
-    'checksum' => '3c3f576dfe39ddef149c7fb9c9e3419d',
+    'timestamp' => 1752965522,
+    'checksum' => '0f25229f8ab357e0e43c218cb80d8838',
     'files' => [
         'system/languages' => [
             'ar' => [
@@ -225,7 +225,7 @@ return [
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/languages.yaml',
-                'modified' => 1739463485
+                'modified' => 1742576858
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/languages.yaml',

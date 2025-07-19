@@ -38,11 +38,6 @@ class __TwigTemplate_6ac7071e6612b406dda914533c64018a4ace944e8752970f363c73fe658
         // line 4
         echo $context["macros"]->getnav_loop(($context["pages"] ?? null));
         echo "
-    <li>
-      <a href=\"https://foundry.rosskelso.com\">
-        Foundry
-      </a>
-    </li>
 </ul>
 
 ";
@@ -77,11 +72,6 @@ class __TwigTemplate_6ac7071e6612b406dda914533c64018a4ace944e8752970f363c73fe658
 
 <ul {{ tree ? 'class=\"tree\"' : '' }}>
     {{ macros.nav_loop(pages) }}
-    <li>
-      <a href=\"https://foundry.rosskelso.com\">
-        Foundry
-      </a>
-    </li>
 </ul>
 
 ", "partials/navigation.html.twig", "/var/www/html/user/themes/quark/templates/partials/navigation.html.twig");
