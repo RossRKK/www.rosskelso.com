@@ -24,7 +24,7 @@ Concepts: Machine Learning, Data Engineering, Cloud Architecture, Computer Visio
 
 
 <h3>Cintra HR & Payroll (since June 2025)</h3>
-Creating HR & payroll managemnet software. 
+Creating HR & payroll management software. 
 
 `c#` `typescript` `angular`
 
