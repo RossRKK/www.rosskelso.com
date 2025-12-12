@@ -4,7 +4,8 @@ published: true
 ---
 
 <h2>Ross Kelso &nbsp; <a class="fa fa-github" href="https://github.com/RossRKK"></a>  <a class="fa fa-linkedin" href="https://www.linkedin.com/in/ross-kelso/"></a><a class="fa fa-download" href="/user/files/cv.pdf"></a></h2>
-Glasgow, Scotland <br/>
+Edinburgh, Scotland <br/>
+
 [ross@rosskelso.com](mailto:ross@rosskelso.com) 
 
 
@@ -15,13 +16,32 @@ First class degree in Computer science with a background in industrial software,
 
 <h3>Technical Skills</h3>
 
-Languages & Frameworks: `c#`, `python`, `javascript`, `.net`, `react`, `sql`<br/>
-Technologies: `elasticsearch`, `git`, `azure`, `docker`, `kubernetes`, `tensorflow`, `ollama`, `nodejs`, `windows`, `linux`, `ci`<br/>
+Languages & Frameworks: `c#`, `python`, `javascript`, `typescript`, `.net`, `angular`, `react`, `sql`, `rust`<br/>
+Technologies: `elasticsearch`, `git`, `azure`, `aws`, `docker`, `kubernetes`, `tensorflow`, <!--`ollama`,--> `nodejs`, `windows`, `linux`, `ci/cd`<br/>
 Concepts: Machine Learning, Data Engineering, Cloud Architecture, Computer Vision
 
 <h2>Work Experience</h2>
-<h3>Intelligent Plant - Software Developer (4 years), Intern (4 years during holidays)</h3>
-Intelligent Plant specialises in providing data storage, analysis and visualisation solutions for the energy industry.
+
+
+<h3>Cintra HR & Payroll (since June 2025)</h3>
+Creating HR & payroll management software. 
+
+`c#` `typescript` `angular`
+
+ * Through rigourous automated testing, identified and fixed longstanding architectural issues with existing validation middleware resulting in validation accuracy and data consistency.
+ * Applied source generation to ensure type safe and performant interoperability between new and legacy systems.
+ * Delivered new pensions functionality ahead of schedule while working in a cross-functional team.
+ * Communicated technical and domain problems clearly and effectively.
+ * Designed and implmented methodology for assessing API throughput at scale. Applied gathered information to increase maxmimum possible throughput by 5 times.
+
+
+<h3>Intelligent Plant - Software Developer (2021-2025), Intern (University Holidays 2017-2021)</h3>
+Creating data storage, analysis and visualisation solutions for the energy industry.
+
+Lead developer for the [Industrial App Store API Python Client](https://appstore.intelligentplant.com/Home/AppProfile?appId=40d7a49722f84be4986318bb5cc98cf3) `python` `pandas` `django` `tensforflow`
+
+ * Designed and implemented a Python SDK to simplify access to the Industrial App Store API for data science environments.
+ * Developed comprehensive documentation and example use cases for ease of adoption by other developers.
 
 Lead developer for [Sequence of Events Explorer](https://appstore.intelligentplant.com/Home/AppProfile?appId=f3175c7a68774ef1ae96de5e8c16900e) `c#` `javascript` `html` `css` `elasticsearch` `ci`
  * Developed the application from inception to maturity, including design, development, deployment, and maintenance resulting in it being adopted by multiple major industrial clients.
@@ -31,22 +51,16 @@ Lead developer for [Sequence of Events Explorer](https://appstore.intelligentpla
 Developer for [Alarm Analysis](https://appstore.intelligentplant.com/Home/AppProfile?appId=d2322b59ff334c97b49760e40000d28e) and Intelligent Plant Historian  `c#` `elasticsearch`
  * Developed and maintained a backend for performing complex data aggregations.
  * Worked with clients directly to facilitate on-site installations.
- * Upgraded the historian across several major versions of Elastic Search. This more than doubled the size of a query that can be performed in 1s and increased the size of a query that can be performed in 5s by about 10 times.
+ * Upgraded the historian across several major versions of Elastic Search. This more than doubled the size of a query that can be performed in 1s and increased the size of a query that can be performed in 5s by 10 times.
 
 Developer for [Gestalt (PnID & Trend)](https://appstore.intelligentplant.com/Home/AppProfile?appId=2a59ca294ce2464cb14694b682294de5) `c#` `sql` `javascript`
  * Lead the project to decouple the Gestalt web app from our data API, resulting in smoother deployments for Gestalt and our API.
  * Designed and implemented a database model to replace an existing file system dependency paving the way for migration to App Services and zero downtime.
 
-Lead developer for the [Industrial App Store API Python Client](https://appstore.intelligentplant.com/Home/AppProfile?appId=40d7a49722f84be4986318bb5cc98cf3) `python` `pandas` `django`
-
- * Designed and implemented a Python SDK to simplify access to the Industrial App Store API.
- * Developed comprehensive documentation and example use cases for ease of adoption by other developers.
- * Ensured API client was robust and extensible to support future enhancements and additional features.
-
-Experimental projects involving the application of AI and large language models to our software `python` `docker` `tensorflow` `ollama`
+<!-- Experimental projects involving the application of AI and large language models to our software `python` `docker` `tensorflow` `ollama`
  * Deployed internal AI inference APIs.
  * Researched and developed proof-of-concept applications integrating LLMs for industrial automation.
- * Explored use cases such as natural language querying of industrial data.
+ * Explored use cases such as natural language querying of industrial data. -->
 
 
 Lead developer for [Power BI Industrial Connector](https://appstore.intelligentplant.com/Home/AppProfile?appId=064fa04abe624c70a982e377a6c72850) `c#` `power query m` `react`
@@ -55,7 +69,7 @@ Lead developer for [Power BI Industrial Connector](https://appstore.intelligentp
 * Optimized data retrieval and transformation processes to improve query efficiency and responsiveness.
 
 
-Optimized the [Excel Data Query Add-in](https://appstore.intelligentplant.com/Home/AppProfile?appId=60e8ea6fc28a4abb902ce0b7b03b215b), reducing query time from minutes to seconds. `c#`
+<!-- Optimized the [Excel Data Query Add-in](https://appstore.intelligentplant.com/Home/AppProfile?appId=60e8ea6fc28a4abb902ce0b7b03b215b), reducing query time from minutes to seconds. `c#` -->
  
 
 <h2>Education</h2>
@@ -98,6 +112,25 @@ Group software engineering project to create an encrypted wireless network of em
 
 <h3>Personal Interests</h3>
 
+**Game Design**
+`rust` `bevy` `godot`
+
+Competed in the [GMTK Game Jam 2025](https://rossrkk.itch.io/red-or-black) using `godot`.
+Implmented a [Tetris clone](https://github.com/RossRKK/tetris) in `rust` using `SDL2` including a simple software synthesizer to play the classic music.
+Implemented in [Flappy Bird clone](https://github.com/RossRKK/bevy-bird) in `rust` using `bevy` game engine.
+
+**dowehavemilk.com**
+`c` `nodejs`
+  * Created a (now-defunct) website that tracks whether shared items in my flat have ran out.
+  * The status could be updated from the website or from an ESP-32 on the fridge.
+
+**micro-telemetry**
+`c` `python`
+ * Created a network of micro-controllers that recorded temperature data around my flat to an Intelligent Plant Historian
+
+**Commodore 64 Assembly Programming**
+* Wrote a variety of assembly programs for the commodore 64 to experiment with low-level computing using a simpler architecture.
+
 **Starfinder/D&D**
 Game Master (2024-present)
 * Leadership and Organization:
@@ -123,14 +156,9 @@ Vice-president, Social Rep, Publicity and Fundraising Rep (2017-2021)
  * Created an app that interfaces with the Apple health app to track walking progress compared to a pre-set rate
  * This resulted in me walking 3,000km in 2024
 
-**dowehavemilk.com**
-`c` `nodejs`
-  * Created a website that tracks whether shared items in my flat have ran out.
-  * The status could be updated from the website or from a Wi-Fi enabled micro-controller on the fridge
 
-**micro-telemetry**
-`c` `python`
- * Created a network of micro-controllers recording temperature data around the flat to IP Historian
+
+
 
 **Games Room**
 `nodejs` `python` `javascript` `html` `css`
@@ -142,8 +170,7 @@ Developer (2018) `nodejs` `html` `javascript` `css`
 * Created a web app to simulate the cards used in the pool game "Killer" using client-side JavaScript.
 * Developed a new version using Bootstrap, Node.js, WebSockets, and Heroku, allowing for multi-device spectating and control.
 
-**Commodore 64 Assembly Programming**
-* Wrote a variety of assembly programs to experiment with low-level computing using a simpler architecture.
+
 
 **Utilities Mod for Minecraft**
  * Developed a minecraft mod using Java and forge resulting in over 700 downloads
