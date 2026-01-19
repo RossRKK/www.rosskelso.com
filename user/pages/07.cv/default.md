@@ -77,14 +77,14 @@ Deans' List, for academic excellence 2017/18, 2018/19, 2019/20
 
 **Masters Thesis**
 
-[Synthetic GPS Traces for Privacy Protection](/user/files/university-reports/synthetic-gps-traces-for-privacy-protection.pdf)
+[Synthetic GPS Traces for Privacy Protection](https://www.rosskelso.com/user/files/university-reports/synthetic-gps-traces-for-privacy-protection.pdf)
 `python` `tensorflow` `pandas` `numpy`
  * Applied Markov Models and generative AI to synthesize realistic GPS traces.
  * Evaluated model accuracy and effectiveness in preserving statistical properties of real-world movement data.
 
 **Senior Honours Project**
 
-[Computer Vision in Cue Sports](/user/files/university-reports/computer-vision-in-cue-sports.pdf)
+[Computer Vision in Cue Sports](https://www.rosskelso.com/user/files/university-reports/computer-vision-in-cue-sports.pdf)
 `opencv` `python`
 * Designed an algorithmic computer vision system to analyze pool table positions without the need for markers.
 * Implemented perspective transformation and object detection techniques for accurate ball position detection.
