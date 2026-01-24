@@ -21,13 +21,13 @@ Concepts: Machine Learning, Data Engineering, Cloud Architecture, Computer Visio
 <h3>Cintra HR & Payroll - Software Developer (since June 2025)</h3>
 Creating HR & payroll management software. 
 
-`c#` `typescript` `angular` `ci/cd` `docker` `terraform` `python`
+`c#` `typescript` `angular` `ci/cd` `aws` `docker` `terraform` `python` `mcp`
 
  * Delivered new cloud-based pensions UI with Angular and .NET ahead of schedule, focusing on UX improvements, validation logic, and data integrity when integrating with legacy database tables.
  * Identified and fixed critical validation middleware bug where premature type conversion caused required field and date validation to silently fail. Modified application-wide middleware to validate against loosely-typed request bodies, preventing entire classes of validation errors.
  * Designed and implemented load testing strategy using k6, then diagnosed and resolved database deadlocks caused by inefficient triggers. Refactored triggers by unrolling dynamic SQL and adding strategic indices, achieving 5x throughput improvement.
  * Work full-stack with emphasis on backend development in a cross-functional team of 4 developers, 1 PM, and 2 designers.
-
+ * Developed a Model Context Protocol (MCP) server enabling AI coding assistants to search and retrieve relevant code across full-stack codebases and understand complex database relatonships and constraints, improving context accuracy for LLM-assisted development.
 
 <h3>Intelligent Plant - Software Developer (2021-2025), Intern (University Holidays 2017-2021)</h3>
 Creating data storage, analysis and visualisation solutions for the energy industry.
@@ -38,7 +38,7 @@ Lead developer for the [Industrial App Store API Python Client](https://appstore
  * Set up and maintained JupyterHub instance in Kubernetes for internal and client data science work.
  * Created demonstration notebooks showing time series prediction with TensorFlow, used by industrial clients and university research partners.
 
-Lead developer for [Sequence of Events Explorer](https://appstore.intelligentplant.com/Home/AppProfile?appId=f3175c7a68774ef1ae96de5e8c16900e) `c#` `javascript` `html` `css` `elasticsearch` `ci`
+Lead developer for [Sequence of Events Explorer](https://appstore.intelligentplant.com/Home/AppProfile?appId=f3175c7a68774ef1ae96de5e8c16900e) `c#` `javascript` `html` `css` `elasticsearch` `ci` `azure`
  * Built application from MVP to production as sole developer, becoming the company's 3rd largest product and sold to every client with alarm analysis capabilities.
  * Designed intuitive drag-and-drop query interface allowing users to build complex filters for industrial alarm event logs, dramatically reducing noise in sequence-of-events analysis.
  * Mentored junior developers through code reviews and maintained code quality standards as project technical lead.
@@ -53,7 +53,7 @@ Developer for [Alarm Analysis](https://appstore.intelligentplant.com/Home/AppPro
  * Developed and maintained a backend for performing complex data aggregations.
 
 
-Developer for [Gestalt (PnID & Trend)](https://appstore.intelligentplant.com/Home/AppProfile?appId=2a59ca294ce2464cb14694b682294de5) `c#` `sql` `javascript`
+Developer for [Gestalt (PnID & Trend)](https://appstore.intelligentplant.com/Home/AppProfile?appId=2a59ca294ce2464cb14694b682294de5) `c#` `sql` `javascript` `azure`
  * Led architectural separation of monolithic API into distinct application and data components, enabling independent deployment cycles and reducing downtime.
  * Replaced file system storage with SQL database implementing hierarchical folder structure through relational model, enabling Azure App Service deployment with blue-green deployment strategy.
 
@@ -62,7 +62,7 @@ Experimental projects involving the application of AI and large language models 
  * Developed locally-hosted coding assistants to maintain IP security while exploring LLM integration opportunities.
 
 
-Lead developer for [Power BI Industrial Connector](https://appstore.intelligentplant.com/Home/AppProfile?appId=064fa04abe624c70a982e377a6c72850) `c#` `power query m` `react` `yarp`
+Lead developer for [Power BI Industrial Connector](https://appstore.intelligentplant.com/Home/AppProfile?appId=064fa04abe624c70a982e377a6c72850) `c#` `power query m` `react` `yarp` `azure`
 * Replaced custom endpoint controllers with YARP proxy implementing licensing middleware.
 * Maintained 100% backwards compatibility while fixing incorrectly named legacy functions.
 * Re-architected connector removing reverse proxy data transformation dependency, enabling direct connection to on-premises installations and simplifying NTLM authentication.
