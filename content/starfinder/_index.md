@@ -1,9 +1,8 @@
 +++
-title = "Blog"
+title = "Starfinder"
 sort_by = "date"
-paginate_by = 10
 template = "section.html"
 page_template = "page.html"
 +++
 
-
+Homebrew sub-systems and material for Starfinder 2e.

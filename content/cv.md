@@ -3,7 +3,8 @@ title = "CV"
 date = "2025-02-13"
 +++
 
-<h2>Ross Kelso &nbsp; <a class="fa fa-github" href="https://github.com/RossRKK"></a>  <a class="fa fa-linkedin" href="https://www.linkedin.com/in/ross-kelso/"></a><a class="fa fa-download" href="/user/files/cv.pdf"></a></h2>
+<h2>Ross Kelso &nbsp; <a class="fa fa-github" href="https://github.com/RossRKK"></a>  <a class="fa fa-linkedin" href="https://www.linkedin.com/in/ross-kelso/"></a><a class="fa fa-download" href="/files/cv.pdf"></a></h2>
+
 [ross@rosskelso.com](mailto:ross@rosskelso.com) Edinburgh, Scotland 
 
 Software developer with 5 years' experience in full-stack development and a first class MSci in Computer Science from St Andrews.<br/>
@@ -81,14 +82,14 @@ Deans' List, for academic excellence 2017/18, 2018/19, 2019/20
 
 **Masters Thesis**
 
-[Synthetic GPS Traces for Privacy Protection](https://www.rosskelso.com/user/files/university-reports/synthetic-gps-traces-for-privacy-protection.pdf)
+[Synthetic GPS Traces for Privacy Protection](/files/university-reports/synthetic-gps-traces-for-privacy-protection.pdf)
 `python` `tensorflow` `pandas` `numpy`
  * Applied Markov Models and Convolutional Generative Adversarial Networks to synthesize realistic GPS movement data indistinguishable from real traces while preserving statistical properties like speed and path-following behavior.
  * Evaluated model accuracy and effectiveness in preserving statistical properties of real-world movement data.
 
 **Senior Honours Project**
 
-[Computer Vision in Cue Sports](https://www.rosskelso.com/user/files/university-reports/computer-vision-in-cue-sports.pdf)
+[Computer Vision in Cue Sports](/files/university-reports/computer-vision-in-cue-sports.pdf)
 `opencv` `python`
 * Designed computer vision system for unconstrained pool table analysis, handling arbitrary camera angles and partial occlusion without the need for calibration markers.
 * Implemented perspective transformation and object detection achieving millimeter-scale ball position accuracy, 
