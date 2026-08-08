@@ -20,7 +20,6 @@ dynamic_note = true
 
 menu = [
   { name = "Guides", url = "/guides", weight = 1 },
-  { name = "Cheat Sheets", url = "/cheat-sheets", weight = 2 },
   { name = "Starfinder", url = "/starfinder", weight = 3 },
   { name = "Downloads", url = "/downloads", weight = 4 },
   { name = "CV", url = "/cv", weight = 5 },
