@@ -1,12 +1,9 @@
----
-title: 'AI Acceleration'
-taxonomy:
-    category:
-        - cheatsheet
-    tag:
-        - windows
-        - ai
----
++++
+title = "AI Acceleration"
+date = "2025-02-14"
+[taxonomies]
+tags = ["windows", "ai"]
++++
 
 # AI Acceleration
 

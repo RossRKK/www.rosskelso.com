@@ -1,20 +1,7 @@
----
-title: Typography
-published: false
-sitemap:
-    lastmod: '13-02-2025 16:47'
-media:
-    featured_image:
-        toggle: true
-        file: {  }
-partials:
-    header_subtitle:
-        toggle: true
-    metadata:
-        where: header
-    breadcrumbs:
-        toggle: false
----
++++
+title = "Typography"
+draft = true
++++
 
 ! Details on the full capabilities of Spectre.css can be found in the [Official Spectre Documentation](https://picturepan2.github.io/spectre/elements.html)
 
@@ -166,4 +153,3 @@ The notices styles are actually provided by the `markdown-notices` plugin but ar
 
 !!!! This is a success notification
 ```
-

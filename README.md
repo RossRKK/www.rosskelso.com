@@ -1,15 +1,17 @@
-# www.rosskelso.com — content
+# www.rosskelso.com
 
-The **content** of www.rosskelso.com: Grav flat-file pages, and nothing else.
-
-The Grav framework (core, `vendor/`, plugins, the stock `quark` theme) is
-provided by the NixOS host that serves this site, not committed here. Site
-configuration lives in the host's Grav module; secrets (admin account, security
-salt) live in the host's secrets store. This repo is *only* the pages.
+The content and configuration for [www.rosskelso.com](https://www.rosskelso.com),
+a static site built with [Zola](https://www.getzola.org/) and the
+[Apollo](https://github.com/not-matthias/apollo) theme.
 
 ```
-pages/            Grav user/pages tree — the site content
+config.toml     site config + Apollo menu/theme settings
+content/         the markdown — sections (guides, cheat-sheets, blog) + pages (cv, downloads)
+static/          static assets (e.g. downloadable files)
 ```
 
-The previous full-install layout (framework + config + everything committed) is
-archived on the `archive/full-install` branch.
+The theme is not vendored here; the NixOS host that serves this site supplies it
+at build time. For local preview: `git submodule add https://github.com/not-matthias/apollo themes/apollo`
+then `zola serve`.
+
+The previous Grav (PHP CMS) install is archived on the `archive/full-install` branch.

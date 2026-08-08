@@ -1,13 +1,9 @@
----
-title: 'WireGuard'
-taxonomy:
-    category:
-        - cheatsheet
-    tag:
-        - linux
-        - ubuntu
-        - networking
----
++++
+title = "WireGuard"
+date = "2025-02-14"
+[taxonomies]
+tags = ["linux", "ubuntu", "networking"]
++++
 
 # WireGuard
 

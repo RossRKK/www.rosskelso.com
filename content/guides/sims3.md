@@ -1,19 +1,11 @@
----
-title: Sims 3 on Deck
-published: true
-partials:
-    header_subtitle:
-        toggle: true
-    metadata:
-        where: header
-    breadcrumbs:
-        toggle: true
----
++++
+title = "Sims 3 on Deck"
+date = "2025-02-13"
++++
 
 How to install the Sims 3 and it's expansions on a steam deck from the DVDs using Lutris.
 
-===
-
+<!-- more -->
 # Installing the Sims 3 on a Steam Deck from a DVD
 
 ! An expansion pack as new or newer than 'Showtime' is required to follow these instructions
@@ -94,8 +86,3 @@ Run the installer, agree to any updates and enter you product key.
 Change the games executable in Lutris back to `<the path you chose in step 3>/drive_c/Program Files (x86)/Electronic Arts/The Sims 3/Game/Bin/TS3.exe`.
 
 If you are asked to install the latest version of Origin agree. This seems to be what gets the game updater working.
-
-
-
-
-

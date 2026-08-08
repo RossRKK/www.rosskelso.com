@@ -1,15 +1,9 @@
----
-title: 'IP Tables'
-sitemap:
-    lastmod: '14-02-2025 00:03'
-taxonomy:
-    category:
-        - cheatsheet
-    tag:
-        - linux
-        - ubuntu
-        - networking
----
++++
+title = "IP Tables"
+date = "2025-02-14"
+[taxonomies]
+tags = ["linux", "ubuntu", "networking"]
++++
 
 # IP Tables
 

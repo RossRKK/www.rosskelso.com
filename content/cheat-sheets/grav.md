@@ -1,13 +1,9 @@
----
-title: 'Grav'
-taxonomy:
-    category:
-        - cheatsheet
-    tag:
-        - linux
-        - ubuntu
-        - networking
----
++++
+title = "Grav"
+date = "2025-02-14"
+[taxonomies]
+tags = ["linux", "ubuntu", "networking"]
++++
 
 # Grav
 

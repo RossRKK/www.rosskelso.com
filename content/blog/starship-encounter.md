@@ -1,14 +1,7 @@
----
-title: Starfinder 2e - Star Ship Encounter Sub-system
-published: true
-partials:
-    header_subtitle:
-        toggle: true
-    metadata:
-        where: header
-    breadcrumbs:
-        toggle: true
----
++++
+title = "Starfinder 2e - Star Ship Encounter Sub-system"
+date = "2025-02-14"
++++
 
 # Starfinder 2e - Star Ship Encounter Sub-system
 

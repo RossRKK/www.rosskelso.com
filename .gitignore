@@ -1,1 +1,3 @@
-# nothing here should carry framework or runtime state — content only
+# build output and the theme (supplied by Nix / a submodule for local dev)
+/public
+/themes

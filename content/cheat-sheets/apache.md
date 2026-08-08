@@ -1,13 +1,9 @@
----
-title: 'Apache 2'
-taxonomy:
-    category:
-        - cheatsheet
-    tag:
-        - linux
-        - ubuntu
-        - networking
----
++++
+title = "Apache 2"
+date = "2025-02-14"
+[taxonomies]
+tags = ["linux", "ubuntu", "networking"]
++++
 
 # Apache 2
 

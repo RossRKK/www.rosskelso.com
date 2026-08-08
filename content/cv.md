@@ -1,7 +1,7 @@
----
-title: CV
-published: true
----
++++
+title = "CV"
+date = "2025-02-13"
++++
 
 <h2>Ross Kelso &nbsp; <a class="fa fa-github" href="https://github.com/RossRKK"></a>  <a class="fa fa-linkedin" href="https://www.linkedin.com/in/ross-kelso/"></a><a class="fa fa-download" href="/user/files/cv.pdf"></a></h2>
 [ross@rosskelso.com](mailto:ross@rosskelso.com) Edinburgh, Scotland 
