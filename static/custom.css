@@ -1,0 +1,32 @@
+/* 0xProto everywhere — the site wears the same typeface as the terminal.
+   The .woff2 files are produced at build time by the Nix site derivation
+   (features/website.nix converts pkgs._0xproto with pkgs.woff2 into
+   static/fonts/); this file only declares and applies them. */
+@font-face {
+  font-family: "0xProto";
+  src: url("/fonts/0xProto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "0xProto";
+  src: url("/fonts/0xProto-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "0xProto";
+  src: url("/fonts/0xProto-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --text-font: "0xProto", monospace;
+  --header-font: "0xProto", monospace;
+  --code-font: "0xProto", monospace;
+  --mono-text-font: "0xProto", monospace;
+}

@@ -17,6 +17,8 @@ theme = "toggle"          # light/dark toggle
 toc = true
 fancy_code = true
 dynamic_note = true
+favicon = "favicon.ico"
+stylesheets = ["custom.css"]   # 0xProto font override; loads after the theme css
 
 menu = [
   { name = "Guides", url = "/guides", weight = 1 },
