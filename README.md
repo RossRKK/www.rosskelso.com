@@ -39,4 +39,25 @@ should name the same commit; bump them together. Note that upstream Apollo past
 package yet — hence the pin to `5d3ffce`. Override for a one-off with
 `APOLLO_REV=<sha> ./dev.sh`.
 
+## Deploying
+
+The site is a build artifact, not a checkout: `features/website.nix` renders it
+from the `www` flake input, which `flake.lock` pins by rev. styx builds whatever
+commit the lock names, so pulling this repo on the box does nothing.
+
+```sh
+cd ~/chaos.nix
+nix flake update www          # repoint the www input at current main
+scripts/deploy-styx.sh        # rsync the flake to styx, rebuild there
+```
+
+**Push first.** The input is `git+https://github.com/RossRKK/www.rosskelso.com`,
+so `nix flake update` fetches from GitHub — local commits here are invisible to
+it. The URL pins no ref, so the update follows the default branch (`main`).
+
+chaos.nix itself is the other way round: `deploy-styx.sh` rsyncs the working
+tree, so the lock bump deploys without being committed. Handy, but it means styx
+can end up running a config that exists nowhere in git — commit the lock
+afterwards so the deployed state is recorded.
+
 The previous Grav (PHP CMS) install is archived on the `archive/full-install` branch.
