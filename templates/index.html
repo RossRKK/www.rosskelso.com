@@ -1,0 +1,24 @@
+{# Site-level override of the theme's index.html.
+
+   The theme's default extends section.html, which lists the *root* section's
+   pages — for this site that is just cv.md and downloads.md, which are the two
+   pages the homepage should not advertise. Instead: the intro from
+   content/_index.md, then blog posts newest first (content/blog/_index.md is
+   sort_by = "date"). #}
+{% extends "base.html" %}
+{% import "macros/macros.html" as post_macros %}
+
+{% block main_content %}
+    {{ post_macros::page_header(title=section.title) }}
+
+    {% if section.content %}
+        <div class="section-content">
+            {{ section.content | safe }}
+        </div>
+    {% endif %}
+
+    {% set blog = get_section(path="blog/_index.md") %}
+    <main class="post-list">
+        {{ post_macros::list_posts(pages=blog.pages) }}
+    </main>
+{% endblock main_content %}

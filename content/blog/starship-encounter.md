@@ -1,9 +1,16 @@
 +++
 title = "Starfinder 2e - Star Ship Encounter Sub-system"
 date = "2025-02-14"
+aliases = ["/starfinder/starship-encounter/"]
+
+[taxonomies]
+tags = ["starfinder", "ttrpg"]
 +++
 
-# Starfinder 2e - Star Ship Encounter Sub-system
+A homebrew starship combat sub-system for Starfinder 2e, run entirely through
+player-led ability checks.
+
+<!-- more -->
 
 This is a sub-system for running starship combat using player led ability checks in Starfinder 2e. By 'player led' I mean all checks will be rolled by the players and they make all the decisions.
 

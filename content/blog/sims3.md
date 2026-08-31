@@ -1,6 +1,10 @@
 +++
 title = "Sims 3 on Deck"
 date = "2025-02-13"
+aliases = ["/guides/sims3/"]
+
+[taxonomies]
+tags = ["guides", "linux"]
 +++
 
 How to install the Sims 3 and it's expansions on a steam deck from the DVDs using Lutris.

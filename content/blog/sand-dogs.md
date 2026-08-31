@@ -1,6 +1,9 @@
 +++
 title = "I am not a sand dog truther"
 date = "2026-08-31"
+
+[taxonomies]
+tags = ["essays"]
 +++
 
 What sand dogs tell us about society.
