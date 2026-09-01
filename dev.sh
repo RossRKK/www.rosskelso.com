@@ -2,9 +2,9 @@
 # Local preview for www.rosskelso.com.
 #
 # The repo is only content + config: the Apollo theme and the 0xProto webfonts
-# are generated, not committed (see .gitignore). features/website.nix on the
-# NixOS host materialises both at build time; this script does the same thing
-# locally so `zola serve` sees the tree the deployment builds from.
+# are generated, not committed (see .gitignore). The website-update unit on
+# styx (features/website.nix) materialises both before building; this script
+# does the same thing locally so `zola serve` sees the tree styx builds from.
 #
 #   ./dev.sh          set up themes/ + static/fonts/, then `zola serve`
 #   ./dev.sh build    set up, then `zola build` into public/
@@ -15,7 +15,7 @@ cd "$(dirname "$0")"
 
 # Apollo commit to check out. Upstream past d452869 requires zola 0.23, which
 # nixpkgs doesn't have yet; 5d3ffce is the last commit that builds with 0.22.
-# Bump this together with the `apollo` input in chaos.nix's flake.lock.
+# Bump this together with the `apollo` input in chaos.nix's flake.nix.
 APOLLO_REV="${APOLLO_REV:-5d3ffce}"
 
 nix shell nixpkgs#git nixpkgs#zola nixpkgs#woff2 --command bash -euo pipefail -c '

@@ -49,8 +49,8 @@ generated rather than committed, and are gitignored:
   `static/custom.css` declares the `@font-face` rules that point at them.
 
 `dev.sh` produces both exactly the way `modules/features/website.nix` in
-[chaos.nix](https://github.com/RossRKK/chaos.nix) does at deploy time, so a
-local build matches what the NixOS host serves.
+[chaos.nix](https://github.com/RossRKK/chaos.nix) does on styx, so a local
+build matches what the host serves.
 
 ### Keeping the theme pin in sync
 
@@ -62,23 +62,25 @@ package yet — hence the pin to `5d3ffce`. Override for a one-off with
 
 ## Deploying
 
-The site is a build artifact, not a checkout: `features/website.nix` renders it
-from the `www` flake input, which `flake.lock` pins by rev. styx builds whatever
-commit the lock names, so pulling this repo on the box does nothing.
+Push to `main`. styx builds the site itself: `features/website.nix` in
+[chaos.nix](https://github.com/RossRKK/chaos.nix) defines a `website-update`
+unit that clones this repo, runs `zola build`, and swaps the result in
+atomically; a timer runs it every five minutes.
 
 ```sh
-cd ~/chaos.nix
-nix flake update www          # repoint the www input at current main
-scripts/deploy-styx.sh        # rsync the flake to styx, rebuild there
+./deploy.sh           # push main, then trigger the build on styx and tail it
+./deploy.sh --status  # what's live right now
 ```
 
-**Push first.** The input is `git+https://github.com/RossRKK/www.rosskelso.com`,
-so `nix flake update` fetches from GitHub — local commits here are invisible to
-it. The URL pins no ref, so the update follows the default branch (`main`).
+Nothing here is in the NixOS closure any more, so no `nix flake update` and no
+`nixos-rebuild` — a typo fix is a push. What *is* still pinned in chaos.nix is
+what the site is built *with*: zola, the apollo theme and the 0xProto font.
+Bumping those needs a normal `scripts/deploy-styx.sh`; the updater notices the
+new build inputs and rebuilds the site on its next run without a content push.
 
-chaos.nix itself is the other way round: `deploy-styx.sh` rsyncs the working
-tree, so the lock bump deploys without being committed. Handy, but it means styx
-can end up running a config that exists nowhere in git — commit the lock
-afterwards so the deployed state is recorded.
+A failed build leaves the previous one serving — the symlink nginx follows only
+moves after zola exits 0. `./deploy.sh` surfaces the failure, and the state
+lives in `/var/lib/website` on styx (`src/` the checkout, `a/` and `b/` the two
+build slots, `current` the symlink).
 
 The previous Grav (PHP CMS) install is archived on the `archive/full-install` branch.
