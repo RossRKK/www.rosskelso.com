@@ -1,0 +1,7 @@
+{# Apollo's head hook. Anything under /drafts/ is unlisted: ask crawlers not to
+   index it or follow links out of it. Belt-and-braces with the sitemap and
+   robots.txt exclusions — this is the only one a crawler sees when someone
+   links a draft URL from elsewhere. #}
+{% if current_path is defined and current_path is starting_with("/drafts/") %}
+    <meta name="robots" content="noindex, nofollow" />
+{% endif %}

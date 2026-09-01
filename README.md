@@ -6,10 +6,31 @@ a static site built with [Zola](https://www.getzola.org/) and the
 
 ```
 config.toml     site config + Apollo menu/theme settings
-content/        the markdown — sections (guides, starfinder) + pages (cv, downloads)
+content/        the markdown — sections (blog, drafts) + pages (cv, downloads)
+templates/      site-level template overrides (homepage, sitemap, feed)
 static/         static assets (e.g. downloadable files)
 dev.sh          local preview: materialises the generated bits, then runs zola
 ```
+
+## Drafts
+
+`content/drafts/` is an unlisted space: the pages are built and served, but
+they are kept out of the homepage listing, the menu, `/tags`, `sitemap.xml`,
+`atom.xml`, the search index and `robots.txt`, and each one carries a
+`noindex, nofollow` meta tag. A draft is reachable only by its URL —
+`/drafts/<slug>/`. That is obscurity, not access control; anything genuinely
+private should not be in the repo.
+
+Zola cannot apply search-index settings to a whole section, so every file in
+`content/drafts/` must set `in_search_index = false` itself. Copy
+`content/drafts/example.md` rather than writing the front matter by hand, and
+leave `[taxonomies]` off so the post stays out of `/tags`. To publish, move the
+file into `content/blog/`, drop `in_search_index`, add tags, and set the date.
+
+The exclusions live in `templates/sitemap.xml`, `templates/atom.xml`,
+`templates/apollo/head_end.html` and `static/robots.txt`. The first two are
+copies of Zola's built-in templates with a path filter added — if the theme or
+Zola changes them upstream, these will need re-syncing.
 
 ## Local preview
 
