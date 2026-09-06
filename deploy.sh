@@ -20,11 +20,27 @@ if [ "${1:-}" = "--status" ]; then
   exit
 fi
 
-branch=$(git rev-parse --abbrev-ref HEAD)
-[ "$branch" = "main" ] || { echo "on branch '$branch' — styx deploys main"; exit 1; }
+# This repo is colocated git+jj. Under jj the git HEAD is detached, so the
+# branch check below never passes — what deploys is the main bookmark, and the
+# thing to guard is work sitting ahead of it.
+if [ -d .jj ]; then
+  ahead=$(jj log --no-graph --ignore-working-copy -r 'main..@ ~ empty()' \
+    -T 'change_id.short() ++ " " ++ description.first_line() ++ "\n"')
+  if [ -n "$ahead" ]; then
+    echo "these commits are ahead of the main bookmark and won't deploy:"
+    echo "$ahead"
+    echo "move it first:  jj bookmark set main -r @   (or -r @- to leave the working copy out)"
+    exit 1
+  fi
+  echo ">> pushing main"
+  jj git push --bookmark main
+else
+  branch=$(git rev-parse --abbrev-ref HEAD)
+  [ "$branch" = "main" ] || { echo "on branch '$branch' — styx deploys main"; exit 1; }
 
-echo ">> pushing main"
-git push origin main
+  echo ">> pushing main"
+  git push origin main
+fi
 
 echo ">> building on styx"
 # --wait: exit status follows the build, so a broken commit fails here. The
