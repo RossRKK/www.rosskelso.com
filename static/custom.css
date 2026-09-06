@@ -30,3 +30,12 @@
   --code-font: "0xProto", monospace;
   --mono-text-font: "0xProto", monospace;
 }
+
+/* Same font-feature settings as the terminal (ghostty: font-feature = -calt,
+   -liga, -dlig). calt drives 0xProto's ligatures *and*, in the italic, the
+   connected "script" alternates (m.both, i.left, t.left …) that make italic
+   text look hand-wavy; turning it off gives plain upright-shaped italics and
+   >= as two glyphs. */
+html {
+  font-feature-settings: "calt" 0, "liga" 0, "dlig" 0;
+}

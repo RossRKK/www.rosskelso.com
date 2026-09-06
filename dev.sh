@@ -13,10 +13,11 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-# Apollo commit to check out. Upstream past d452869 requires zola 0.23, which
-# nixpkgs doesn't have yet; 5d3ffce is the last commit that builds with 0.22.
+# Apollo commit to check out. nixpkgs now ships zola 0.23, whose template
+# engine dropped Tera macros, so the theme must be at d452869 or later (the
+# zola 0.23 upgrade); d7e0b55 is what the site is built and tested against.
 # Bump this together with the `apollo` input in chaos.nix's flake.nix.
-APOLLO_REV="${APOLLO_REV:-5d3ffce}"
+APOLLO_REV="${APOLLO_REV:-d7e0b55}"
 
 nix shell nixpkgs#git nixpkgs#zola nixpkgs#woff2 --command bash -euo pipefail -c '
   rev="$1"; cmd="$2"

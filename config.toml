@@ -30,3 +30,6 @@ menu = [
 socials = [
   { name = "github", url = "https://github.com/RossRKK", icon = "github" },
 ]
+
+[extra.analytics]
+enabled = false
