@@ -22,8 +22,8 @@ tags = ["recipes"]
 
 **Method**
 
-1. Preheat the oven to 180°C (350°F/Gas 4). Cream the butter and both types of
-   sugar together in a large bowl until the mixture turns creamy.
+1. Preheat the oven to 180°C. Cream the butter and both types of sugar together
+   in a large bowl until the mixture turns creamy.
 2. Beat the egg, chocolate spread, and vanilla extract into the creamed butter
    and sugar mixture, until fully mixed in.
 3. Sieve the flour, baking powder, cocoa powder, and salt into a bowl.
