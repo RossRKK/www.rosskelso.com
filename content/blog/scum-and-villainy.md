@@ -63,13 +63,13 @@ they'd like to, without directly negating the player's ability to take the
 action if it is "impossible" or "very unlikely to work" - as is probably more
 common. In the rules for Scum and Villainy there is an example of an action with
 "no effect" where a player tries to shoot a fleeing starship with their pistol
-[^no-effect-example].
-In this example the GM basically has to shut down this option because otherwise
-any roll higher than a 4 on a d6 would cause this starship to be stopped by a
-single character shooting it with a pistol. The rules encourage everyone to
-understand why there is a no effect ruling here and come up with new actions to
-get around it (like getting a bigger gun). But if there is time pressure that
-makes that not work in the fiction then the answer is essentially "no".
+[^no-effect-example]. In this example the GM basically has to shut down this
+option because otherwise any roll higher than a 4 on a d6 would cause this
+starship to be stopped by a single character shooting it with a pistol. The
+rules encourage everyone to understand why there is a no effect ruling here and
+come up with new actions to get around it (like getting a bigger gun). But if
+there is time pressure that makes that not work in the fiction then the answer
+is essentially "no".
 
 Conversely in a game like starfinder if a player wants to do something that's
 very unlikely to work I can still let them. I can still have their character do
@@ -77,8 +77,8 @@ what the player wants them to do. I can let them know that this is very unlikely
 to work and set the DC very high. Then on the off chance they roll high enough
 they can still succeed. In pathfinder/starfinder 2e especially I can set the DC
 so high that even on a 20 they only succeed because on a nat 20 you go up a
-degree of success, and give them the standard effect instead of an extra critical
-effect.
+degree of success, and give them the standard effect instead of an extra
+critical effect.
 
 ## Planning
 
@@ -91,12 +91,21 @@ play test session: the pre-given scenario puts them in a situation the players
 did not prepare for and so they have less concept of what is going on.
 
 More fundamentally though I think this is a problem simply because a lot of
-where my table gets the fun from is from coming up with a truly ludicrous quarter
-baked plan, and then watching it go wrong. You lose some of the fun of that when
-the plan isn't yours. This issue may in part be remedied by not using a starting
-scenario from the book and instead starting in a more player led way.
+where my table gets the fun from is from coming up with a truly ludicrous
+quarter baked plan, and then watching it go wrong. You lose some of the fun of
+that when the plan isn't yours. This issue may in part be remedied by not using
+a starting scenario from the book and instead starting in a more player led way.
 
 ## Combat Crunch
+
+Being able to resolve "combat" in scum and villainy so quickly was legitimately
+very cool. But I do wonder if me giving the players too much ability to affect
+the narrative by not limiting effect more caused some of the loss of stakes. In
+general I allowed them to incapacitate those in their way in 1 or 2 checks
+(mainly because the players chose the action and that's what they asked to do).
+However, I think the game would really suffer if I introduced some kind of
+pseudo-hit point system by forcing players to take multiple rounds to down an
+enemy (I guess I'm describing setting up a clock).
 
 I have in the past gone out of my way to remove some of the mechanical crunch
 from starfinder. When presented with second edition and reading the GM Core
@@ -110,13 +119,31 @@ starfinder 1e's starship combat system.
 
 ## Conclusion
 
-I think going forward we will stick to starfinder. The universe we've built
-together is vibrant and the mechanics are familiar. I hope that as my main group
-continues our new campaign (now reset back to level 1) and we get the
-opportunity to learn how our characters work, that combat will become less of a
-slog and more of a tight tactical game. The kind of thing I really enjoy in
-Baldur's Gate 3 (which has the significant advantage of using a computer to
-resolve all game actions very quickly) and board games like
+I'm glad I took the time to play scum and villainy. However I don't think it was
+the solution I was looking for. I also admit that a lot of my criticisms of this
+game come from me running it badly due to a lack of familiarity. But I guess in
+some sense that was the point. Every time I have changed system (5e ->
+starfinder 1e -> starfinder 2e) I have always done a test session first. The
+similarity of these systems to each other allowed that to work relatively
+smoothly (it is worth noting that prior to playing 5e I played a lot of BG3).
+
+I think that if I decided to spend the time becoming familiar with this system
+it might turn out to work well for my group. But on the other hand: I think that
+we're comfortable in starfinder 2e, and I think that the pathfinder/starfinder
+2e system better supports me with the tools I want to tweak the game with
+sub-systems that will work with my group.
+
+As we go forward I will likely spend some time streamlining starfinder combat. I
+have plenty of ideas. Like running more combats with fewer high level monsters
+instead of many low level monsters (less time on the GMs turn), pre-preparing
+finite state machines for enemy behaviour so that monster moves are more
+mechanical.
+
+I hope that as my main group continues our new campaign (now reset back to
+level 1) and we get the opportunity to learn how our characters work, that
+combat will become less of a slog and more of a tight tactical game. The kind of
+thing I really enjoy in Baldur's Gate 3 (which has the significant advantage of
+using a computer to resolve all game actions very quickly) and board games like
 [Undaunted Normandy](https://boardgamegeek.com/boardgame/268864/undaunted-normandy).
 
 [^no-effect-example]: Scum and Villainy pg. 27 "Dominant Factors"
