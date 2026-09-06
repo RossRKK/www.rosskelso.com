@@ -17,7 +17,7 @@ tags = ["recipes"]
 - 200g plain flour
 - 30g cocoa powder [^nutty]
 - 1 pinch of salt
-- ½ tsp baking powder
+- 1/2 tsp baking powder
 - 150g white chocolate chips
 
 **Method**
