@@ -1,7 +1,10 @@
 +++
 title = "Tattie Scones"
 date = "2026-09-06"
-in_search_index = false
+draft = true
+
+[taxonomies]
+tags = ["recipes"]
 +++
 
 **Ingredients**

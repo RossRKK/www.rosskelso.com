@@ -1,7 +1,7 @@
 +++
 title = "Pepsi Theory"
 date = "2026-09-01"
-in_search_index = false
+draft = true
 +++
 
 The pepsi theory of everything
