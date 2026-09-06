@@ -1,19 +1,19 @@
 +++
 title = "Scum and Villainy"
 date = "2026-09-06"
-draft = true
 
 [taxonomies]
 tags = ["ttrpg", "starfinder"]
 +++
 
-Recently I convinced my starfinder group to indulge me and try out playing "Scum
-and Villainy" (the sci-fi hack of Blades in the Dark). I had recently been
+Recently I convinced my starfinder group to indulge me and try out playing
+[Scum and Villainy](https://offguardgames.com/scum-and-villainy/) (the sci-fi
+hack of [Blades in the Dark](https://bladesinthedark.com/)). I had recently been
 thinking that while I enjoy playing starfinder I often find the combat can drag,
 with each round taking a significant length of time and each player only getting
 to take 3 actions.
 
-It has always been true that in games I've ran (and played) the most fun is had
+It has always been true that in games I've run (and played) the most fun is had
 in exploration mode where the players and the GM have freedom to essentially
 just mess around. Recently I had the opportunity to introduce some new players
 to starfinder which resulted in a lot of fun setting up the stakes but it seemed
@@ -47,14 +47,14 @@ unrelated events happening after each other. I think that this is largely due to
 our unfamiliarity with the system constantly getting in the way of our ability
 to lean into it.
 
-## DCs and Degress of Success
+## DCs and Degrees of Success
 
 When playing starfinder I find it very natural to set DCs in response to player
 actions and lean into player role play choices. If a player ever wants to do
 something implausible, I don't have to say that will have limited (or perhaps
 even no) effect - I can use the tools at my disposal to just set a very high DC.
 
-Scum and Villainy suffers from an issue which other games like Call of Cthulu
+Scum and Villainy suffers from an issue which other games like Call of Cthulhu
 suffer from: where the GM doesn't have control of setting how difficult an
 action is. In the case of scum and villainy only how effective it is and how
 severe the consequences of failure are (through position). I think I prefer
@@ -77,7 +77,7 @@ what the player wants them to do. I can let them know that this is very unlikely
 to work and set the DC very high. Then on the off chance they roll high enough
 they can still succeed. In pathfinder/starfinder 2e especially I can set the DC
 so high that even on a 20 they only succeed because on a nat 20 you go up a
-degree of success, and give them the standard effect instead of a extra critical
+degree of success, and give them the standard effect instead of an extra critical
 effect.
 
 ## Planning
@@ -87,14 +87,14 @@ players skip the planning and use flashbacks to retroactively come up with a
 plan.
 
 In part I think this was part of what was disorienting for my players in our
-playtest session: the pre-given scenario puts them in a situation the players
+play test session: the pre-given scenario puts them in a situation the players
 did not prepare for and so they have less concept of what is going on.
 
 More fundamentally though I think this is a problem simply because a lot of
 where my table gets the fun from is from coming up with a truly ludicrous quarter
 baked plan, and then watching it go wrong. You lose some of the fun of that when
 the plan isn't yours. This issue may in part be remedied by not using a starting
-scenario from the book and instead starting in a more player lead way.
+scenario from the book and instead starting in a more player led way.
 
 ## Combat Crunch
 
