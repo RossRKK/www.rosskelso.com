@@ -17,7 +17,7 @@ tags = ["recipes"]
 **Spices**
 
 - Whole: 1 dried bay leaf
-- Ground: ½ level tsp turmeric, 1 level tsp cumin, 1 tsp salt
+- Ground: 1/2 level tsp turmeric, 1 level tsp cumin, 1 tsp salt
 
 **Method**
 
