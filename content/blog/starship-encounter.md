@@ -7,160 +7,263 @@ aliases = ["/starfinder/starship-encounter/"]
 tags = ["starfinder", "ttrpg"]
 +++
 
-A homebrew starship combat sub-system for Starfinder 2e, run entirely through
-player-led ability checks.
+This is a sub-system for running starship combat using player led ability checks
+in Starfinder 2e. By 'player led' I mean all checks will be rolled by the
+players and they make all the decisions.
 
-<!-- more -->
+Broadly this sub-system codifies specific skill checks and their outcomes for
+starship based encounters. This allows everyone to have shared expectations.
+There is no tactical positioning, instead a bonus/penalty called 'encounter
+advantage' is used to track which side has the upper hand moment to moment.
 
-This is a sub-system for running starship combat using player led ability checks in Starfinder 2e. By 'player led' I mean all checks will be rolled by the players and they make all the decisions.
-
-Broadly this sub-system codifies specific skill checks and their outcomes for starship based encounters. This allows everyone to have shared expectations. There is no tactical positioning, instead a bonus/penalty called 'encounter advantage' is used to track which side has the upper hand moment to moment.
-
-This sub-system is very loose and the GM will often have to make a call on what a DC should be or the outcome of a check.
+This sub-system is very loose and the GM will often have to make a call on what
+a DC should be or the outcome of a check.
 
 ## Narrative Explanation
 
-Here is a narrative explanation of each starship system which informs the design of the skill checks.
+Here is a narrative explanation of each starship system which informs the design
+of the skill checks.
 
-- **Helm**: The pilot's primary responsibility is maneuvering the ship to avoid incoming weapons fire, their secondary responsibility is to out manuever the enemy ship(s) in order to get the upper hand.
-- **Weapons**: The gunners' primary responsibility is to destroy the enemy vessels, they can also lay down covering fire to try to gain the upper hand.
-- **Astro-navigation**: In order to go into FTL and flee an encounter you must plot a course. Typically 3 astro-navigation successes are required to plot a course. It is possible for the enemy to hack into your systems and copy your plotted course (or vice-versa). Each course is from a specific origin to a specific destination, if the origin or destination changes you must plot a new course. Once you have computed a course you may jump whenever you like as a free action.
-- **Shields**: The shields are used to deflect incoming weapons fire. Shields on a star ship have a number of layers each of which can take 1 hit. Engineers maintain the shields and recharge them to protect the ship. If the engineers critically succeed they can recharge the shields by 2 layers and up to 1 layer better than the typical maximum.
-- **Scanners**: The scanners are used to learn about the enemy vessels' capabilities and whether they are attempting to scan or hack you.
-- **Escape Pods**: the escape pods are an emergency escape mechanism allowing the player characters to survive their ship being destroyed. If you you eject you escape pods while surrounded by enemy combatants chances are you are going to be captured.
+- **Helm**: The pilot's primary responsibility is maneuvering the ship to avoid
+  incoming weapons fire, their secondary responsibility is to out manuever the
+  enemy ship(s) in order to get the upper hand.
+- **Weapons**: The gunners' primary responsibility is to destroy the enemy
+  vessels, they can also lay down covering fire to try to gain the upper hand.
+- **Astro-navigation**: In order to go into FTL and flee an encounter you must
+  plot a course. Typically 3 astro-navigation successes are required to plot a
+  course. It is possible for the enemy to hack into your systems and copy your
+  plotted course (or vice-versa). Each course is from a specific origin to a
+  specific destination, if the origin or destination changes you must plot a new
+  course. Once you have computed a course you may jump whenever you like as a
+  free action.
+- **Shields**: The shields are used to deflect incoming weapons fire. Shields on
+  a star ship have a number of layers each of which can take 1 hit. Engineers
+  maintain the shields and recharge them to protect the ship. If the engineers
+  critically succeed they can recharge the shields by 2 layers and up to 1 layer
+  better than the typical maximum.
+- **Scanners**: The scanners are used to learn about the enemy vessels'
+  capabilities and whether they are attempting to scan or hack you.
+- **Escape Pods**: the escape pods are an emergency escape mechanism allowing
+  the player characters to survive their ship being destroyed. If you you eject
+  you escape pods while surrounded by enemy combatants chances are you are going
+  to be captured.
 
 ## Encounter Advantage
 
-During a starship combat encounter keep track of the current 'encounter advantage' this is an untyped bonus/penalty the players can add to all of their checks in the encounter. This is intended to represent who has the upper hand in the encounter. Laying down covering fire, intimidating the enemy or maneuvering to a better position may increase the player's encounter advantage.
+During a starship combat encounter keep track of the current 'encounter
+advantage' this is an untyped bonus/penalty the players can add to all of their
+checks in the encounter. This is intended to represent who has the upper hand in
+the encounter. Laying down covering fire, intimidating the enemy or maneuvering
+to a better position may increase the player's encounter advantage.
 
-Encounter advantage can be from +3 to -3 and it's initial value depends on how the encounter starts. If the players ambush their enemy it may start at +2. If the players are out gunned it may start at -1.
+Encounter advantage can be from +3 to -3 and it's initial value depends on how
+the encounter starts. If the players ambush their enemy it may start at +2. If
+the players are out gunned it may start at -1.
 
-Before a player makes a check they may choose to forgo one degree of success (i.e. a crit success is a success, a success is a failure etc.) in order to gain one encounter advantage on what would have been a success. They must be able to describe how the action they want to take hinders their enemy. E.g. **Attack** compared to **Covering Fire**
+Before a player makes a check they may choose to forgo one degree of success
+(i.e. a crit success is a success, a success is a failure etc.) in order to gain
+one encounter advantage on what would have been a success. They must be able to
+describe how the action they want to take hinders their enemy. E.g. **Attack**
+compared to **Covering Fire**
 
-A player may also choose to make a check solely to increase encounter advantage (which they must justify), on a success they increase encounter advantage by 1, on a crit success they increase encounter advantage by 2.
+A player may also choose to make a check solely to increase encounter advantage
+(which they must justify), on a success they increase encounter advantage by 1,
+on a crit success they increase encounter advantage by 2.
 
-This concept of encounter advantage can also be applied to other social and skill encounters.
+This concept of encounter advantage can also be applied to other social and
+skill encounters.
 
 ## The Players' Ship
 
-The recommended player ship has 3 hit points, 1 shield layer (2 on a crit) 2 gun turrets and a 3 point FTL system (it takes successes to jump).
+The recommended player ship has 3 hit points, 1 shield layer (2 on a crit) 2 gun
+turrets and a 3 point FTL system (it takes successes to jump).
 
-When the players are hit (due to a failed evasion check) they first lose a shield points and then lose a hull points. They can regenerate their shields by succeeding on a crafting/engineering lore check against their enemy's DC. Hull points can only be regenerated by making repairs at a port.
+When the players are hit (due to a failed evasion check) they first lose a
+shield points and then lose a hull points. They can regenerate their shields by
+succeeding on a crafting/engineering lore check against their enemy's DC. Hull
+points can only be regenerated by making repairs at a port.
 
-The players can jump into FTL and escape the fight if they get 3 successes on astro-navigation checks.
+The players can jump into FTL and escape the fight if they get 3 successes on
+astro-navigation checks.
 
-Only 1 player can make piloting checks in a round. Only 2 players may make attack checks in a single round.
+Only 1 player can make piloting checks in a round. Only 2 players may make
+attack checks in a single round.
 
-The player ship is equipped with escape pods which they can use to abandon ship in an emergency.
+The player ship is equipped with escape pods which they can use to abandon ship
+in an emergency.
 
 This can grow and change throughout the course of the campaign.
 
 ## Encounter Difficulty
 
-Throughout the difficulty of checks is set using the level of the enemy threat. Use a DC based on an appropriate level for the enemy. For appropriate DCs see [Level-Based DCs](https://2e.aonprd.com/Rules.aspx?ID=2629) and [Building Creatures](https://2e.aonprd.com/Rules.aspx?ID=2874).
+Throughout the difficulty of checks is set using the level of the enemy threat.
+Use a DC based on an appropriate level for the enemy. For appropriate DCs see
+[Level-Based DCs](https://2e.aonprd.com/Rules.aspx?ID=2629) and
+[Building Creatures](https://2e.aonprd.com/Rules.aspx?ID=2874).
 
-If there are multiple enemy ships this is modelled by a higher DC that goes down as these enemies are defeated. See [Adjusting Difficulty](https://2e.aonprd.com/Rules.aspx?ID=2630).
+If there are multiple enemy ships this is modelled by a higher DC that goes down
+as these enemies are defeated. See
+[Adjusting Difficulty](https://2e.aonprd.com/Rules.aspx?ID=2630).
 
-Each enemy ship should have a level (to base DCs on) and a number of hit points they can take before being destroyed. The GM should also decide which 'actions' an enemy vessel will take each round. For a simple encounter this should be gunnery (i.e. shoot the players). 
+Each enemy ship should have a level (to base DCs on) and a number of hit points
+they can take before being destroyed. The GM should also decide which 'actions'
+an enemy vessel will take each round. For a simple encounter this should be
+gunnery (i.e. shoot the players).
 
-More complex encounters may have the enemy have regenerating shields, scan the players to gain encounter advantage or have more complex weapon hit effects.
+More complex encounters may have the enemy have regenerating shields, scan the
+players to gain encounter advantage or have more complex weapon hit effects.
 
 ## Standard Checks
 
-During a round the players can make any check they can justify. However these checks are always or often available:
+During a round the players can make any check they can justify. However these
+checks are always or often available:
 
-- **Maneuver**: make a piloting check against the enemy attack DC to gain encounter advantage
-    - Critical success: gain 2 encounter advantage
-    - Success: gain 1 encounter advantage
-- **Attack**: make a gunnery check (simple weapons bonus + dex) against the enemy AC
-    - Critical success: the enemy takes 2 damage
-    - Success: the enemy takes 1 damage
-    - Critical failure: the enemy is free to maneuver, lose 1 encounter advantage
-- **Covering Fire**: make a gunnery check (simple weapons bonus + dex) against the enemy piloting DC
-    - Critical success: the enemy takes 1 damage and you gain 1 encounter advantage
-    - Success: you gain 1 encounter advantage
-- **Astro-Navigate**: make a computers/drift lore check against the enemy's DC to attempt to charge the FTL drive, you must state your destination (choosing a new destination resets your FTL to 0 charges). Once you have computed a course (you have 3 charges) you may jump whenever you like as a free action.
-    - Critical success: the FTL drive gains 2 charges
-    - Success: the FTL drive gains 1 charge
-- **Risky Astro-Navigation**: make a computers/drift lore check against the enemy's DC to attempt to charge the FTL drive, you will jump to a random point in space (GM's choice)
-    - Critical success: the FTL drive gains 3 charges, you may immediately jump
-    - Success: the FTL drive gains 2 charges
-    - Critical failure: you gain no FTL charges, any existing course plotted is now to a random location (i.e. you ust start over or continue to use **Risky Astro-Navigation**)
-- **Regenerate Shields**: make crafting or engineering lore against the enemy's DC to attempt to recharge the shields. Shields cannot be charged beyond their maximum (recommended 1) unless on a critical success where they overcharge to 1 extra point
-    - Critical success: the shields gain 2 charges
-    - Success: the shields gain 1 charge 
+- **Maneuver**: make a piloting check against the enemy attack DC to gain
+  encounter advantage
+  - Critical success: gain 2 encounter advantage
+  - Success: gain 1 encounter advantage
+- **Attack**: make a gunnery check (simple weapons bonus + dex) against the
+  enemy AC
+  - Critical success: the enemy takes 2 damage
+  - Success: the enemy takes 1 damage
+  - Critical failure: the enemy is free to maneuver, lose 1 encounter advantage
+- **Covering Fire**: make a gunnery check (simple weapons bonus + dex) against
+  the enemy piloting DC
+  - Critical success: the enemy takes 1 damage and you gain 1 encounter
+    advantage
+  - Success: you gain 1 encounter advantage
+- **Astro-Navigate**: make a computers/drift lore check against the enemy's DC
+  to attempt to charge the FTL drive, you must state your destination (choosing
+  a new destination resets your FTL to 0 charges). Once you have computed a
+  course (you have 3 charges) you may jump whenever you like as a free action.
+  - Critical success: the FTL drive gains 2 charges
+  - Success: the FTL drive gains 1 charge
+- **Risky Astro-Navigation**: make a computers/drift lore check against the
+  enemy's DC to attempt to charge the FTL drive, you will jump to a random point
+  in space (GM's choice)
+  - Critical success: the FTL drive gains 3 charges, you may immediately jump
+  - Success: the FTL drive gains 2 charges
+  - Critical failure: you gain no FTL charges, any existing course plotted is
+    now to a random location (i.e. you ust start over or continue to use **Risky
+    Astro-Navigation**)
+- **Regenerate Shields**: make crafting or engineering lore against the enemy's
+  DC to attempt to recharge the shields. Shields cannot be charged beyond their
+  maximum (recommended 1) unless on a critical success where they overcharge to
+  1 extra point
+  - Critical success: the shields gain 2 charges
+  - Success: the shields gain 1 charge
 - **Communicate**: use social skills to intimidate, deceive or placate the enemy
-    - Critical success: gain 2 encounter advantage
-    - Success: gain 1 encounter advantage
-    - Critical failure: lose one encounter advantage
-- **Identify Weaknesses**: scan the enemy ship for weaknesses, make a perception check against the enemy's DC to gain encounter advantage
-    - Critical success: gain 2 encounter advantage
-    - Success: gain 1 encounter advantage
-- **Scan** `secret`: make a perception check against the enemy's deception DC to identify strategic information
-    - Critical success: learn the player's choice of information and it's matching maximum/current value.
-    - Success: learn 1 of the following (player's choice), if there is nothing to learn gain 1 encounter advantage
-        - enemy current hit points
-        - enemy maximum hit points
-        - enemy current shields
-        - enemy maximum shields
-        - enemy current FTL charge
-        - enemy FTL maximum charge
-        - whether the enemy is attempting to scan or hack the player ship and the obfuscate or cover tracks action should be taken
-    - Critical failure: learn incorrect information
-- **Pursue** `secret`: make a computers or thievery check against the enemy's deception DC to attempt to follow them through FTL
-    - Critical success: your FTL system is set to the same level as the enemy's on the same course
-    - Success: you learn where the enemy is attempting to go (i.e. you can now manually astro-navigate to pursue)
-    - Critical failure: the enemy deceives you, you learn a false destination
-- **Hack**: make a computers or thievery check to attempt to hack the enemy's systems
-    - Critical success: gain 2 encounter advantage
-    - Success: gain 1 encounter advantage
-- **Abandon Ship**: make a reflex saving throw against the enemy's attack DC to make it to escape pods before the ship explodes (automatic success if the ship is not about to be destroyed)
-    - Critical success: the player character reaches an escape pod and survives, they may save another character
-    - Success: the player character reaches an escape pod and survives
-    - Failure: the player character dies (unless saved)
-
+  - Critical success: gain 2 encounter advantage
+  - Success: gain 1 encounter advantage
+  - Critical failure: lose one encounter advantage
+- **Identify Weaknesses**: scan the enemy ship for weaknesses, make a perception
+  check against the enemy's DC to gain encounter advantage
+  - Critical success: gain 2 encounter advantage
+  - Success: gain 1 encounter advantage
+- **Scan** `secret`: make a perception check against the enemy's deception DC to
+  identify strategic information
+  - Critical success: learn the player's choice of information and it's matching
+    maximum/current value.
+  - Success: learn 1 of the following (player's choice), if there is nothing to
+    learn gain 1 encounter advantage
+    - enemy current hit points
+    - enemy maximum hit points
+    - enemy current shields
+    - enemy maximum shields
+    - enemy current FTL charge
+    - enemy FTL maximum charge
+    - whether the enemy is attempting to scan or hack the player ship and the
+      obfuscate or cover tracks action should be taken
+  - Critical failure: learn incorrect information
+- **Pursue** `secret`: make a computers or thievery check against the enemy's
+  deception DC to attempt to follow them through FTL
+  - Critical success: your FTL system is set to the same level as the enemy's on
+    the same course
+  - Success: you learn where the enemy is attempting to go (i.e. you can now
+    manually astro-navigate to pursue)
+  - Critical failure: the enemy deceives you, you learn a false destination
+- **Hack**: make a computers or thievery check to attempt to hack the enemy's
+  systems
+  - Critical success: gain 2 encounter advantage
+  - Success: gain 1 encounter advantage
+- **Abandon Ship**: make a reflex saving throw against the enemy's attack DC to
+  make it to escape pods before the ship explodes (automatic success if the ship
+  is not about to be destroyed)
+  - Critical success: the player character reaches an escape pod and survives,
+    they may save another character
+  - Success: the player character reaches an escape pod and survives
+  - Failure: the player character dies (unless saved)
 
 ## Example Enemy 'Actions'
 
-Players are always the active participant so these are phrased as actions the players can take to counter-act the enemy acting.
+Players are always the active participant so these are phrased as actions the
+players can take to counter-act the enemy acting.
 
 - **Evade**: make a piloting check to avoid the enemy weapons fire
-    - Critical success: take no damage and gain 1 encounter advantage
-    - Success: take no damage
-    - Failure: take 1 damage (first to shields then to hull) or lose 1 encounter advantage (depending on whether you where evading **Covering Fire** or **Attack**)
-    - Critical failure: take 2 damage (first to shields then to hull) or take 1 damage and lose 1 encounter advantage (depending on whether you where evading **Covering Fire** or **Attack**)
-- **Obfuscate**: make a stealth or deception check against the enemy's DC to hide strategic information from enemy scans (the players may take this action even if the enemy ship is not scanning them, in which case there is no failure effects and any success effect applies the next time the enemy scans)
-    - Critical success: gain 1 encounter advantage
-    - Success: no effect (prevent enemy scan)
-    - Failure: lose 1 encounter advantage
-    - Critical failure: lose 2 encounter advantage
-- **Cover Tracks**: (trigger: the player ship is about to jump, this check must be made by someone who has not taken their turn this round) make a computers or deception check against the enemy's DC to prevent them pursuing you through FTL
-    - Critical success: the enemy attempts to pursue but jumps to a random location (or a location of your choosing if you have plotted an additional fake course requiring 3 successful astro-navigation checks)
-    - Success: enemy is prevented from pursuing
-    - Failure: enemy copies your astro-navigation calculations and can pursue you through your FTL jump. They are delayed by 1 round.
-    - Critical failure: as with failure but with no delay
+  - Critical success: take no damage and gain 1 encounter advantage
+  - Success: take no damage
+  - Failure: take 1 damage (first to shields then to hull) or lose 1 encounter
+    advantage (depending on whether you where evading **Covering Fire** or
+    **Attack**)
+  - Critical failure: take 2 damage (first to shields then to hull) or take 1
+    damage and lose 1 encounter advantage (depending on whether you where
+    evading **Covering Fire** or **Attack**)
+- **Obfuscate**: make a stealth or deception check against the enemy's DC to
+  hide strategic information from enemy scans (the players may take this action
+  even if the enemy ship is not scanning them, in which case there is no failure
+  effects and any success effect applies the next time the enemy scans)
+  - Critical success: gain 1 encounter advantage
+  - Success: no effect (prevent enemy scan)
+  - Failure: lose 1 encounter advantage
+  - Critical failure: lose 2 encounter advantage
+- **Cover Tracks**: (trigger: the player ship is about to jump, this check must
+  be made by someone who has not taken their turn this round) make a computers
+  or deception check against the enemy's DC to prevent them pursuing you through
+  FTL
+  - Critical success: the enemy attempts to pursue but jumps to a random
+    location (or a location of your choosing if you have plotted an additional
+    fake course requiring 3 successful astro-navigation checks)
+  - Success: enemy is prevented from pursuing
+  - Failure: enemy copies your astro-navigation calculations and can pursue you
+    through your FTL jump. They are delayed by 1 round.
+  - Critical failure: as with failure but with no delay
 
-Auto-success 'actions'. Some enemy abilities make more sense as automatic effects that the players need to keep on top of. These can occur at the end of a round. 
-- **Regenerating Shields**: enemy shields regenerate back to 1 point every round (or every other round). Essentially players must hit twice per round to be effective
-- **FTL Jammer**: the players lose 1 point of FTL charge every round (or every other round).
+Auto-success 'actions'. Some enemy abilities make more sense as automatic
+effects that the players need to keep on top of. These can occur at the end of a
+round.
+
+- **Regenerating Shields**: enemy shields regenerate back to 1 point every round
+  (or every other round). Essentially players must hit twice per round to be
+  effective
+- **FTL Jammer**: the players lose 1 point of FTL charge every round (or every
+  other round).
 - **Astro-Navigate**: charge FTL every round and attempt to flee
 
-<!-- 
+<!--
 Weapon ideas
 
 - Clamping weapons to prevent the player ship from moving (roid removers)
-- 
+-
 
  -->
 
 ## Structure of a Round
 
-Starship combat typically starts with social challenges, if these challenges go well combat may be avoided entirely. If either side starts to take offensive action I recommend structuring checks in rounds.
+Starship combat typically starts with social challenges, if these challenges go
+well combat may be avoided entirely. If either side starts to take offensive
+action I recommend structuring checks in rounds.
 
-Each round the GM announces checks the players must make in response to enemy actions (if they choose not to then they critically fail). Each player makes a skill check, either one the GM called for, a standard one or something they suggest (if it can be justified). They may also try to use any abilities or spells they have if they can justify why they work in the scenario. The players may go in any order.
+Each round the GM announces checks the players must make in response to enemy
+actions (if they choose not to then they critically fail). Each player makes a
+skill check, either one the GM called for, a standard one or something they
+suggest (if it can be justified). They may also try to use any abilities or
+spells they have if they can justify why they work in the scenario. The players
+may go in any order.
 
 ## Destruction
 
-If the players ship reaches 0 hit points it and its contents are destroyed. The players must attempt to **Abandon Ship** or be killed.
+If the players ship reaches 0 hit points it and its contents are destroyed. The
+players must attempt to **Abandon Ship** or be killed.
 
-A player may expend all of their hero points (at least 1) to survive the ships destruction on 0HP but stable and adrift in space. 
+A player may expend all of their hero points (at least 1) to survive the ships
+destruction on 0HP but stable and adrift in space.

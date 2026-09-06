@@ -6,10 +6,6 @@ date = "2026-09-04"
 tags = ["recipes"]
 +++
 
-Three\* bean chilli
-
-<!-- more -->
-
 **Ingredients**
 
 - 2 cans of beans, 1 black, 1 pinto (or cannellini) [^beans]

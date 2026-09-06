@@ -6,10 +6,6 @@ date = "2026-09-06"
 tags = ["recipes"]
 +++
 
-Indian Cookery by Saira. _Serves 4_
-
-<!-- more -->
-
 **Ingredients**
 
 - 250g red split lentils

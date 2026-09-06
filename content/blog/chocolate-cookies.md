@@ -6,10 +6,6 @@ date = "2026-09-05"
 tags = ["recipes"]
 +++
 
-Chocolate Chip Cookies
-
-<!-- more -->
-
 **Ingredients**
 
 - 125g unsalted butter, softened

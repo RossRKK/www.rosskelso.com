@@ -6,10 +6,6 @@ date = "2026-08-31"
 tags = ["essays"]
 +++
 
-What sand dogs tell us about society.
-
-<!-- more -->
-
 Many beggars partake in some kind of busking or street art in order to entice
 people into giving them money, and they are not called scammers. Just today I
 saw a homeless woman in the centre of Oxford drawing a kite on the pavement with

@@ -6,10 +6,6 @@ date = "2026-09-04"
 tags = ["recipes"]
 +++
 
-The classic Kelso brothers' pancake recipe.
-
-<!-- more -->
-
 **Ingredients**
 
 - 1 egg
