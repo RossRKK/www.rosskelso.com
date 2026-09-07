@@ -6,19 +6,29 @@ date = "2026-09-05"
 tags = ["recipes"]
 +++
 
-**Ingredients**
-
-- 125g unsalted butter, softened
-- 90g soft light brown sugar
-- 1 egg
-- 125g chocolate spread [^nutty]
-- 2–3 drops vanilla extract
-- 90g caster sugar
-- 200g plain flour
-- 30g cocoa powder [^nutty]
-- 1 pinch of salt
-- 1/2 tsp baking powder
-- 150g white chocolate chips
+```recipe
+"bake 180°C, 14 min"(
+    "stir in"(
+        "beat in"(
+            "cream"(
+                125g "unsalted butter, softened",
+                90g "soft light brown sugar",
+                90g "caster sugar",
+            ),
+            1 egg,
+            125g "chocolate spread",
+            "2–3 drops vanilla extract",
+        ),
+        "sieve"(
+            200g "plain flour",
+            1/2 tsp "baking powder",
+            30g "cocoa powder",
+            1 "pinch of salt",
+        ),
+        150g "white chocolate chips",
+    ),
+)
+```
 
 **Method**
 

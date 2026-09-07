@@ -6,12 +6,39 @@ date = "2026-09-06"
 tags = ["recipes"]
 +++
 
-**Ingredients**
+```recipe
+dough := "mix in"(
+    "mash"(
+        "air-dry 5 min"(
+            "drain"(
+                "boil"(
+                    "chop evenly"(
+                        "peel"(500g potatoes),
+                    ),
+                ),
+            ),
+        ),
+    ),
+    25g "butter, at room temperature",
+    "salt and pepper",
+    125g "plain flour, plus extra for rolling",
+)
+```
 
-- 500g potatoes
-- 25g butter, at room temperature
-- 125g plain flour, plus extra for rolling
-- Salt and pepper
+<!-- stage break — keeps the two tables apart; see README -->
+
+```recipe
+"fry"(
+    "quarter"(
+        "dry fry 3–4 min a side"(
+            "flatten, prick"(
+                "split into 3"(dough),
+            ),
+        ),
+    ),
+    "butter, for frying",
+)
+```
 
 **Method**
 

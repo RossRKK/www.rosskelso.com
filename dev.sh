@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 # Local preview for www.rosskelso.com.
 #
-# The repo is only content + config: the Apollo theme and the 0xProto webfonts
-# are generated, not committed (see .gitignore). The website-update unit on
+# The repo is only content + config: the Apollo theme, the 0xProto webfonts
+# and the recipe posts are generated, not committed (see .gitignore). The website-update unit on
 # styx (features/website.nix) materialises both before building; this script
 # does the same thing locally so `zola serve` sees the tree styx builds from.
 #
-#   ./dev.sh          set up themes/ + static/fonts/, then `zola serve --drafts`
+#   ./dev.sh          set up themes/ + static/fonts/ + recipe posts, then
+#                     `zola serve --drafts`
 #   ./dev.sh build    set up, then `zola build` into public/
 #
 # Everything runs through `nix shell`, so no tools need to be installed.
@@ -28,7 +29,12 @@ NIXPKGS="${NIXPKGS:-github:nixos/nixpkgs/nixos-26.05}"
 # flake.nix — and only alongside a zola that can parse the newer theme.
 APOLLO_REV="${APOLLO_REV:-5d3ffce}"
 
-nix shell "$NIXPKGS#git" "$NIXPKGS#zola" "$NIXPKGS#woff2" --command bash -euo pipefail -c '
+# recipe-grid is not in nixpkgs, so it is built from recipe-grid.nix (which
+# takes the same pinned nixpkgs) rather than named as an attribute here.
+RECIPE_GRID=$(nix build --no-link --print-out-paths --impure \
+  --expr "import ./recipe-grid.nix { nixpkgs = builtins.getFlake \"$NIXPKGS\"; }")
+
+nix shell "$NIXPKGS#git" "$NIXPKGS#zola" "$NIXPKGS#woff2" "$RECIPE_GRID" --command bash -euo pipefail -c '
   rev="$1"; cmd="$2"; nixpkgs="$3"
 
   if [ ! -d themes/apollo/.git ]; then
@@ -48,6 +54,11 @@ nix shell "$NIXPKGS#git" "$NIXPKGS#zola" "$NIXPKGS#woff2" --command bash -euo pi
     woff2_compress "static/fonts/0xProto-$w.ttf"
     rm "static/fonts/0xProto-$w.ttf"
   done
+
+  # Recipe posts, compiled from the recipe-grid sources in recipes/ into
+  # content/blog/. Regenerated every run: the sources are what is committed,
+  # so a stale generated post would otherwise sit there unnoticed.
+  python3 build-recipes.py
 
   # Posts marked draft = true are never built for the live site; serve them
   # locally so a work in progress is previewable.

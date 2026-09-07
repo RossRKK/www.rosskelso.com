@@ -9,13 +9,16 @@ tags = ["recipes"]
 This recipe was reverse engineered from me vibing it out and is therefore
 extremely approximate. Please read the footnotes.
 
-**Ingredients**
-
-- 2 loaves of Mother's Pride white bread, crusts removed and blitzed (980g
-  breadcrumbs)
-- 90g fresh parsley, de-stemmed and finely chopped [^parsley]
-- 3 large onions, finely chopped (about 200g each) [^onion]
-- 250g unsalted butter, at room temperature [^butter]
+```recipe
+"bake 180°C"(
+    "mix"(
+        2 "loaves of Mother's Pride white bread, crusts removed and blitzed (980g breadcrumbs)",
+        90g "fresh parsley, de-stemmed and finely chopped",
+        3 "large onions, finely chopped (about 200g each)",
+        250g "unsalted butter, at room temperature",
+    ),
+)
+```
 
 **Method**
 
