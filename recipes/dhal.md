@@ -6,18 +6,40 @@ date = "2026-09-06"
 tags = ["recipes"]
 +++
 
-**Ingredients**
+```recipe
+lentils := "whisk"(
+    "simmer 20 min"(
+        "skim"(
+            "boil"(
+                "rinse ×3"(250g "red split lentils"),
+                500ml "cold water",
+            ),
+        ),
+    ),
+)
+```
 
-- 250g red split lentils
-- 1 green chilli, punctured
-- 1 small onion, chopped finely
-- 4/5 cloves garlic, chopped finely
-- 2 tbsp vegetable oil
+<!-- stage break — keeps the two tables apart; see README -->
 
-**Spices**
-
-- Whole: 1 dried bay leaf
-- Ground: 1/2 level tsp turmeric, 1 level tsp cumin, 1 tsp salt
+```recipe
+"stir through"(
+    "stir in, simmer"(
+        lentils,
+        "mix"(
+            1/2 tsp turmeric,
+            1 tsp cumin,
+            1 tsp salt,
+        ),
+        1 "dried bay leaf",
+        1 "green chilli, punctured",
+    ),
+    "fry"(
+        2 tbsp "vegetable oil",
+        1 "small onion, chopped finely",
+        "4–5 cloves garlic, chopped finely",
+    ),
+)
+```
 
 **Method**
 

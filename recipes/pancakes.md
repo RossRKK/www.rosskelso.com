@@ -6,11 +6,16 @@ date = "2026-09-04"
 tags = ["recipes"]
 +++
 
-**Ingredients**
-
-- 1 egg
-- 100g plain flour
-- 300ml milk
+```recipe
+"fry"(
+    "mix"(
+        1 egg,
+        100g "plain flour",
+        300ml milk,
+    ),
+    "butter, for frying",
+)
+```
 
 **Method**
 

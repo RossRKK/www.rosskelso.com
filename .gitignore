@@ -5,3 +5,11 @@
 /themes
 # 0xProto webfonts, compressed from the nixpkgs font
 /static/fonts
+# recipe posts, compiled from recipes/ by build-recipes.py — add a line here
+# when you add a recipe, or the generated post gets committed alongside it
+/content/blog/chocolate-cookies.md
+/content/blog/dhal.md
+/content/blog/pancakes.md
+/content/blog/stuffing.md
+/content/blog/tattie-scones.md
+/content/blog/three-bean-chilli.md
