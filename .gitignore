@@ -7,6 +7,7 @@
 /static/fonts
 # recipe posts, compiled from recipes/ by build-recipes.py — add a line here
 # when you add a recipe, or the generated post gets committed alongside it
+/content/blog/chocolate-cake.md
 /content/blog/chocolate-cookies.md
 /content/blog/dhal.md
 /content/blog/pancakes.md
