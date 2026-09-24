@@ -18,7 +18,7 @@ Based on the Burning Barn pre-mixed can.
 **Smoked Storm**
 
 ```new-recipe
-"mix"(
+"build in the glass"(
     50ml "smoked rum",
     10ml "The King's Ginger",
     10ml "lime juice",
