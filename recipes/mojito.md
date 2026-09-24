@@ -36,16 +36,26 @@ tags = ["recipes", "cocktails"]
 6. Add 60ml Havana Club white rum.
 7. Top with soda water. Serve with a straw.
 
+**Notes**
+
+- Doorly's white rum is better than Havana Club, if you can get it.
+
 **Pitcher (serves 12)**
 
 ```new-recipe
-"mix in a pitcher"(
-    "1 beaker caster sugar",
-    "juice"(
-        6 lemons,
-        6 limes,
+"pour in"(
+    "mix until dissolved"(
+        "muddle in the jug"(
+            "1–2 packs of mint",
+            "1 beaker caster sugar",
+        ),
+        "juice"(
+            6 lemons,
+            6 limes,
+        ),
     ),
-    "1–2 packs of mint",
     700ml "Havana Club (1 bottle)",
 )
 ```
+
+Built step by step in the jug, the same way as the single.

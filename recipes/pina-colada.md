@@ -7,13 +7,21 @@ tags = ["recipes", "cocktails"]
 +++
 
 ```recipe
-"mix"(
-    30ml "white rum",
-    45ml "cream of coconut",
-    45ml "pineapple juice",
-    15ml "lime juice",
+"dirty dump"(
+    "shake over ice"(
+        30ml "white rum",
+        45ml "cream of coconut",
+        45ml "pineapple juice",
+        15ml "lime juice",
+    ),
 )
 ```
+
+**Method**
+
+1. Shake over ice.
+2. Dirty dump: pour the whole lot, ice and all, straight into the glass
+   without straining.
 
 **Notes**
 

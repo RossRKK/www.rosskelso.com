@@ -38,6 +38,7 @@ Use 1 tsp gingerbread chai per ~60ml vodka, steeped for a few hours (at least
 
 **Notes**
 
+- Running cheap vodka through a Brita filter takes away the jet fuel flavour.
 - A bigger serve: 60ml vodka, 45ml honey syrup, 45ml milk.
 - Use smoked rum for an incredibly smoky version.
 

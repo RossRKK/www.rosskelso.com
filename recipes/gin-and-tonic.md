@@ -8,7 +8,7 @@ tags = ["recipes", "cocktails"]
 
 ```recipe
 "garnish with a lime wedge (optional)"(
-    "mix"(
+    "build in the glass"(
         50ml gin,
         100ml tonic,
     ),
@@ -18,7 +18,7 @@ tags = ["recipes", "cocktails"]
 **The signature**
 
 ```new-recipe
-"mix"(
+"build in the glass"(
     75ml "Number 3 gin",
     150ml "Fever-Tree tonic (1 can)",
 )

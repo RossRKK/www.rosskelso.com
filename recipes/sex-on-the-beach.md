@@ -7,7 +7,7 @@ tags = ["recipes", "cocktails"]
 +++
 
 ```recipe
-"mix"(
+"build in the glass"(
     45ml "orange juice",
     45ml "cranberry juice",
     45ml "peach liqueur",
