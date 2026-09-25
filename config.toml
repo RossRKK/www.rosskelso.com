@@ -32,4 +32,7 @@ socials = [
 ]
 
 [extra.analytics]
-enabled = false
+enabled = true
+
+[extra.analytics.goatcounter]
+user = "rosskelso"   # rosskelso.goatcounter.com
