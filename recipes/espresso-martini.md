@@ -7,12 +7,13 @@ tags = ["recipes", "cocktails"]
 +++
 
 ```recipe
-"serve in a chilled coupe"(
-    "shake over ice"(
+"double strain into a chilled coupe"(
+    "shake"(
         30ml vodka,
         25ml "coffee liqueur, preferably Kahlúa",
         40ml "chilled espresso",
         20ml "caramel syrup",
+        ice,
     ),
 )
 ```
@@ -20,11 +21,6 @@ tags = ["recipes", "cocktails"]
 **Method**
 
 1. Shake over ice.
-2. Serve in a chilled coupe.
-
-**Notes**
-
-- Substitute Mr Black for the Kahlúa for a coffee lover.
-- Substitute sticky toffee moonshine for the Kahlúa for a sweet tooth.
+2. Double strain into a chilled coupe.
 
 Based on Nick Hamilton's recipe.

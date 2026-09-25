@@ -7,9 +7,10 @@ tags = ["recipes", "cocktails"]
 +++
 
 ```recipe
-"build in a highball over ice"(
+"build in a highball"(
     30ml "Burning Barn smoked rum",
     200ml "ginger ale",
+    ice,
 )
 ```
 
@@ -23,6 +24,7 @@ Based on the Burning Barn pre-mixed can.
     10ml "The King's Ginger",
     10ml "lime juice",
     "80–100ml ginger ale",
+    ice,
 )
 ```
 

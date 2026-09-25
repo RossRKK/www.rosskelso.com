@@ -7,22 +7,20 @@ tags = ["recipes", "cocktails"]
 +++
 
 ```recipe
-"dirty dump"(
-    "shake over ice"(
+"strain into a highball"(
+    "shake"(
         30ml "white rum",
-        45ml "cream of coconut",
+        45ml "coconut cream",
+        15ml "simple syrup",
         45ml "pineapple juice",
         15ml "lime juice",
+        ice,
     ),
+    ice,
 )
 ```
 
 **Method**
 
 1. Shake over ice.
-2. Dirty dump: pour the whole lot, ice and all, straight into the glass
-   without straining.
-
-**Notes**
-
-- No cream of coconut? Use 15ml simple syrup and 45ml coconut cream instead.
+2. Strain into a highball over fresh ice.

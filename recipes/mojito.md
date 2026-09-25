@@ -15,12 +15,12 @@ tags = ["recipes", "cocktails"]
                     "mint, loosely filling a highball glass",
                     4 tsp "caster sugar",
                 ),
-                "juice of ½ lime",
-                "juice of ½ lemon",
+                "juice of 1/2 lime",
+                "juice of 1/2 lemon",
             ),
             ice,
         ),
-        60ml "Havana Club white rum",
+        60ml "Havana Club 3 Años",
     ),
     "soda water",
 )
@@ -33,29 +33,33 @@ tags = ["recipes", "cocktails"]
 3. Add the juice of half a lime and the juice of half a lemon.
 4. Mix until the sugar dissolves.
 5. Fill the glass with ice.
-6. Add 60ml Havana Club white rum.
+6. Add 60ml Havana Club 3 Años.
 7. Top with soda water. Serve with a straw.
 
 **Notes**
 
-- Doorly's white rum is better than Havana Club, if you can get it.
+- Doorly's white rum is better than Havana Club 3 Años, if you can get it.
 
 **Pitcher (serves 12)**
 
 ```new-recipe
 "pour in"(
     "mix until dissolved"(
-        "muddle in the jug"(
+        "muddle"(
             "1–2 packs of mint",
-            "1 beaker caster sugar",
+            200g "caster sugar",
         ),
         "juice"(
             6 lemons,
             6 limes,
         ),
     ),
-    700ml "Havana Club (1 bottle)",
+    700ml "Havana Club 3 Años (1 bottle)",
 )
 ```
 
-Built step by step in the jug, the same way as the single.
+Built step by step in the jug.
+
+**Warning:** this is a base mix, dilute before drinking.
+
+- The sugar was originally "1 beaker", about 250ml.
