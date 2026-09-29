@@ -8,7 +8,7 @@ a static site built with [Zola](https://www.getzola.org/) and the
 config.toml       site config + Apollo menu/theme settings
 content/          the markdown — the blog section + pages (cv, downloads)
 recipes/          recipe sources, compiled into content/blog/ at build time
-templates/        site-level template overrides (homepage)
+templates/        site-level template overrides (homepage, footer)
 static/           static assets (e.g. downloadable files)
 build-recipes.py  compiles recipes/ into the recipe posts in content/blog/
 recipe-grid.nix   the recipe-grid compiler, built from its PyPI sdists

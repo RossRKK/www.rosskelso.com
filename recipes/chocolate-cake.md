@@ -82,3 +82,6 @@ _To make the icing:_
   8-inch tins.
 
 Bridget Halnan's recipe, with edits and comments by Andrew Orr.
+
+© Andrew Orr. Published here with his permission; not to be copied or used
+without it.
