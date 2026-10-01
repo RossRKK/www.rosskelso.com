@@ -1,0 +1,54 @@
+{# Site-level override of the theme's base.html, to add the copyright footer.
+
+   Copied verbatim from Apollo at the pinned APOLLO_REV (see dev.sh) with only
+   the <footer> added. The theme's apollo/body_end.html hook would have been
+   less to carry, but it lands outside .content, as another column of the
+   flexbox body; the footer belongs under the post, in the text column. When
+   bumping the theme, re-copy its base.html and re-add the footer. #}
+{% import "macros/macros.html" as post_macros %}
+
+<!DOCTYPE html>
+<html lang="{{ lang }}" class="dark light">
+
+    {% include "partials/header.html" %}
+
+    <body>
+        {% include "apollo/body_start.html" ignore missing %}
+        <div class="left-content">
+            {% block left_content %}
+            {% endblock left_content %}
+        </div>
+
+        <div class="content">
+            {% include "partials/nav.html" %}
+
+            {# Post page is the default #}
+            {% block main_content %}
+                Nothing here?!
+            {% endblock main_content %}
+
+            {% if page.extra.comment is defined %}
+                {% set show_comment = page.extra.comment %}
+            {% else %}
+                {% set show_comment = false %}
+            {% endif %}
+
+            {% if show_comment %}
+                <div class="giscus">
+                </div>
+                {% include "_giscus_script.html" %}
+            {% endif %}
+
+            <footer class="site-footer">
+                &copy; {{ now() | date(format="%Y") }} Ross Kelso
+            </footer>
+        </div>
+
+        <div class="right-content">
+            {% block right_content %}
+            {% endblock right_content %}
+        </div>
+        {% include "apollo/body_end.html" ignore missing %}
+    </body>
+
+</html>
