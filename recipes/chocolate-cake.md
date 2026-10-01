@@ -83,5 +83,4 @@ _To make the icing:_
 
 Bridget Halnan's recipe, with edits and comments by Andrew Orr.
 
-© Andrew Orr. Published here with his permission; not to be copied or used
-without it.
+© Andrew Orr. Not to be used without his permission.
