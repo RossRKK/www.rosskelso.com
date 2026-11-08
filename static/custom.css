@@ -211,3 +211,36 @@ html {
   -webkit-mask: url("/img/supply-setup.svg") center / contain no-repeat;
   mask: url("/img/supply-setup.svg") center / contain no-repeat;
 }
+
+/* The Nerve board and route diagram, inlined by the inline_svg shortcode.
+   Only the "Have you got the Nerve?" lettering (and the route's start/off
+   labels) are drawn in currentColor, so they follow the light/dark toggle;
+   the board keeps its printed colours and black outlines in both themes.
+   Apollo makes every figure an inline-block with 40px side padding, which
+   shrinks an SVG with no intrinsic width to the 300px default — so these are
+   blocks that take the full content width instead. */
+.nerve-board {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 1.5rem 0;
+  color: var(--text-0);
+}
+
+.nerve-board svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* On the dark background the board's black outline disappears, so trace its
+   silhouette with a thin white edge. The edge filter is defined inside each
+   SVG and applied only to the group of board shapes, so the lettering, the
+   number badges and the start/off arrows are left as they are. */
+:root.dark #nerve-board-shapes {
+  filter: url(#nerve-board-edge);
+}
+
+:root.dark #nerve-route-shapes {
+  filter: url(#nerve-route-edge);
+}

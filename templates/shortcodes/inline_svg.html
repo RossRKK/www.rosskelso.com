@@ -1,0 +1,5 @@
+{#- Inline an SVG from static/ so it can be styled by the page: anything it
+    draws in currentColor follows the theme's text colour. -#}
+<figure class="{{ class | default(value='inline-svg') }}" role="img" aria-label="{{ alt }}">
+{{ load_data(path="static/" ~ path, format="plain") | safe }}
+</figure>

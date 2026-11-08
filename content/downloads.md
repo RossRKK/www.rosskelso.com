@@ -18,3 +18,4 @@ A few files worth keeping around.
 
 - [GMTK Game Jam 2025 (ZIP)](/files/gmtk-2025/Archive.zip)
 - [Supply — card game rules (PDF)](/files/games/supply-rules.pdf)
+- [Nerve — board (A3 PDF)](/files/games/nerve-board-a3.pdf)
