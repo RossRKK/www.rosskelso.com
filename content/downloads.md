@@ -17,3 +17,4 @@ A few files worth keeping around.
 ## Games
 
 - [GMTK Game Jam 2025 (ZIP)](/files/gmtk-2025/Archive.zip)
+- [Supply — card game rules (PDF)](/files/games/supply-rules.pdf)
