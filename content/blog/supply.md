@@ -78,4 +78,12 @@ replace the supply row, but only once per turn
 - King (Suit ability value: 10)
   - Gain 5 health points
 
+## Tweaks
+
+This game is tinkered with and tweaked everytime I play it.
+
+- Queens have 10 suit ability
+- Jacks have 10 suit ability: choose 1 card from your opponents hand, it is discarded, they still
+  play 3.
+
 </div>
