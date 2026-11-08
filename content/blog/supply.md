@@ -1,7 +1,6 @@
 +++
 title = "Supply"
 date = "2026-11-08"
-draft = true
 
 [taxonomies]
 tags = ["games", "card-games"]
