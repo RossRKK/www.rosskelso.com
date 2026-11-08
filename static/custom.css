@@ -31,6 +31,13 @@
   --mono-text-font: "0xProto", monospace;
 }
 
+/* Apollo's table of contents hard-codes font-family: sans-serif on its links
+   (sass/parts/_toc.scss) rather than using the font variables above. */
+.toc li,
+.toc a {
+  font-family: var(--text-font);
+}
+
 /* Same font-feature settings as the terminal (ghostty: font-feature = -calt,
    -liga, -dlig). calt drives 0xProto's ligatures *and*, in the italic, the
    connected "script" alternates (m.both, i.left, t.left …) that make italic
