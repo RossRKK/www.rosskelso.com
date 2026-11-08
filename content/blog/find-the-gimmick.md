@@ -4,7 +4,7 @@ date = "2026-09-06"
 draft = true
 
 [taxonomies]
-tags = ["starfinder", "ttrpg"]
+tags = ["games", "ttrpg", "starfinder"]
 +++
 
 In [Scum and Villainy](@/blog/scum-and-villainy.md) I said that one of the ways

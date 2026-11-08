@@ -6,6 +6,10 @@ date = "2026-11-08"
 tags = ["games", "card-games"]
 +++
 
+Supply is a card game for two players, played with a standard deck of cards. It
+was originally designed in 2020. The rules are below, or you can
+[download them as a PDF](/files/games/supply-rules.pdf).
+
 <div class="supply-rules">
 
 *A game by Ross Kelso and Gavin Lamb*

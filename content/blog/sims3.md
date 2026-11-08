@@ -4,7 +4,7 @@ date = "2025-02-13"
 aliases = ["/guides/sims3/"]
 
 [taxonomies]
-tags = ["guides", "linux"]
+tags = ["games", "guides", "linux", "steam-deck"]
 +++
 
 # Installing the Sims 3 on a Steam Deck from a DVD

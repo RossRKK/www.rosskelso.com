@@ -3,7 +3,7 @@ title = "Scum and Villainy"
 date = "2026-09-06"
 
 [taxonomies]
-tags = ["ttrpg", "starfinder"]
+tags = ["games", "ttrpg", "starfinder"]
 +++
 
 Recently I convinced my starfinder group to indulge me and try out playing

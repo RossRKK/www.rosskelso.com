@@ -4,7 +4,7 @@ date = "2025-02-14"
 aliases = ["/starfinder/starship-encounter/"]
 
 [taxonomies]
-tags = ["starfinder", "ttrpg"]
+tags = ["games", "ttrpg", "starfinder"]
 +++
 
 This is a sub-system for running starship combat using player led ability checks
