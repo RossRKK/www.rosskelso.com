@@ -23,7 +23,7 @@ tags = ["games", "card-games"]
 
 The game should look like this:
 
-![Player 1's hand is the 2, 3 and 4 of spades, with the ace of spades set aside. Player 2's hand is the 2, 3 and 4 of clubs, with the ace of clubs set aside. Between them are the supply deck, a supply row of five cards (5 of diamonds, 10 of hearts, 10 of clubs, queen of diamonds, 7 of spades) and an empty scrap pile.](/img/supply-setup.png)
+<div class="supply-setup" role="img" aria-label="Player 1's hand is the 2, 3 and 4 of spades, with the ace of spades set aside. Player 2's hand is the 2, 3 and 4 of clubs, with the ace of clubs set aside. Between them are the supply deck, a supply row of five cards (5 of diamonds, 10 of hearts, 10 of clubs, queen of diamonds, 7 of spades) and an empty scrap pile."></div>
 
 ## Aim of the Game
 

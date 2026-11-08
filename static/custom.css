@@ -192,4 +192,15 @@ html {
 .supply-rules ul { list-style: "❖  "; }
 .supply-rules ul ul { list-style: "➢  "; }
 .supply-rules ul ul ul { list-style: "■  "; }
-.supply-rules img { background: #fff; padding: 0.5rem; border-radius: 4px; }
+
+/* The setup picture is black line art with transparent card faces. Used as
+   a mask over the theme's text colour it is drawn in whatever colour the
+   text is, so it follows the light/dark toggle without a second image. */
+.supply-setup {
+  aspect-ratio: 978.66 / 530.76;
+  max-width: 100%;
+  margin: 1.5rem 0;
+  background-color: var(--text-0);
+  -webkit-mask: url("/img/supply-setup.svg") center / contain no-repeat;
+  mask: url("/img/supply-setup.svg") center / contain no-repeat;
+}
