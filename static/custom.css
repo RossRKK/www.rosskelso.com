@@ -186,3 +186,10 @@ html {
   font-size: 0.8em;
   color: var(--text-1);
 }
+
+/* The Supply rules post keeps the printed rules' bullets: ❖ at the top
+   level, ➢ beneath it, ■ beneath that. */
+.supply-rules ul { list-style: "❖  "; }
+.supply-rules ul ul { list-style: "➢  "; }
+.supply-rules ul ul ul { list-style: "■  "; }
+.supply-rules img { background: #fff; padding: 0.5rem; border-radius: 4px; }
