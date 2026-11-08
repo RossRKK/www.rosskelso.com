@@ -7,10 +7,10 @@ tags = ["games", "board-games"]
 +++
 
 Nerve is a board game I originally designed in 2020. It is a multiplayer
-variant of the Royal Game of Ur. You can
+variant of the [Royal Game of Ur](https://en.wikipedia.org/wiki/Royal_Game_of_Ur). You can
 [download the board as an A3 PDF](/files/games/nerve-board-a3.pdf) to print.
 
-{{ inline_svg(path="img/nerve-board.svg", class="nerve-board", alt="The Nerve board. On the left, seven coloured arms (red, blue, green, yellow, pink, orange and purple) of four squares each lead into a grey octagon. A track of six white squares runs from it to a second grey octagon on the right, from which seven shorter arms of two squares each, one per colour, lead out. Arrows mark the direction of play. The words ’Have you got the Nerve?’ are printed twice, once upside down.") }}
+{{ inline_svg(path="img/nerve-board.svg", class="nerve-board", alt="The Nerve board. On the left, seven coloured arms (red, blue, green, yellow, pink, orange and purple) of four squares each lead into a grey octagon. A track of six white squares runs from it to a second grey octagon on the right, from which seven shorter arms of two squares each, one per colour, lead out. Arrows mark the direction of play. The words ‘Have you got the Nerve?’ are printed twice, once upside down.") }}
 
 ## Rules
 
