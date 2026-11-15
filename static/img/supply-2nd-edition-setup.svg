@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="626" viewBox="0 0 600 626" style="max-width: 100%; height: auto" fill="currentColor" font-family="0xProto, monospace" font-size="18">
+  <defs>
+    <rect id="supply2-card" x="0.75" y="0.75" width="46.5" height="66.5" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <rect id="supply2-space" x="0.75" y="0.75" width="46.5" height="66.5" rx="5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <pattern id="supply2-back" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="8" stroke="currentColor" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+
+  <!-- First player -->
+  <text x="16" y="28" font-weight="bold">First player · 30 health</text>
+  <text x="152" y="70" text-anchor="middle">Hand</text>
+  <text x="336" y="70" text-anchor="middle">Deck</text>
+  <text x="408" y="52" text-anchor="middle">Discard</text>
+  <text x="408" y="70" text-anchor="middle">pile</text>
+  <g transform="translate(16 80)">
+    <use href="#supply2-card" xlink:href="#supply2-card"/>
+    <text x="5" y="14" font-size="12">2</text><text x="5" y="25" font-size="11">♠&#xFE0E;</text>
+    <text x="24" y="42" font-size="22" text-anchor="middle">♠&#xFE0E;</text>
+    <g transform="rotate(180 24 34)"><text x="5" y="14" font-size="12">2</text><text x="5" y="25" font-size="11">♠&#xFE0E;</text></g>
+  </g>
+  <g transform="translate(72 80)">
+    <use href="#supply2-card" xlink:href="#supply2-card"/>
+    <text x="5" y="14" font-size="12">3</text><text x="5" y="25" font-size="11">♠&#xFE0E;</text>
+    <text x="24" y="42" font-size="22" text-anchor="middle">♠&#xFE0E;</text>
+    <g transform="rotate(180 24 34)"><text x="5" y="14" font-size="12">3</text><text x="5" y="25" font-size="11">♠&#xFE0E;</text></g>
+  </g>
+  <g transform="translate(128 80)">
+    <use href="#supply2-card" xlink:href="#supply2-card"/>
+    <text x="5" y="14" font-size="12">4</text><text x="5" y="25" font-size="11">♠&#xFE0E;</text>
+    <text x="24" y="42" font-size="22" text-anchor="middle">♠&#xFE0E;</text>
+    <g transform="rotate(180 24 34)"><text x="5" y="14" font-size="12">4</text><text x="5" y="25" font-size="11">♠&#xFE0E;</text></g>
+  </g>
+  <g transform="translate(184 80)">
+    <use href="#supply2-card" xlink:href="#supply2-card"/>
+    <text x="5" y="14" font-size="12">2</text><text x="5" y="25" font-size="11">♦&#xFE0E;</text>
+    <text x="24" y="42" font-size="22" text-anchor="middle">♦&#xFE0E;</text>
+    <g transform="rotate(180 24 34)"><text x="5" y="14" font-size="12">2</text><text x="5" y="25" font-size="11">♦&#xFE0E;</text></g>
+  </g>
+  <g transform="translate(240 80)">
+    <use href="#supply2-card" xlink:href="#supply2-card"/>
+    <text x="5" y="14" font-size="12">2</text><text x="5" y="25" font-size="11">♥&#xFE0E;</text>
+    <text x="24" y="42" font-size="22" text-anchor="middle">♥&#xFE0E;</text>
+    <g transform="rotate(180 24 34)"><text x="5" y="14" font-size="12">2</text><text x="5" y="25" font-size="11">♥&#xFE0E;</text></g>
+  </g>
+  <use href="#supply2-space" xlink:href="#supply2-space" x="312" y="80"/>
+  <use href="#supply2-space" xlink:href="#supply2-space" x="384" y="80"/>
+  <rect x="16.75" y="164.75" width="270.5" height="66.5" rx="5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="152" y="204" text-anchor="middle">Play area</text>
+
+  <!-- Between the players -->
+  <text x="72" y="276" text-anchor="middle">Supply deck</text>
+  <text x="272" y="276" text-anchor="middle">Supply row</text>
+  <text x="512" y="276" text-anchor="middle">Scrap heap</text>
+  <g transform="translate(48 286)">
+    <use href="#supply2-card" xlink:href="#supply2-card"/>
+    <rect x="6" y="6" width="36" height="56" rx="2" fill="url(#supply2-back)" stroke="currentColor" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(136 286)">
+    <use href="#supply2-card" xlink:href="#supply2-card"/>
+    <text x="5" y="14" font-size="12">5</text><text x="5" y="25" font-size="11">♦&#xFE0E;</text>
+    <text x="24" y="42" font-size="22" text-anchor="middle">♦&#xFE0E;</text>
+    <g transform="rotate(180 24 34)"><text x="5" y="14" font-size="12">5</text><text x="5" y="25" font-size="11">♦&#xFE0E;</text></g>
+  </g>
+  <g transform="translate(192 286)">
+    <use href="#supply2-card" xlink:href="#supply2-card"/>
+    <text x="5" y="14" font-size="12">10</text><text x="5" y="25" font-size="11">♥&#xFE0E;</text>
+    <text x="24" y="42" font-size="22" text-anchor="middle">♥&#xFE0E;</text>
+    <g transform="rotate(180 24 34)"><text x="5" y="14" font-size="12">10</text><text x="5" y="25" font-size="11">♥&#xFE0E;</text></g>
+  </g>
+  <g transform="translate(248 286)">
+    <use href="#supply2-card" xlink:href="#supply2-card"/>
+    <text x="5" y="14" font-size="12">8</text><text x="5" y="25" font-size="11">♣&#xFE0E;</text>
+    <text x="24" y="42" font-size="22" text-anchor="middle">♣&#xFE0E;</text>
+    <g transform="rotate(180 24 34)"><text x="5" y="14" font-size="12">8</text><text x="5" y="25" font-size="11">♣&#xFE0E;</text></g>
+  </g>
+  <g transform="translate(304 286)">
+    <use href="#supply2-card" xlink:href="#supply2-card"/>
+    <text x="5" y="14" font-size="12">Q</text><text x="5" y="25" font-size="11">♠&#xFE0E;</text>
+    <text x="24" y="42" font-size="22" text-anchor="middle">♠&#xFE0E;</text>
+    <g transform="rotate(180 24 34)"><text x="5" y="14" font-size="12">Q</text><text x="5" y="25" font-size="11">♠&#xFE0E;</text></g>
+  </g>
+  <g transform="translate(360 286)">
+    <use href="#supply2-card" xlink:href="#supply2-card"/>
+    <text x="5" y="14" font-size="12">7</text><text x="5" y="25" font-size="11">♥&#xFE0E;</text>
+    <text x="24" y="42" font-size="22" text-anchor="middle">♥&#xFE0E;</text>
+    <g transform="rotate(180 24 34)"><text x="5" y="14" font-size="12">7</text><text x="5" y="25" font-size="11">♥&#xFE0E;</text></g>
+  </g>
+  <use href="#supply2-space" xlink:href="#supply2-space" x="488" y="286"/>
+
+  <!-- Second player -->
+  <text x="16" y="612" font-weight="bold">Second player · 30 health</text>
+  <text x="152" y="560" text-anchor="middle">Hand</text>
+  <text x="336" y="560" text-anchor="middle">Deck</text>
+  <text x="408" y="560" text-anchor="middle">Discard</text>
+  <text x="408" y="578" text-anchor="middle">pile</text>
+  <g transform="translate(16 470)">
+    <use href="#supply2-card" xlink:href="#supply2-card"/>
+    <text x="5" y="14" font-size="12">2</text><text x="5" y="25" font-size="11">♣&#xFE0E;</text>
+    <text x="24" y="42" font-size="22" text-anchor="middle">♣&#xFE0E;</text>
+    <g transform="rotate(180 24 34)"><text x="5" y="14" font-size="12">2</text><text x="5" y="25" font-size="11">♣&#xFE0E;</text></g>
+  </g>
+  <g transform="translate(72 470)">
+    <use href="#supply2-card" xlink:href="#supply2-card"/>
+    <text x="5" y="14" font-size="12">3</text><text x="5" y="25" font-size="11">♣&#xFE0E;</text>
+    <text x="24" y="42" font-size="22" text-anchor="middle">♣&#xFE0E;</text>
+    <g transform="rotate(180 24 34)"><text x="5" y="14" font-size="12">3</text><text x="5" y="25" font-size="11">♣&#xFE0E;</text></g>
+  </g>
+  <g transform="translate(128 470)">
+    <use href="#supply2-card" xlink:href="#supply2-card"/>
+    <text x="5" y="14" font-size="12">4</text><text x="5" y="25" font-size="11">♣&#xFE0E;</text>
+    <text x="24" y="42" font-size="22" text-anchor="middle">♣&#xFE0E;</text>
+    <g transform="rotate(180 24 34)"><text x="5" y="14" font-size="12">4</text><text x="5" y="25" font-size="11">♣&#xFE0E;</text></g>
+  </g>
+  <g transform="translate(184 470)">
+    <use href="#supply2-card" xlink:href="#supply2-card"/>
+    <text x="5" y="14" font-size="12">3</text><text x="5" y="25" font-size="11">♦&#xFE0E;</text>
+    <text x="24" y="42" font-size="22" text-anchor="middle">♦&#xFE0E;</text>
+    <g transform="rotate(180 24 34)"><text x="5" y="14" font-size="12">3</text><text x="5" y="25" font-size="11">♦&#xFE0E;</text></g>
+  </g>
+  <g transform="translate(240 470)">
+    <use href="#supply2-card" xlink:href="#supply2-card"/>
+    <text x="5" y="14" font-size="12">3</text><text x="5" y="25" font-size="11">♥&#xFE0E;</text>
+    <text x="24" y="42" font-size="22" text-anchor="middle">♥&#xFE0E;</text>
+    <g transform="rotate(180 24 34)"><text x="5" y="14" font-size="12">3</text><text x="5" y="25" font-size="11">♥&#xFE0E;</text></g>
+  </g>
+  <use href="#supply2-space" xlink:href="#supply2-space" x="312" y="470"/>
+  <use href="#supply2-space" xlink:href="#supply2-space" x="384" y="470"/>
+  <rect x="16.75" y="384.75" width="270.5" height="66.5" rx="5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="152" y="424" text-anchor="middle">Play area</text>
+</svg>

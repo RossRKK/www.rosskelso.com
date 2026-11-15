@@ -1,18 +1,23 @@
 +++
-title = "Supply"
+title = "Supply (1st Edition)"
 date = "2026-11-08"
 
 [taxonomies]
-tags = ["games", "card-games"]
+tags = ["supply", "games", "card-games"]
 +++
 
 Supply is a card game for two players, played with a standard deck of cards. It
 was originally designed in 2020. The rules are below, or you can
 [download them as a PDF](/files/games/supply-rules.pdf).
 
+For revised rules see [Supply (2nd edition)](@/blog/supply-2nd-edition.md)
+
+You can play supply here
+[https://supply.rosskelso.com](https://supply.rosskelso.com).
+
 <div class="supply-rules">
 
-*A game by Ross Kelso and Gavin Lamb*
+_A game by Ross Kelso and Gavin Lamb_
 
 ## Setup
 
@@ -21,8 +26,8 @@ was originally designed in 2020. The rules are below, or you can
   - Initially the decks and discard piles will be empty
 - Set aside the Aces of money (♠/♣)
 - Each player starts with 30 health
-- Shuffle the remaining deck, deal the first 5 cards from the top of the deck
-  to form the supply row
+- Shuffle the remaining deck, deal the first 5 cards from the top of the deck to
+  form the supply row
 
 The game should look like this:
 
@@ -50,12 +55,11 @@ replace the supply row, but only once per turn
     defence cards played
 - Playing attack cards (♦) contribute to a pool of attack points worth the sum
   of the cards’ values
-  - If your opponent has a barrier in play then they cannot be attacked
-    directly
-  - A barrier can be destroyed by removing attack points totalling the
-    strength of the barrier from the pool
-  - If your opponent has no barriers in play then the remaining attack points
-    in the pool is subtracted from their health
+  - If your opponent has a barrier in play then they cannot be attacked directly
+  - A barrier can be destroyed by removing attack points totalling the strength
+    of the barrier from the pool
+  - If your opponent has no barriers in play then the remaining attack points in
+    the pool is subtracted from their health
 - Playing money cards (♠/♣) contribute to a pool of money points worth the sum
   of the cards’ values
   - Any card in the supply row can be bought by spending money points from the
@@ -77,13 +81,5 @@ replace the supply row, but only once per turn
   - Draw another card, then play an extra card
 - King (Suit ability value: 10)
   - Gain 5 health points
-
-## Tweaks
-
-This game is tinkered with and tweaked everytime I play it.
-
-- Queens have 10 suit ability
-- Jacks have 10 suit ability: choose 1 card from your opponents hand, it is discarded, they still
-  play 3.
 
 </div>
