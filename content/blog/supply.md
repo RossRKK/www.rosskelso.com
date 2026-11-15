@@ -7,7 +7,9 @@ tags = ["supply", "games", "card-games"]
 +++
 
 Supply is a card game for two players, played with a standard deck of cards. It
-was originally designed in 2020. The rules are below, or you can
+is inspired by the fantastic deck builder
+[Star Realms](https://www.starrealms.com/). It was originally
+designed in 2020. The rules are below, or you can
 [download them as a PDF](/files/games/supply-rules.pdf).
 
 For revised rules see [Supply (2nd edition)](@/blog/supply-2nd-edition.md)

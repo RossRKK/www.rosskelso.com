@@ -18,7 +18,8 @@ here [https://supply.rosskelso.com](https://supply.rosskelso.com).
 
 Supply is a deck building game where each player takes on the role of the rulers
 of 2 rival kingdoms. You must manage the kingdom's economy, fortify its defences
-and rally the troops if you hope to prevail.
+and rally the troops if you hope to prevail. It is inspired by the fantastic
+deck builder [Star Realms](https://www.starrealms.com/).
 
 ## Setup
 
