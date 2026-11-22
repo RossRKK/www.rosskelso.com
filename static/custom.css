@@ -53,7 +53,8 @@ html {
   --bg-0: #e1e2e7; /* Normal bg */
   --bg-1: #c4c8da; /* CursorLine bg */
   --bg-2: #a8aecb; /* LineNr fg */
-  --text-0: #3760bf; /* Normal fg */
+  --text-0: #000000; /* not Normal fg: black reads best for body text */
+  --text-color: #3760bf; /* Normal fg, so code keeps the theme colour */
   --text-1: #6172b0; /* NormalSB fg */
   --text-2: #68709a; /* Conceal fg */
   --primary-color: #2e7de9; /* Title fg */
