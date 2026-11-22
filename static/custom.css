@@ -16,13 +16,6 @@
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: "0xProto";
-  src: url("/fonts/0xProto-Italic.woff2") format("woff2");
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
 
 :root {
   --text-font: "0xProto", monospace;

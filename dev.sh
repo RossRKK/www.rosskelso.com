@@ -48,7 +48,7 @@ nix shell "$NIXPKGS#git" "$NIXPKGS#zola" "$NIXPKGS#woff2" "$RECIPE_GRID" --comma
   # woff2_compress step in features/website.nix.
   mkdir -p static/fonts
   font=$(nix build --no-link --print-out-paths "$nixpkgs#_0xproto")
-  for w in Regular Bold Italic; do
+  for w in Regular Bold; do
     [ -f "static/fonts/0xProto-$w.woff2" ] && continue
     cp "$font/share/fonts/truetype/0xProto-$w.ttf" static/fonts/
     woff2_compress "static/fonts/0xProto-$w.ttf"
