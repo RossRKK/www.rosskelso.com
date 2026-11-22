@@ -3,7 +3,7 @@ title = "CV"
 date = "2025-02-13"
 +++
 
-<h2>Ross Kelso &nbsp; <a class="fa fa-github" href="https://github.com/RossRKK"></a>  <a class="fa fa-linkedin" href="https://www.linkedin.com/in/ross-kelso/"></a><a class="fa fa-download" href="/files/cv.pdf"></a></h2>
+<h2>Ross Kelso<a class="fa fa-github" href="https://github.com/RossRKK"></a>  <a class="fa fa-linkedin" href="https://www.linkedin.com/in/ross-kelso/"></a><a class="fa fa-download" href="/files/cv.pdf"></a></h2>
 
 [ross@rosskelso.com](mailto:ross@rosskelso.com) Edinburgh, Scotland 
 
@@ -30,7 +30,7 @@ Creating HR & payroll management software.
  * Work full-stack with emphasis on backend development in a cross-functional team of 4 developers, 1 PM, and 2 designers.
  * Developed a Model Context Protocol (MCP) server enabling AI coding assistants to search and retrieve relevant code across full-stack codebases and understand complex database relatonships and constraints, improving context accuracy for LLM-assisted development.
 
-<h3>Intelligent Plant - Software Developer (2021-2025), Intern (University Holidays 2017-2021)</h3>
+<h3>Intelligent Plant - Software Developer (2021-2025), Intern (2017-2021)</h3>
 Creating data storage, analysis and visualisation solutions for the energy industry.
 
 Lead developer for the [Industrial App Store API Python Client](https://appstore.intelligentplant.com/Home/AppProfile?appId=40d7a49722f84be4986318bb5cc98cf3) `python` `pandas` `django` `tensorflow`
