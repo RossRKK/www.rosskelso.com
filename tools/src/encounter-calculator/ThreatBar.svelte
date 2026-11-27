@@ -17,6 +17,7 @@
 
   let segments = $derived(barSegments(encounter));
   let scale = $derived(segments.at(-1)!.end);
+  let shown = $derived(segments.filter((segment) => segment.end > segment.start));
 
   interface Segment {
     rating: Rating;
@@ -24,11 +25,19 @@
     end: number;
   }
 
+  // A budget below the one before it (low, for parties under three) gets no width.
   function barSegments({ budgets }: Encounter): Segment[] {
-    const ends = budgets.map((budget) => ({ rating: budget.threat as Rating, end: budget.xp }));
-    const extreme = ends.at(-1)!.end;
-    ends.push({ rating: "beyond-extreme", end: Math.round(extreme * OVERFLOW) });
-    return ends.map(({ rating, end }, i) => ({ rating, start: ends[i - 1]?.end ?? 0, end }));
+    const extreme = budgets.at(-1)!.xp;
+    const ends = [
+      ...budgets.map((budget) => ({ rating: budget.threat as Rating, end: budget.xp })),
+      { rating: "beyond-extreme" as const, end: Math.round(extreme * OVERFLOW) },
+    ];
+    let start = 0;
+    return ends.map(({ rating, end }) => {
+      const segment = { rating, start, end: Math.max(start, end) };
+      start = segment.end;
+      return segment;
+    });
   }
 
   function filled({ start, end }: Segment, xp: number): number {
@@ -45,7 +54,7 @@
   </p>
 
   <div class="names" aria-hidden="true">
-    {#each segments as segment (segment.rating)}
+    {#each shown as segment (segment.rating)}
       <span
         class:current={segment.rating === encounter.rating}
         style:width={percent(segment.end - segment.start)}
@@ -63,7 +72,7 @@
     aria-valuenow={Math.min(encounter.xp, scale)}
     aria-valuetext="{encounter.xp} XP, {NAMES[encounter.rating]}"
   >
-    {#each segments as segment (segment.rating)}
+    {#each shown as segment (segment.rating)}
       <div
         class="segment"
         style:width={percent(segment.end - segment.start)}
@@ -75,7 +84,7 @@
   </div>
 
   <div class="ticks" aria-hidden="true">
-    {#each segments.slice(0, -1) as segment (segment.rating)}
+    {#each shown.slice(0, -1) as segment (segment.rating)}
       <span class="tick" style:left={percent(segment.end)}>{segment.end}</span>
     {/each}
   </div>

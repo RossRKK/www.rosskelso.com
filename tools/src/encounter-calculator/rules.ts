@@ -43,8 +43,7 @@ export function groupXp(party: Party, group: CreatureGroup): number {
 // adjustment per character above or below four.
 const ENCOUNTER_BUDGET: Record<Threat, { forFour: number; perCharacter: number }> = {
   trivial: { forFour: 40, perCharacter: 10 },
-  // 15, not AoN's 20: with 20, low falls to or below trivial for parties under three.
-  low: { forFour: 60, perCharacter: 15 },
+  low: { forFour: 60, perCharacter: 20 },
   moderate: { forFour: 80, perCharacter: 20 },
   severe: { forFour: 120, perCharacter: 30 },
   extreme: { forFour: 160, perCharacter: 40 },

@@ -10,20 +10,14 @@ describe("encounterBudgets", () => {
   });
 
   it.each([
-    [1, { trivial: 10, low: 15, moderate: 20, severe: 30, extreme: 40 }],
-    [3, { trivial: 30, low: 45, moderate: 60, severe: 90, extreme: 120 }],
-    [5, { trivial: 50, low: 75, moderate: 100, severe: 150, extreme: 200 }],
-    [6, { trivial: 60, low: 90, moderate: 120, severe: 180, extreme: 240 }],
+    // As written, low's adjustment of 20 takes it to or below trivial under three characters.
+    [1, { trivial: 10, low: 0, moderate: 20, severe: 30, extreme: 40 }],
+    [2, { trivial: 20, low: 20, moderate: 40, severe: 60, extreme: 80 }],
+    [3, { trivial: 30, low: 40, moderate: 60, severe: 90, extreme: 120 }],
+    [5, { trivial: 50, low: 80, moderate: 100, severe: 150, extreme: 200 }],
+    [6, { trivial: 60, low: 100, moderate: 120, severe: 180, extreme: 240 }],
   ])("applies the character adjustment for a party of %i", (size, expected) => {
     expect(budgetsFor(size)).toEqual(expected);
-  });
-
-  it("keeps the threats in increasing order for every party size", () => {
-    for (let size = 1; size <= 10; size++) {
-      const xps = encounterBudgets(size).map((budget) => budget.xp);
-      expect(xps).toEqual([...xps].sort((a, b) => a - b));
-      expect(new Set(xps).size).toBe(xps.length);
-    }
   });
 });
 
@@ -60,6 +54,12 @@ describe("rateEncounter", () => {
     [[{ count: 1, level: 9 }, { count: 1, level: 1 }], 170, "beyond-extreme"],
   ] as const)("rates %j as %i XP", (groups, xp, rating) => {
     expect(rateEncounter(party, [...groups])).toMatchObject({ xp, rating });
+  });
+
+  it("never rates a party of one or two as low", () => {
+    expect(rateEncounter({ size: 1, level: 3 }, [{ count: 1, level: 0 }])).toMatchObject({ xp: 15, rating: "moderate" });
+    expect(rateEncounter({ size: 2, level: 3 }, [{ count: 1, level: 1 }])).toMatchObject({ xp: 20, rating: "trivial" });
+    expect(rateEncounter({ size: 2, level: 3 }, [{ count: 1, level: 2 }])).toMatchObject({ xp: 30, rating: "moderate" });
   });
 
   it("scales the rating with party size", () => {
