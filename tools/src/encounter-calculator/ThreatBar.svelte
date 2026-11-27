@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { cubicOut } from "svelte/easing";
+  import { prefersReducedMotion, Tween } from "svelte/motion";
   import type { Encounter, Rating } from "./rules";
 
   let { encounter }: { encounter: Encounter } = $props();
@@ -18,6 +20,11 @@
   let segments = $derived(barSegments(encounter));
   let scale = $derived(segments.at(-1)!.end);
   let shown = $derived(segments.filter((segment) => segment.end > segment.start));
+  // One animated total drives every segment, so the fill stays contiguous mid-animation.
+  const fillXp = Tween.of(() => encounter.xp, {
+    duration: () => (prefersReducedMotion.current ? 0 : 150),
+    easing: cubicOut,
+  });
 
   interface Segment {
     rating: Rating;
@@ -78,7 +85,7 @@
         style:width={percent(segment.end - segment.start)}
         style:--colour="var(--threat-{segment.rating})"
       >
-        <span class="fill" style:width="{100 * filled(segment, encounter.xp)}%"></span>
+        <span class="fill" style:width="{100 * filled(segment, fillXp.current)}%"></span>
       </div>
     {/each}
   </div>
@@ -130,7 +137,6 @@
     position: absolute;
     inset: 0 auto 0 0;
     background-color: var(--colour);
-    transition: width 150ms ease-out;
   }
 
   .names {
@@ -160,11 +166,5 @@
   .tick {
     position: absolute;
     transform: translateX(-50%);
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .fill {
-      transition: none;
-    }
   }
 </style>
