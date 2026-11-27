@@ -62,6 +62,26 @@
 </form>
 
 <style>
+  /* Threat as a traffic light, from tokyonight's comment, green, yellow, orange,
+     red and magenta2. Kept with the tool so a cached site stylesheet can't lack it. */
+  :global(:root.light) .encounter-calculator {
+    --threat-trivial: #848cb5;
+    --threat-low: #587539;
+    --threat-moderate: #8c6c3e;
+    --threat-severe: #b15c00;
+    --threat-extreme: #f52a65;
+    --threat-beyond-extreme: #d20065;
+  }
+
+  :global(:root.dark) .encounter-calculator {
+    --threat-trivial: #565f89;
+    --threat-low: #9ece6a;
+    --threat-moderate: #e0af68;
+    --threat-severe: #ff9e64;
+    --threat-extreme: #f7768e;
+    --threat-beyond-extreme: #ff007c;
+  }
+
   fieldset {
     margin: 0 0 1rem;
     padding: 0.5rem 1rem;
