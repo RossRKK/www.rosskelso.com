@@ -24,6 +24,7 @@ export interface Budget {
 
 export interface Encounter {
   xp: number;
+  awardPerCharacter: number;
   rating: Rating;
   budgets: Budget[];
 }
@@ -32,7 +33,17 @@ export function rateEncounter(party: Party, groups: CreatureGroup[]): Encounter 
   const xp = groups.reduce((sum, group) => sum + groupXp(party, group), 0);
   const budgets = encounterBudgets(party.size);
   const fits = budgets.find((budget) => xp <= budget.xp);
-  return { xp, rating: fits?.threat ?? "beyond-extreme", budgets };
+  return {
+    xp,
+    awardPerCharacter: awardPerCharacter(party.size, xp),
+    rating: fits?.threat ?? "beyond-extreme",
+    budgets,
+  };
+}
+
+// "You'll always award the amount of XP listed for a group of four characters" (GM Core p. 76).
+export function awardPerCharacter(partySize: number, xp: number): number {
+  return Math.floor((xp * 4) / partySize);
 }
 
 export function groupXp(party: Party, group: CreatureGroup): number {

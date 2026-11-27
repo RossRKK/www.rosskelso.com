@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { creatureXp, encounterBudgets, isOffTable, rateEncounter, type Threat } from "./rules";
+import { awardPerCharacter, creatureXp, encounterBudgets, isOffTable, rateEncounter, type Threat } from "./rules";
 
 const budgetsFor = (partySize: number): Record<Threat, number> =>
   Object.fromEntries(encounterBudgets(partySize).map(({ threat, xp }) => [threat, xp])) as Record<Threat, number>;
@@ -64,5 +64,17 @@ describe("rateEncounter", () => {
 
   it("scales the rating with party size", () => {
     expect(rateEncounter({ size: 6, level: 5 }, [{ count: 2, level: 5 }]).rating).toBe("low");
+  });
+});
+
+describe("awardPerCharacter", () => {
+  it.each([
+    [4, 130, 130],
+    // A moderate encounter for six (120 XP) awards moderate for four (80 XP).
+    [6, 120, 80],
+    [2, 40, 80],
+    [3, 130, 173],
+  ])("gives a party of %i facing %i XP %i XP each", (size, xp, award) => {
+    expect(awardPerCharacter(size, xp)).toBe(award);
   });
 });
