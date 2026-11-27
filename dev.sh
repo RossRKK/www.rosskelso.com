@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 # Local preview for www.rosskelso.com.
 #
-# The repo is only content + config: the Apollo theme, the 0xProto webfonts
-# and the recipe posts are generated, not committed (see .gitignore). The website-update unit on
-# styx (features/website.nix) materialises both before building; this script
+# The repo is only content + config: the Apollo theme, the 0xProto webfonts,
+# the recipe posts and the tool scripts are generated, not committed (see
+# .gitignore). The website-update unit on styx (features/website.nix)
+# materialises them before building; this script
 # does the same thing locally so `zola serve` sees the tree styx builds from.
 #
 #   ./dev.sh          set up themes/ + static/fonts/ + recipe posts, then
@@ -34,8 +35,12 @@ APOLLO_REV="${APOLLO_REV:-5d3ffce}"
 RECIPE_GRID=$(nix build --no-link --print-out-paths --impure \
   --expr "import ./recipe-grid.nix { nixpkgs = builtins.getFlake \"$NIXPKGS\"; }")
 
+# The JS tools in tools/, type-checked, tested and bundled by tools.nix.
+TOOLS=$(nix build --no-link --print-out-paths --impure \
+  --expr "import ./tools.nix { nixpkgs = builtins.getFlake \"$NIXPKGS\"; }")
+
 nix shell "$NIXPKGS#git" "$NIXPKGS#zola" "$NIXPKGS#woff2" "$RECIPE_GRID" --command bash -euo pipefail -c '
-  rev="$1"; cmd="$2"; nixpkgs="$3"
+  rev="$1"; cmd="$2"; nixpkgs="$3"; tools="$4"
 
   if [ ! -d themes/apollo/.git ]; then
     git clone https://github.com/not-matthias/apollo themes/apollo
@@ -60,6 +65,11 @@ nix shell "$NIXPKGS#git" "$NIXPKGS#zola" "$NIXPKGS#woff2" "$RECIPE_GRID" --comma
   # so a stale generated post would otherwise sit there unnoticed.
   python3 build-recipes.py
 
+  # Tool scripts, copied out of the store writable so `npm run watch` in
+  # tools/ can rebuild over them while zola serves.
+  rm -rf static/tools
+  cp -r --no-preserve=mode "$tools" static/tools
+
   # Posts marked draft = true are never built for the live site; serve them
   # locally so a work in progress is previewable.
   if [ "$cmd" = serve ]; then
@@ -67,4 +77,4 @@ nix shell "$NIXPKGS#git" "$NIXPKGS#zola" "$NIXPKGS#woff2" "$RECIPE_GRID" --comma
   else
     zola "$cmd"
   fi
-' -- "$APOLLO_REV" "${1:-serve}" "$NIXPKGS"
+' -- "$APOLLO_REV" "${1:-serve}" "$NIXPKGS" "$TOOLS"

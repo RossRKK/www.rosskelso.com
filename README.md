@@ -12,6 +12,8 @@ templates/        site-level template overrides (homepage, footer)
 static/           static assets (e.g. downloadable files)
 build-recipes.py  compiles recipes/ into the recipe posts in content/blog/
 recipe-grid.nix   the recipe-grid compiler, built from its PyPI sdists
+tools/            the JS tools (Svelte + TypeScript), one script per tool
+tools.nix         type-checks, tests and bundles tools/ into static/tools/
 dev.sh            local preview: materialises the generated bits, runs zola
 ```
 
@@ -90,6 +92,30 @@ A few things worth knowing when writing one:
 Anything that will not compress into a cell — a variation, a warning, an
 ingredient substitution — goes in a `**Notes**` list under the table.
 
+## Tools
+
+Interactive pages live in `content/tools/`. Each is a Svelte + TypeScript app
+in `tools/src/<name>/`, bundled by Vite into one self-contained
+`static/tools/<name>.js` and mounted into its page with
+`{{ tool(name="<name>") }}`. A new tool also needs its name adding to the
+list in `tools/vite.config.ts`.
+
+```sh
+cd tools
+npm install
+npm test          # vitest
+npm run check     # svelte-check: types
+npm run watch     # rebuild into static/tools/ while ./dev.sh serves
+```
+
+`tools.nix` runs the same check, tests and build in the nix sandbox, so a
+failing test fails `./dev.sh` and the deploy. After changing dependencies,
+update its `npmDepsHash`:
+
+```sh
+nix run nixpkgs#prefetch-npm-deps -- tools/package-lock.json
+```
+
 ## Drafts
 
 An unfinished post lives in `content/blog/` like any other, with
@@ -116,6 +142,7 @@ generated rather than committed, and are gitignored:
 - `themes/apollo` — cloned at a pinned commit.
 - `static/fonts/*.woff2` — 0xProto, compressed from the nixpkgs font package.
 - `content/blog/<recipe>.md` — compiled from `recipes/` by `build-recipes.py`.
+- `static/tools/*.js` — bundled from `tools/` by `tools.nix`.
   `static/custom.css` declares the `@font-face` rules that point at them.
 
 `dev.sh` produces both exactly the way `modules/features/website.nix` in
@@ -145,6 +172,8 @@ atomically; a timer runs it every five minutes.
 `features/website.nix` has to run `build-recipes.py` before `zola build`, with
 `recipe-grid.nix` on its path, exactly as `dev.sh` does — otherwise the recipe
 posts simply are not there, since they are not committed.
+Likewise it has to build `tools.nix` and copy the result into `static/tools/`,
+or the tool pages load a script that is not there.
 
 Nothing here is in the NixOS closure any more, so no `nix flake update` and no
 `nixos-rebuild` — a typo fix is a push. What *is* still pinned in chaos.nix is
