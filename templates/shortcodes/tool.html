@@ -1,0 +1,3 @@
+{#- Mount a tool built from tools/src/<name>/ into the page. -#}
+<div id="{{ name }}" class="tool"></div>
+<script type="module" src="{{ get_url(path='tools/' ~ name ~ '.js') }}"></script>

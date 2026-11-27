@@ -22,9 +22,10 @@ stylesheets = ["custom.css"]   # 0xProto font override; loads after the theme cs
 
 menu = [
   { name = "Blog", url = "/blog", weight = 1 },
-  { name = "Tags", url = "/tags", weight = 2 },
-  { name = "Downloads", url = "/downloads", weight = 3 },
-  { name = "CV", url = "/cv", weight = 4 },
+  { name = "Tools", url = "/tools", weight = 2 },
+  { name = "Tags", url = "/tags", weight = 3 },
+  { name = "Downloads", url = "/downloads", weight = 4 },
+  { name = "CV", url = "/cv", weight = 5 },
 ]
 
 socials = [
