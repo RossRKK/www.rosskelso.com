@@ -7,7 +7,11 @@
 pkgs.buildNpmPackage {
   pname = "rosskelso-tools";
   version = "0";
-  src = ./tools;
+  # A local npm install would otherwise be copied into the store with the source.
+  src = pkgs.lib.cleanSourceWith {
+    src = ./tools;
+    filter = path: _type: baseNameOf path != "node_modules";
+  };
   npmDepsHash = "sha256-K4eSfyOJmd/IWlk/lO+PkO/czqIqIIWys26CmLT7sKo=";
 
   doCheck = true;
